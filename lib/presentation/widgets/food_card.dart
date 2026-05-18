@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../data/models/food_model.dart';
+import '../controllers/favorite_controller.dart';
 import '../screens/recipe_details_screen.dart';
 
 class FoodCard extends StatefulWidget {
@@ -28,18 +29,13 @@ class _FoodCardState extends State<FoodCard>
   late Animation<double> _scaleAnim;
   bool _isPressed = false;
 
-  Color _getDifficultyColor(String difficulty) {
-    return {
-      'সহজ': const Color(0xFF2ECC71),
-      'মাঝারি': const Color(0xFFFFB347),
-      'কঠিন': const Color(0xFFFF6B6B),
-    }[difficulty] ??
-        Colors.grey;
-  }
+  // ── NEW ──────────────────────────────────────────────────────────────────
+  late final FavouritesController _favCtrl;
 
   @override
   void initState() {
     super.initState();
+    _favCtrl = Get.find<FavouritesController>(); // ← NEW
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 120),
@@ -47,6 +43,16 @@ class _FoodCardState extends State<FoodCard>
     _scaleAnim = Tween<double>(begin: 1.0, end: 0.95).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     );
+  }
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Color _getDifficultyColor(String difficulty) {
+    return {
+      'সহজ': const Color(0xFF2ECC71),
+      'মাঝারি': const Color(0xFFFFB347),
+      'কঠিন': const Color(0xFFFF6B6B),
+    }[difficulty] ??
+        Colors.grey;
   }
 
   @override
@@ -79,8 +85,6 @@ class _FoodCardState extends State<FoodCard>
   Widget build(BuildContext context) {
     final serialNumber = widget.index + 1;
 
-    // Responsive sizes derived from screen width so card content
-    // never overflows on small (360px) or large (412px+) screens.
     final emojiCircleSize = 68.w.clamp(60.0, 84.0);
     final emojiFontSize   = 32.sp.clamp(26.0, 40.0);
     final nameFontSize    = 13.sp.clamp(11.0, 15.0);
@@ -101,7 +105,7 @@ class _FoodCardState extends State<FoodCard>
         child: Stack(
           clipBehavior: Clip.none,
           children: [
-            // ── Main Card ────────────────────────────────────────────────
+            // ── Main Card ──────────────────────────────────────────────────
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -132,15 +136,13 @@ class _FoodCardState extends State<FoodCard>
                   ),
                 ],
               ),
-
-              // ── Use Column + mainAxisSize.min so nothing overflows ─────
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(height: 14.h),
 
-                  // ── Emoji Circle ────────────────────────────────────────
+                  // ── Emoji Circle ──────────────────────────────────────────
                   Stack(
                     alignment: Alignment.topRight,
                     children: [
@@ -195,8 +197,8 @@ class _FoodCardState extends State<FoodCard>
                               borderRadius: BorderRadius.circular(10.r),
                               boxShadow: [
                                 BoxShadow(
-                                  color: const Color(0xFFFFB347)
-                                      .withOpacity(0.4),
+                                  color:
+                                  const Color(0xFFFFB347).withOpacity(0.4),
                                   blurRadius: 6,
                                   offset: const Offset(0, 2),
                                 ),
@@ -205,11 +207,8 @@ class _FoodCardState extends State<FoodCard>
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(
-                                  Icons.star_rounded,
-                                  color: Colors.white,
-                                  size: 10.sp,
-                                ),
+                                Icon(Icons.star_rounded,
+                                    color: Colors.white, size: 10.sp),
                                 SizedBox(width: 2.w),
                                 Text(
                                   widget.food.rating.toStringAsFixed(1),
@@ -228,7 +227,7 @@ class _FoodCardState extends State<FoodCard>
 
                   SizedBox(height: 10.h),
 
-                  // ── Food Name ───────────────────────────────────────────
+                  // ── Food Name ─────────────────────────────────────────────
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.w),
                     child: Text(
@@ -248,7 +247,7 @@ class _FoodCardState extends State<FoodCard>
 
                   SizedBox(height: 6.h),
 
-                  // ── Tags ────────────────────────────────────────────────
+                  // ── Tags ──────────────────────────────────────────────────
                   if (widget.food.tags.isNotEmpty)
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 6.w),
@@ -265,7 +264,8 @@ class _FoodCardState extends State<FoodCard>
                               vertical: 2.h,
                             ),
                             decoration: BoxDecoration(
-                              color: widget.accentColor.withOpacity(0.18),
+                              color:
+                              widget.accentColor.withOpacity(0.18),
                               borderRadius: BorderRadius.circular(6.r),
                               border: Border.all(
                                 color:
@@ -289,7 +289,7 @@ class _FoodCardState extends State<FoodCard>
 
                   if (widget.food.tags.isNotEmpty) SizedBox(height: 6.h),
 
-                  // ── Divider ─────────────────────────────────────────────
+                  // ── Divider ───────────────────────────────────────────────
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12.w),
                     child: Divider(
@@ -301,8 +301,7 @@ class _FoodCardState extends State<FoodCard>
 
                   SizedBox(height: 6.h),
 
-                  // ── Meta Chips ──────────────────────────────────────────
-                  // Wrap prevents overflow when 3 chips don't fit in a Row
+                  // ── Meta Chips ────────────────────────────────────────────
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 4.w),
                     child: Wrap(
@@ -326,7 +325,8 @@ class _FoodCardState extends State<FoodCard>
                         ),
                         _DifficultyChip(
                           difficulty: widget.food.difficulty,
-                          color: _getDifficultyColor(widget.food.difficulty),
+                          color:
+                          _getDifficultyColor(widget.food.difficulty),
                           fontSize: tagFontSize,
                         ),
                       ],
@@ -338,7 +338,7 @@ class _FoodCardState extends State<FoodCard>
               ),
             ),
 
-            // ── Serial Number Badge (Top Left) ───────────────────────────
+            // ── Serial Number Badge ────────────────────────────────────────
             Positioned(
               top: -10,
               left: -8,
@@ -380,6 +380,45 @@ class _FoodCardState extends State<FoodCard>
                 ),
               ),
             ),
+
+            // ── ❤️ Favourite Button (Top Right) ── NEW ─────────────────────
+            Positioned(
+              top: 8.h,
+              right: 8.w,
+              child: Obx(() {
+                final isFav = _favCtrl.isFavourite(widget.food);
+                return GestureDetector(
+                  // stop tap bubbling to the card's GestureDetector
+                  onTapDown: (d) {},
+                  onTap: () => _favCtrl.toggleFavourite(widget.food),
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    width: 30.w,
+                    height: 30.w,
+                    decoration: BoxDecoration(
+                      color: isFav
+                          ? const Color(0xFFFF6B6B).withOpacity(0.25)
+                          : Colors.black.withOpacity(0.35),
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: isFav
+                            ? const Color(0xFFFF6B6B).withOpacity(0.6)
+                            : Colors.white.withOpacity(0.2),
+                        width: 1,
+                      ),
+                    ),
+                    child: Icon(
+                      isFav ? Icons.favorite : Icons.favorite_border,
+                      color: isFav
+                          ? const Color(0xFFFF6B6B)
+                          : Colors.white54,
+                      size: 15.sp,
+                    ),
+                  ),
+                );
+              }),
+            ),
+            // ──────────────────────────────────────────────────────────────
           ],
         ),
       ),

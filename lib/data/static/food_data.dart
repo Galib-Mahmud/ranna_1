@@ -11843,277 +11843,7353 @@ final List<FoodItem> bideshiFoods = [
     rating: 4.8,
     viewCount: 5700,
   ),
-  _stubBideshi(
-      'টেম্পুরা', 'japanese', '🍤', 30, 'মাঝারি', 380, ['জাপানি', 'ভাজা']),
-  _stubBideshi('তেরিয়াকি চিকেন', 'japanese', '🍗', 35, 'মাঝারি', 400,
-      ['জাপানি', 'মাংস']),
-  _stubBideshi(
-      'ইয়াকিসোবা', 'japanese', '🍜', 25, 'সহজ', 340, ['জাপানি', 'নুডলস']),
-  _stubBideshi(
-      'মিসো স্যুপ', 'japanese', '🍲', 20, 'সহজ', 180, ['জাপানি', 'স্যুপ']),
-  _stubBideshi(
-      'কাটসু কারি', 'japanese', '🍛', 40, 'মাঝারি', 460, ['জাপানি', 'কারি']),
-  _stubBideshi(
-      'চিকেন কাটসু', 'japanese', '🍗', 35, 'মাঝারি', 420, ['জাপানি', 'মাংস']),
-  _stubBideshi('প্যাড থাই', 'thai', '🍜', 25, 'মাঝারি', 380, ['থাই', 'নুডলস']),
-  _stubBideshi(
-      'থাই ফ্রাইড রাইস', 'thai', '🍚', 22, 'সহজ', 360, ['থাই', 'রাইস']),
-  _stubBideshi('গ্রিন কারি', 'thai', '🍛', 35, 'মাঝারি', 400, ['থাই', 'কারি']),
-  _stubBideshi('রেড কারি', 'thai', '🍛', 35, 'মাঝারি', 410, ['থাই', 'কারি']),
-  _stubBideshi(
-      'টম ইয়াম স্যুপ', 'thai', '🍲', 30, 'সহজ', 240, ['থাই', 'স্যুপ']),
-  _stubBideshi(
-      'থাই বেসিল চিকেন', 'thai', '🍗', 28, 'সহজ', 380, ['থাই', 'মাংস']),
-  _stubBideshi('পেঁপে সালাদ', 'thai', '🥗', 20, 'সহজ', 200, ['থাই', 'সালাদ']),
-  _stubBideshi('স্টিকি রাইস', 'thai', '🍚', 30, 'সহজ', 280, ['থাই', 'রাইস']),
-  _stubBideshi(
-      'বাটার চিকেন', 'indian', '🍛', 40, 'মাঝারি', 440, ['ইন্ডিয়ান', 'মাংস']),
-  _stubBideshi(
-      'চিকেন টিক্কা', 'indian', '🍗', 35, 'মাঝারি', 400, ['ইন্ডিয়ান', 'মাংস']),
-  _stubBideshi('পনির বাটার মাসালা', 'indian', '🧀', 35, 'মাঝারি', 420,
-      ['ইন্ডিয়ান', 'পনির']),
-  _stubBideshi('মসালা দোসা', 'indian', '🥞', 30, 'মাঝারি', 360,
-      ['ইন্ডিয়ান', 'ভেজিটেরিয়ান']),
-  _stubBideshi(
-      'সামোসা', 'indian', '🥟', 25, 'মাঝারি', 280, ['ইন্ডিয়ান', 'স্ন্যাকস']),
-  _stubBideshi(
-      'পাকোড়া', 'indian', '🥦', 22, 'সহজ', 240, ['ইন্ডিয়ান', 'ভাজা']),
-  _stubBideshi('তন্দুরি চিকেন', 'indian', '🍗', 45, 'মাঝারি', 420,
-      ['ইন্ডিয়ান', 'মাংস']),
+  // 21. টেম্পুরা
+  const FoodItem(
+      id: 'bideshi_021',
+      name: 'টেম্পুরা',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍤',
+      description:
+          'ক্রিসপি ব্যাটারে ভাজা টেম্পুরা — জাপানিজ রান্নার হালকা ও সুস্বাদু স্ন্যাকস।',
+      ingredients: [
+        '২০০ গ্রাম চিংড়ি/সবজি',
+        '১ কাপ আইস কোল্ড পানি',
+        '১ কাপ ময়দা',
+        '১/৪ কাপ কর্নস্টার্চ',
+        '১ টি ডিম',
+        'লবণ',
+        'ডুবো ভাজার তেল',
+        'টেম্পুরা সস পরিবেশনে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার তৈরি',
+            description:
+                'আইস কোল্ড পানিতে ডিম ও ময়দা হালকা মেশান (অতিরিক্ত নাড়বেন না)।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'উপকরণ প্রস্তুত',
+            description: 'চিংড়ি/সবজি শুকনো কাপড়ে মুছে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'উপকরণ ব্যাটারে হালকা ডুবিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                '১৮০°C তেলে ক্রিসপি ও হালকা গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'টেম্পুরা সস বা সয়া সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['জাপানি', 'ভাজা', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 22. তেরিয়াকি চিকেন
+  const FoodItem(
+      id: 'bideshi_022',
+      name: 'তেরিয়াকি চিকেন',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍗',
+      description:
+          'মিষ্টি-নোনতা তেরিয়াকি সসে গ্রিলড চিকেন — জাপানিজ রান্নার ক্লাসিক।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন থাই/ব্রেস্ট',
+        '১/৪ কাপ সয়া সস',
+        '২ টেবিল চামচ মিরিন',
+        '২ টেবিল চামচ সাকি',
+        '২ টেবিল চামচ চিনি',
+        '১ চা চামচ আদা বাটা',
+        '১ চা চামচ রসুন বাটা',
+        'তিলের তেল',
+        'তিল গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেড',
+            description:
+                'সয়া সস, মিরিন, সাকি, চিনি, আদা-রসুন মিশিয়ে চিকেন মাখিয়ে ৩০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description:
+                'ম্যারিনেড লিকুইড কড়াইতে নিয়ে ঘন হওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিকেন গ্রিল',
+            description: 'প্যানে তেল গরম করে চিকেন উভয় পাশ গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস কোটিং',
+            description: 'গ্রিল করা চিকেনে তেরিয়াকি সস লাগিয়ে গ্লেজ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিল ও সবুজ পেঁয়াজ ছিটিয়ে ভাতের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 35,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['জাপানি', 'মাংস', 'তেরিয়াকি'],
+      rating: 4.8,
+      viewCount: 5400),
+
+  // 23. ইয়াকিসোবা
+  const FoodItem(
+      id: 'bideshi_023',
+      name: 'ইয়াকিসোবা',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍜',
+      description:
+          'জাপানিজ স্টাইল ভাজা নুডলস — দ্রুত তৈরি ও ফ্লেভারফুল এক প্লেট খাবার।',
+      ingredients: [
+        '৩০০ গ্রাম ইয়াকিসোবা নুডলস',
+        '২০০ গ্রাম চিকেন/পোর্ক (ঐচ্ছিক)',
+        '১ কাপ বাঁধাকপি কুচি',
+        '১/২ কাপ গাজর জুলিয়েন',
+        '২ টি সবুজ পেঁয়াজ',
+        '৩ টেবিল চামচ ইয়াকিসোবা সস',
+        '১ চা চামচ তিলের তেল',
+        'রসুন কুচি',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস প্রস্তুত',
+            description: 'নুডলস প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাংস/সবজি ভাজা',
+            description: 'হাই হিটে তেলে রসুন, মাংস ও সবজি দ্রুত ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'নুডলস যোগ',
+            description: 'নুডলস ও ইয়াকিসোবা সস দিয়ে ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিনিশ',
+            description: 'তিলের তেল দিয়ে ফিনিশ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সবুজ পেঁয়াজ ও আদা কুচি ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['জাপানি', 'নুডলস', 'দ্রুত'],
+      rating: 4.6,
+      viewCount: 4900),
+
+  // 24. মিসো স্যুপ
+  const FoodItem(
+      id: 'bideshi_024',
+      name: 'মিসো স্যুপ',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍲',
+      description:
+          'জাপানিজ ট্র্যাডিশনাল মিসো স্যুপ — হালকা, পুষ্টিকর ও আরামদায়ক।',
+      ingredients: [
+        '৪ কাপ দাশি ব্রথ',
+        '৩ টেবিল চামচ মিসো পেস্ট',
+        '১/২ কাপ টোফু (কিউব)',
+        '২ টেবিল চামচ ওয়াকামে শৈবাল',
+        '২ টি সবুজ পেঁয়াজ কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রথ গরম',
+            description: 'দাশি ব্রথ কড়াইতে গরম করুন (ফুটাবেন না)।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মিসো যোগ',
+            description:
+                'মিসো পেস্ট আলাদা বাটিতে অল্প ব্রথ দিয়ে মিশিয়ে ব্রথে যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টোফু ও শৈবাল',
+            description: 'টোফু ও ওয়াকামে যোগ করে ২ মিনিট হালকা গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'সবুজ পেঁয়াজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 180,
+      tags: ['জাপানি', 'স্যুপ', 'হেলদি'],
+      rating: 4.5,
+      viewCount: 3800),
+
+  // 25. কাটসু কারি
+  const FoodItem(
+      id: 'bideshi_025',
+      name: 'কাটসু কারি',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍛',
+      description: 'ক্রিসপি পোর্ক কাটসু ও জাপানিজ কারির পারফেক্ট কম্বিনেশন।',
+      ingredients: [
+        '৪ টি পোর্ক/চিকেন কাটলেট',
+        '১/২ কাপ ময়দা',
+        '২ টি ডিম (ফেটা)',
+        '১ কাপ পanko ব্রেডক্রাম্ব',
+        '২ কাপ জাপানিজ কারি রু',
+        '৩ কাপ চিকেন ব্রথ',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি গাজর কুচি',
+        '১ টি আলু কুচি',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কাটলেট প্রস্তুত',
+            description: 'মাংস পাতলা করে ময়দা → ডিম → পanko এভাবে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ভাজা',
+            description: 'তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কারি তৈরি',
+            description:
+                'তেলে পেঁয়াজ, গাজর, আলু ভেজে ব্রথ ও কারি রু যোগ করে ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'ভাতের উপর কারি ঢেলে কাটলেট স্লাইস করে সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পিকলড আদা ও ফুকুজিনজুকে সহ পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['জাপানি', 'কারি', 'ক্রিসপি'],
+      rating: 4.8,
+      viewCount: 5600),
+
+  // 26. চিকেন কাটসু
+  const FoodItem(
+      id: 'bideshi_026',
+      name: 'চিকেন কাটসু',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍗',
+      description:
+          'ক্রিসপি ব্রেডেড চিকেন কাটসু — জাপানিজ রান্নার জনপ্রিয় ডিশ।',
+      ingredients: [
+        '৪ টি চিকেন ব্রেস্ট',
+        '১/২ কাপ ময়দা',
+        '২ টি ডিম (ফেটা)',
+        '১ কাপ পanko ব্রেডক্রাম্ব',
+        'লবণ',
+        'গোলমরিচ',
+        'তেল',
+        'টনকাৎসু সস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description: 'চিকেন পাতলা করে লবণ ও গোলমরিচ মাখান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কোটিং',
+            description: 'ময়দা → ডিম → পanko এভাবে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কাটা',
+            description: 'কাটসু স্ট্রিপ করে কাটুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'টনকাৎসু সস ও বাঁধাকপি সালাদ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['জাপানি', 'মাংস', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 5100),
+
+  // 27. প্যাড থাই
+  const FoodItem(
+      id: 'bideshi_027',
+      name: 'প্যাড থাই',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍜',
+      description:
+          'থাইল্যান্ডের জাতীয় খাবার প্যাড থাই — টক-মিষ্টি-ঝাল স্বাদের নুডলস।',
+      ingredients: [
+        '২০০ গ্রাম রাইস নুডলস',
+        '২০০ গ্রাম চিকেন/চিংড়ি',
+        '২ টি ডিম',
+        '১/২ কাপ বীন স্প্রাউট',
+        '২ টেবিল চামচ তেঁতুলের পেস্ট',
+        '২ টেবিল চামচ ফিশ সস',
+        '১ টেবিল চামচ চিনি',
+        '১/৪ কাপ চিনাবাদাম কুচি',
+        '২ টি সবুজ পেঁয়াজ',
+        'লেবু',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস ভিজানো',
+            description: 'রাইস নুডলস কুসুম গরম পানিতে ১০ মিনিট ভিজিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description: 'তেঁতুলের পেস্ট, ফিশ সস ও চিনি মিশিয়ে সস বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রান্না',
+            description: 'হাই হিটে তেলে মাংস, ডিম, নুডলস ও সস দ্রুত টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টপিং',
+            description: 'বীন স্প্রাউট ও চিনাবাদাম যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও সবুজ পেঁয়াজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['থাই', 'নুডলস', 'টক-মিষ্টি'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 28. থাই ফ্রাইড রাইস
+  const FoodItem(
+      id: 'bideshi_028',
+      name: 'থাই ফ্রাইড রাইস',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍚',
+      description:
+          'থাই স্টাইল ফ্রাইড রাইস — লেবু, ফিশ সস ও মশলার সুস্বাদু কম্বিনেশন।',
+      ingredients: [
+        '৩ কাপ ঠান্ডা ভাত',
+        '২০০ গ্রাম চিকেন/চিংড়ি',
+        '২ টি ডিম',
+        '১ টি পেঁয়াজ কুচি',
+        '২ টেবিল চামচ ফিশ সস',
+        '১ টেবিল চামচ সয়া সস',
+        '১ চা চামচ চিনি',
+        '২ টি কাঁচা মরিচ',
+        'লেবু',
+        'ধনেপাতা',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস ভাজা',
+            description: 'তেলে চিকেন/চিংড়ি দ্রুত ভেজে তুলুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম ও সবজি',
+            description:
+                'একই প্যানে ডিম স্ক্র্যাম্বল করে পেঁয়াজ ও মরিচ যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাত ও সস',
+            description: 'ভাত দিয়ে ফিশ সস, সয়া সস ও চিনি মিশিয়ে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4, title: 'ফিনিশ', description: 'ভাজা মাংস ফেরত দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও ধনেপাতা ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['থাই', 'রাইস', 'দ্রুত'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 29. গ্রিন কারি
+  const FoodItem(
+      id: 'bideshi_029',
+      name: 'গ্রিন কারি',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍛',
+      description:
+          'ক্রিমি থাই গ্রিন কারি — নারিকেল দুধ ও সবুজ মশলার সুগন্ধি কম্বিনেশন।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন/টোফু',
+        '১ কাপ নারিকেল দুধ',
+        '২ টেবিল চামচ গ্রিন কারি পেস্ট',
+        '১ টি বেগুন কুচি',
+        '১/২ কাপ বাঁশের কুচি',
+        '২ টি থাই বেজিল পাতা',
+        '১ টেবিল চামচ ফিশ সস',
+        '১ চা চামচ চিনি',
+        'লেবু পাতা',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কারি পেস্ট ভাজা',
+            description: 'তেলে গ্রিন কারি পেস্ট হালকা ভেজে সুগন্ধি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'নারিকেল দুধ',
+            description: 'নারিকেল দুধ যোগ করে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মাংস ও সবজি',
+            description:
+                'চিকেন/টোফু ও সবজি যোগ করে নরম হওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজনিং',
+            description: 'ফিশ সস, চিনি ও লেবু পাতা দিয়ে সিজনিং করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'থাই বেজিল ছিটিয়ে ভাতের সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['থাই', 'কারি', 'ক্রিমি'],
+      rating: 4.7,
+      viewCount: 5300),
+
+  // 30. রেড কারি
+  const FoodItem(
+      id: 'bideshi_030',
+      name: 'রেড কারি',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍛',
+      description:
+          'স্পাইসি থাই রেড কারি — লাল মরিচ ও নারিকেল দুধের ঝাল-ক্রিমি স্বাদ।',
+      ingredients: [
+        '৫০০ গ্রাম গরুর মাংস/চিকেন',
+        '১ কাপ নারিকেল দুধ',
+        '২ টেবিল চামচ রেড কারি পেস্ট',
+        '১ টি বেগুন কুচি',
+        '১/২ কাপ বেল পেপার',
+        '২ টি থাই বেজিল',
+        '১ টেবিল চামচ ফিশ সস',
+        '১ চা চামচ চিনি',
+        'কাঁচা মরিচ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কারি পেস্ট ভাজা',
+            description: 'তেলে রেড কারি পেস্ট ভেজে সুগন্ধি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'নারিকেল দুধ',
+            description: 'নারিকেল দুধ যোগ করে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মাংস ও সবজি',
+            description: 'মাংস ও সবজি যোগ করে নরম হওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজনিং',
+            description: 'ফিশ সস, চিনি ও কাঁচা মরিচ দিয়ে সিজনিং করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'থাই বেজিল ছিটিয়ে ভাতের সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 410,
+      tags: ['থাই', 'কারি', 'ঝাল'],
+      rating: 4.7,
+      viewCount: 5100),
+
+  // 31. টম ইয়াম স্যুপ
+  const FoodItem(
+      id: 'bideshi_031',
+      name: 'টম ইয়াম স্যুপ',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍲',
+      description:
+          'থাইল্যান্ডের বিখ্যাত টক-ঝাল স্যুপ — লেমনগ্রাস, লেবু পাতা ও চিংড়ির সুগন্ধি কম্বিনেশন।',
+      ingredients: [
+        '৪ কাপ চিকেন/চিংড়ি ব্রথ',
+        '২০০ গ্রাম চিংড়ি',
+        '২ টি লেমনগ্রাস (কুচি)',
+        '৪-৫ টি লেবু পাতা',
+        '২ টি কাঁচা মরিচ',
+        '২ টেবিল চামচ ফিশ সস',
+        '২ টেবিল চামচ লেবুর রস',
+        '১/২ কাপ মুশরুম',
+        '১ টি টমেটো',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রথ গরম',
+            description: 'ব্রথ গরম করে লেমনগ্রাস ও লেবু পাতা যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি যোগ',
+            description: 'মুশরুম ও টমেটো যোগ করে ৩ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিংড়ি',
+            description: 'চিংড়ি যোগ করে ২-৩ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজনিং',
+            description: 'ফিশ সস, লেবুর রস ও কাঁচা মরিচ দিয়ে সিজনিং করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ধনেপাতা ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['থাই', 'স্যুপ', 'টক-ঝাল'],
+      rating: 4.8,
+      viewCount: 5600),
+
+  // 32. থাই বেসিল চিকেন
+  const FoodItem(
+      id: 'bideshi_032',
+      name: 'থাই বেসিল চিকেন',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍗',
+      description: 'ঝাল ও সুগন্ধি থাই বেসিল চিকেন — দ্রুত তৈরি ও ফ্লেভারফুল।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন কিমা',
+        '১ কাপ থাই বেজিল পাতা',
+        '৪-৫ টি কাঁচা মরিচ',
+        '৩ কোয়া রসুন',
+        '২ টেবিল চামচ ফিশ সস',
+        '১ টেবিল চামচ সয়া সস',
+        '১ চা চামচ চিনি',
+        '১ টি পেঁয়াজ কুচি',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মশলা বাটা',
+            description: 'রসুন ও কাঁচা মরিচ বাটা বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিকেন ভাজা',
+            description: 'তেলে মশলা বাটা ও পেঁয়াজ ভেজে চিকেন কিমা যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস',
+            description: 'ফিশ সস, সয়া সস ও চিনি যোগ করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেজিল',
+            description: 'রান্না শেষে থাই বেজিল যোগ করে হালকা নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত ও ফ্রাইড এগ সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['থাই', 'মাংস', 'ঝাল'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 33. পেঁপে সালাদ
+  const FoodItem(
+      id: 'bideshi_033',
+      name: 'পেঁপে সালাদ',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🥗',
+      description: 'টাটকা পেঁপে ও মশলার থাই সালাদ — হালকা, টক-ঝাল ও রিফ্রেশিং।',
+      ingredients: [
+        '২ কাপ কাঁচা পেঁপে জুলিয়েন',
+        '১ টি টমেটো (কোয়া)',
+        '১/৪ কাপ চিনাবাদাম কুচি',
+        '২ টি কাঁচা মরিচ',
+        '২ টেবিল চামচ ফিশ সস',
+        '২ টেবিল চামচ লেবুর রস',
+        '১ টেবিল চামচ চিনি',
+        '১ টেবিল চামচ শুকনো চিংড়ি (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পেঁপে প্রস্তুত',
+            description: 'কাঁচা পেঁপে জুলিয়েন করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রেসিং',
+            description:
+                'ফিশ সস, লেবুর রস, চিনি ও মরিচ মিশিয়ে ড্রেসিং বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description: 'পেঁপে, টমেটো, চিনাবাদাম ও ড্রেসিং মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'ঠান্ডা বা রুম টেম্পারেচারে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['থাই', 'সালাদ', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4200),
+
+  // 34. স্টিকি রাইস
+  const FoodItem(
+      id: 'bideshi_034',
+      name: 'স্টিকি রাইস',
+      category: 'bideshi',
+      subCategory: 'thai',
+      emoji: '🍚',
+      description:
+          'থাইল্যান্ডের ট্র্যাডিশনাল স্টিকি রাইস — মিষ্টি নারিকেল স্বাদের ডেজার্ট বা সাইড ডিশ।',
+      ingredients: [
+        '২ কাপ গ্লুটিনাস রাইস',
+        '১ কাপ নারিকেল দুধ',
+        '১/৪ কাপ চিনি',
+        '১/২ চা চামচ লবণ',
+        '১ টেবিল চামচ তিল (গার্নিশ)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চাল ভিজানো',
+            description: 'চাল ৪-৬ ঘণ্টা বা রাতে ভিজিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'স্টিম',
+            description: 'চাল ঝরিয়ে স্টিমারে ২০-২৫ মিনিট স্টিম করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'নারিকেল মিক্স',
+            description: 'নারিকেল দুধ, চিনি ও লবণ গরম করে মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'গরম চালের উপর নারিকেল মিক্স ঢেলে ১০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিল ছিটিয়ে ঠান্ডা বা গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 250,
+      servings: 6,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['থাই', 'রাইস', 'মিষ্টি'],
+      rating: 4.5,
+      viewCount: 3900),
+
+  // 35. বাটার চিকেন
+  const FoodItem(
+      id: 'bideshi_035',
+      name: 'বাটার চিকেন',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🍛',
+      description:
+          'ক্রিমি ও মশলাদার বাটার চিকেন — ইন্ডিয়ান রান্নার বিশ্ববিখ্যাত ডিশ।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন টুকরা',
+        '১ কাপ টমেটো পিউরি',
+        '১/২ কাপ হেভি ক্রিম',
+        '৩ টেবিল চামচ মাখন',
+        '১ চা চামচ গরম মশলা',
+        '১ চা চামচ কাশ্মীরি মরিচ',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ কাপ দই',
+        'লবণ',
+        'চিনি',
+        'কাসুরি মেথি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেন দই, আদা-রসুন, মশলা ও লবণ মাখিয়ে ১ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিকেন রান্না',
+            description: 'প্যানে মাখন দিয়ে চিকেন হালকা ভেজে তুলুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস তৈরি',
+            description:
+                'একই প্যানে টমেটো পিউরি, মশলা ও অল্প পানি দিয়ে সস বানান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ক্রিম যোগ',
+            description: 'ক্রিম, চিনি ও কাসুরি মেথি যোগ করে সস ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'মিশ্রণ',
+            description: 'ভাজা চিকেন সস দিয়ে মিশিয়ে ৫ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'নান বা পরোটার সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 70,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['ইন্ডিয়ান', 'মাংস', 'ক্রিমি'],
+      rating: 4.9,
+      viewCount: 7200),
+
+  // 36. চিকেন টিক্কা
+  const FoodItem(
+      id: 'bideshi_036',
+      name: 'চিকেন টিক্কা',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🍗',
+      description:
+          'তন্দুরি স্টাইল চিকেন টিক্কা — মশলাদার ম্যারিনেটেড চিকেনের গ্রিলড স্বাদ।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন টুকরা',
+        '১/২ কাপ দই',
+        '১ চা চামচ টিক্কা মাসালা',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ গরম মশলা',
+        '১ টেবিল চামচ লেবুর রস',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'দই, টিক্কা মাসালা, আদা-রসুন, মশলা ও লেবুর রস মিশিয়ে চিকেন মাখান। ৪ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শিকে পরানো',
+            description: 'ম্যারিনেট চিকেন শিকে পরান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল/বেক',
+            description:
+                'ওভেন/গ্রিলে ২০০°C তাপমাত্রায় ২০-২৫ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজ, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 250,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['ইন্ডিয়ান', 'মাংস', 'গ্রিল'],
+      rating: 4.8,
+      viewCount: 6100),
+
+  // 37. পনির বাটার মাসালা
+  const FoodItem(
+      id: 'bideshi_037',
+      name: 'পনির বাটার মাসালা',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🧀',
+      description:
+          'ক্রিমি টমেটো সসে পনির — ভেজিটেরিয়ানদের জন্য ইন্ডিয়ান রান্নার সেরা পছন্দ।',
+      ingredients: [
+        '৩০০ গ্রাম পনির (কিউব)',
+        '১ কাপ টমেটো পিউরি',
+        '১/২ কাপ হেভি ক্রিম',
+        '৩ টেবিল চামচ মাখন',
+        '১ চা চামচ গরম মশলা',
+        '১ চা চামচ কাশ্মীরি মরিচ',
+        '১ চা চামচ আদা-রসুন বাটা',
+        'লবণ',
+        'চিনি',
+        'কাসুরি মেথি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পনির ভাজা',
+            description: 'পনির কিউব হালকা ভেজে তুলুন (ঐচ্ছিক)।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description:
+                'মাখনে আদা-রসুন ভেজে টমেটো পিউরি ও মশলা দিয়ে সস বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ক্রিম যোগ',
+            description: 'ক্রিম, চিনি ও কাসুরি মেথি যোগ করে সস ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পনির যোগ',
+            description: 'পনির সস দিয়ে মিশিয়ে ৫ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'নান বা পরোটার সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['ইন্ডিয়ান', 'পনির', 'ভেজিটেরিয়ান'],
+      rating: 4.8,
+      viewCount: 5800),
+
+  // 38. মসালা দোসা
+  const FoodItem(
+      id: 'bideshi_038',
+      name: 'মসালা দোসা',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🥞',
+      description:
+          'ক্রিসপি চাল-ডালের দোসা — আলুর মশলাদার পুরে ভরা সাউথ ইন্ডিয়ান স্পেশাল।',
+      ingredients: [
+        '১ কাপ চাল',
+        '১/২ কাপ উড়দ ডাল',
+        '১/৪ চা চামচ ফেনুগ্রিক',
+        '৩ টি সিদ্ধ আলু',
+        '১ টি পেঁয়াজ কুচি',
+        '১ চা চামচ সরিষা',
+        '১ চা চামচ হলুদ',
+        'কাঁচা মরিচ',
+        'ধনেপাতা',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার',
+            description:
+                'চাল, ডাল ও ফেনুগ্রিক ৬-৮ ঘণ্টা ভিজিয়ে মিহি বাটা বানিয়ে ৮-১০ ঘণ্টা ফারমেন্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পুর',
+            description:
+                'তেলে সরিষা ফোড়ন দিয়ে পেঁয়াজ, আলু ও মশলা দিয়ে পুর বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'দোসা',
+            description:
+                'গরম তাওয়ায় ব্যাটার ছড়িয়ে পাতলা করে ক্রিসপি করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পুর ভরা',
+            description: 'দোসার মাঝখানে পুর দিয়ে ভাঁজ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সাম্বার ও নারিকেল চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 600,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 360,
+      tags: ['ইন্ডিয়ান', 'ভেজিটেরিয়ান', 'সাউথ ইন্ডিয়ান'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 39. সামোসা
+  const FoodItem(
+      id: 'bideshi_039',
+      name: 'সামোসা',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🥟',
+      description:
+          'ক্রিসপি ময়দার খোল ও মশলাদার আলুর পুর — ইন্ডিয়ান স্ট্রিট ফুডের আইকন।',
+      ingredients: [
+        '২ কাপ ময়দা',
+        '৩ টি সিদ্ধ আলু',
+        '১/২ কাপ মটরশুঁটি',
+        '১ চা চামচ জিরা',
+        '১ চা চামচ ধনিয়া গুঁড়া',
+        '১/২ চা চামচ গরম মশলা',
+        'লবণ',
+        'কাঁচা মরিচ',
+        'ধনেপাতা',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো তৈরি',
+            description: 'ময়দা, লবণ ও তেল মিশিয়ে শক্ত ডো তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পুর',
+            description: 'আলু মেখে মটর, জিরা, মশলা ও লবণ মিশিয়ে পুর বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সামোসা বানানো',
+            description: 'ডো বেলে পুর দিয়ে ত্রিভুজ আকারে সিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                'মাঝারি আঁচে তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পুদিনা চাটনি বা টক পানি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 30,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 280,
+      tags: ['ইন্ডিয়ান', 'স্ন্যাকস', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 5600),
+
+  // 40. পাকোড়া
+  const FoodItem(
+      id: 'bideshi_040',
+      name: 'পাকোড়া',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🥦',
+      description:
+          'বেসন ও সবজির ক্রিসপি পাকোড়া — ইন্ডিয়ান ইফতারের প্রিয় স্ন্যাকস।',
+      ingredients: [
+        '১ কাপ বেসন',
+        '১ কাপ মিক্সড সবজি কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ জিরা',
+        'লবণ',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার',
+            description: 'বেসন, মশলা ও পানি দিয়ে মাঝারি ঘন ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মিশ্রণ',
+            description: 'সবজি ব্যাটারে মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description:
+                'গরম তেলে চামচ দিয়ে ছোট ছোট করে ক্রিসপি হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পুদিনা চাটনি বা টক পানি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['ইন্ডিয়ান', 'ভাজা', 'স্ন্যাকস'],
+      rating: 4.6,
+      viewCount: 4500),
+
+  // 41. তন্দুরি চিকেন
+  const FoodItem(
+      id: 'bideshi_041',
+      name: 'তন্দুরি চিকেন',
+      category: 'bideshi',
+      subCategory: 'indian',
+      emoji: '🍗',
+      description:
+          'দই ও মশলার ম্যারিনেটেড তন্দুরি চিকেন — ইন্ডিয়ান রান্নার ক্লাসিক গ্রিলড ডিশ।',
+      ingredients: [
+        '১ কেজি চিকেন (লেগ/থাই)',
+        '১ কাপ দই',
+        '২ টেবিল চামচ তন্দুরি মাসালা',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ গরম মশলা',
+        'লেবুর রস',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'দই, তন্দুরি মাসালা, আদা-রসুন, মশলা ও লেবুর রস মিশিয়ে চিকেন মাখান। ৮ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল/ওভেন',
+            description:
+                '২২০°C তাপমাত্রায় ৩৫-৪০ মিনিট গ্রিল করুন, মাঝে উল্টে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পরিবেশন',
+            description:
+                'পেঁয়াজ রিং, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 45,
+      prepTime: 30,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['ইন্ডিয়ান', 'মাংস', 'তন্দুর'],
+      rating: 4.9,
+      viewCount: 6800),
   _stubBideshi('টাকো', 'mexican', '🌮', 20, 'সহজ', 320, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'বুরিটো', 'mexican', '🌯', 25, 'সহজ', 420, ['মেক্সিকান', 'রাইস']),
-  _stubBideshi('নাচোস', 'mexican', '🧀', 18, 'সহজ', 380, ['মেক্সিকান', 'চিপস']),
-  _stubBideshi(
-      'কেসাডিয়া', 'mexican', '🧀', 22, 'সহজ', 360, ['মেক্সিকান', 'চিজ']),
-  _stubBideshi(
-      'ফাহিতা', 'mexican', '🥘', 30, 'মাঝারি', 400, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi('গুয়াকামোলি', 'mexican', '🥑', 15, 'সহজ', 220,
-      ['মেক্সিকান', 'অ্যাভোকাডো']),
-  _stubBideshi(
-      'মেক্সিকান রাইস', 'mexican', '🍚', 25, 'সহজ', 300, ['মেক্সিকান', 'রাইস']),
-  _stubBideshi(
-      'চিকেন টাকো', 'mexican', '🌮', 22, 'সহজ', 340, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'বিফ বুরিটো', 'mexican', '🌯', 28, 'সহজ', 440, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'লোডেড নাচোস', 'mexican', '🧀', 20, 'সহজ', 420, ['মেক্সিকান', 'চিজ']),
-  _stubBideshi('শাওয়ারমা', 'middle_eastern', '🌯', 35, 'মাঝারি', 420,
-      ['মিডল ইস্ট', 'মাংস']),
-  _stubBideshi('ফালাফেল', 'middle_eastern', '🧆', 25, 'সহজ', 280,
-      ['মিডল ইস্ট', 'ভেজিটেরিয়ান']),
-  _stubBideshi(
-      'হামুস', 'middle_eastern', '🫘', 20, 'সহজ', 240, ['মিডল ইস্ট', 'ছোলা']),
-  _stubBideshi('কাবাব', 'middle_eastern', '🍢', 30, 'মাঝারি', 380,
-      ['মিডল ইস্ট', 'মাংস']),
-  _stubBideshi('চিকেন শাওয়ারমা', 'middle_eastern', '🌯', 38, 'মাঝারি', 440,
-      ['মিডল ইস্ট', 'মাংস']),
-  _stubBideshi('পিটা ব্রেড', 'middle_eastern', '🫓', 25, 'সহজ', 220,
-      ['মিডল ইস্ট', 'রুটি']),
-  _stubBideshi('তুর্কিশ কাবাব', 'middle_eastern', '🍢', 35, 'মাঝারি', 400,
-      ['তুর্কিশ', 'মাংস']),
-  _stubBideshi('লেন্টিল স্যুপ', 'middle_eastern', '🍲', 30, 'সহজ', 240,
-      ['মিডল ইস্ট', 'ডাল']),
-  _stubBideshi('রাইস পিলাফ', 'middle_eastern', '🍚', 35, 'সহজ', 320,
-      ['মিডল ইস্ট', 'রাইস']),
-  _stubBideshi('গার্লিক সস চিকেন', 'middle_eastern', '🍗', 32, 'সহজ', 380,
-      ['মিডল ইস্ট', 'মাংস']),
-  _stubBideshi(
-      'ফ্রেঞ্চ টোস্ট', 'french', '🍞', 20, 'সহজ', 340, ['ফ্রেঞ্চ', 'নাস্তা']),
-  _stubBideshi('ক্রেপ', 'french', '🥞', 25, 'সহজ', 300, ['ফ্রেঞ্চ', 'মিষ্টি']),
-  _stubBideshi(
-      'মোজারেলা স্টিক', 'italian', '🧀', 20, 'সহজ', 320, ['ইতালিয়ান', 'চিজ']),
-  _stubBideshi(
-      'চিকেন উইংস', 'american', '🍗', 35, 'সহজ', 380, ['মাংস', 'ফ্রাই']),
-  _stubBideshi('স্টেক', 'american', '🥩', 25, 'মাঝারি', 520, ['মাংস', 'গ্রিল']),
-  _stubBideshi(
-      'গ্রিলড চিকেন', 'american', '🍗', 30, 'সহজ', 360, ['মাংস', 'গ্রিল']),
-  _stubBideshi('সিজার সালাদ', 'american', '🥗', 15, 'সহজ', 280,
-      ['সালাদ', 'স্বাস্থ্যকর']),
-  _stubBideshi(
-      'গ্রীক সালাদ', 'greek', '🥗', 12, 'সহজ', 240, ['গ্রীক', 'সালাদ']),
-  _stubBideshi('টর্টিলা র‍্যাপ', 'mexican', '🌯', 18, 'সহজ', 340,
-      ['মেক্সিকান', 'র‍্যাপ']),
-  _stubBideshi(
-      'চিকেন র‍্যাপ', 'mexican', '🌯', 20, 'সহজ', 360, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'বিফ র‍্যাপ', 'mexican', '🌯', 22, 'সহজ', 380, ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'চিকেন সাব', 'american', '🥪', 18, 'সহজ', 380, ['স্যান্ডউইচ', 'মাংস']),
-  _stubBideshi('টুনা স্যান্ডউইচ', 'american', '🥪', 15, 'সহজ', 340,
-      ['স্যান্ডউইচ', 'মাছ']),
-  _stubBideshi(
-      'চিকেন সালাদ', 'american', '🥗', 20, 'সহজ', 320, ['সালাদ', 'মাংস']),
-  _stubBideshi(
-      'পাস্তা সালাদ', 'italian', '🥗', 18, 'সহজ', 300, ['পাস্তা', 'সালাদ']),
-  _stubBideshi('চিকেন আলফ্রেডো', 'italian', '🍝', 30, 'মাঝারি', 460,
-      ['পাস্তা', 'ক্রিম']),
-  _stubBideshi(
-      'মাশরুম স্যুপ', 'american', '🍲', 25, 'সহজ', 220, ['স্যুপ', 'মাশরুম']),
-  _stubBideshi(
-      'চিকেন কর্ন স্যুপ', 'american', '🍲', 28, 'সহজ', 260, ['স্যুপ', 'মাংস']),
-  _stubBideshi(
-      'সি ফুড পাস্তা', 'italian', '🍝', 35, 'মাঝারি', 440, ['পাস্তা', 'সিফুড']),
-  _stubBideshi(
-      'চিজ পাস্তা', 'italian', '🍝', 25, 'সহজ', 400, ['পাস্তা', 'চিজ']),
-  _stubBideshi(
-      'পেনে পাস্তা', 'italian', '🍝', 25, 'সহজ', 380, ['পাস্তা', 'ইতালিয়ান']),
-  _stubBideshi(
-      'ফেটুচিনি', 'italian', '🍝', 28, 'সহজ', 400, ['পাস্তা', 'ইতালিয়ান']),
-  _stubBideshi('র‍্যাভিওলি', 'italian', '🥟', 35, 'মাঝারি', 420,
-      ['পাস্তা', 'ইতালিয়ান']),
-  _stubBideshi('গ্নোচি', 'italian', '🥔', 30, 'মাঝারি', 380, ['পাস্তা', 'আলু']),
-  _stubBideshi('ব্রুশেত্তা', 'italian', '🍅', 15, 'সহজ', 240,
-      ['ইতালিয়ান', 'স্টার্টার']),
-  _stubBideshi(
-      'ক্যালজোন', 'italian', '🥟', 40, 'মাঝারি', 460, ['ইতালিয়ান', 'পিজ্জা']),
-  _stubBideshi(
-      'সসেজ পিজ্জা', 'italian', '🍕', 35, 'সহজ', 420, ['পিজ্জা', 'সসেজ']),
-  _stubBideshi('ভেজ পিজ্জা', 'italian', '🍕', 30, 'সহজ', 340,
-      ['পিজ্জা', 'ভেজিটেরিয়ান']),
-  _stubBideshi('হাওয়াইয়ান পিজ্জা', 'italian', '🍕', 32, 'সহজ', 380,
-      ['পিজ্জা', 'আনারস']),
-  _stubBideshi(
-      'চিকেন লাসাগনা', 'italian', '🍝', 55, 'মাঝারি', 520, ['পাস্তা', 'মাংস']),
-  _stubBideshi(
-      'বেকড পাস্তা', 'italian', '🍝', 45, 'মাঝারি', 480, ['পাস্তা', 'বেকড']),
-  _stubBideshi('চিকেন পারমেজান', 'italian', '🍗', 40, 'মাঝারি', 460,
-      ['ইতালিয়ান', 'মাংস']),
-  _stubBideshi(
-      'টেরিয়াকি রাইস', 'japanese', '🍚', 30, 'সহজ', 360, ['জাপানি', 'রাইস']),
-  _stubBideshi('কোরিয়ান বারবিকিউ', 'korean', '🥩', 45, 'মাঝারি', 480,
-      ['কোরিয়ান', 'মাংস']),
-  _stubBideshi(
-      'সুশি রোল', 'japanese', '🍣', 40, 'মাঝারি', 340, ['জাপানি', 'মাছ']),
-  _stubBideshi(
-      'স্যামন সুশি', 'japanese', '🍣', 35, 'মাঝারি', 320, ['জাপানি', 'মাছ']),
-  _stubBideshi(
-      'চিকেন ইয়াকিতোরি', 'japanese', '🍢', 30, 'সহজ', 340, ['জাপানি', 'মাংস']),
-  _stubBideshi(
-      'এগ ড্রপ স্যুপ', 'chinese', '🍲', 15, 'সহজ', 180, ['চাইনিজ', 'স্যুপ']),
-  _stubBideshi(
-      'ওয়ানটন স্যুপ', 'chinese', '🍲', 25, 'সহজ', 240, ['চাইনিজ', 'স্যুপ']),
-  _stubBideshi(
-      'বিফ নুডল স্যুপ', 'chinese', '🍜', 30, 'সহজ', 380, ['চাইনিজ', 'নুডলস']),
-  _stubBideshi(
-      'ফো', 'vietnamese', '🍲', 40, 'মাঝারি', 400, ['ভিয়েতনামিজ', 'স্যুপ']),
-  _stubBideshi('বান মি', 'vietnamese', '🥖', 25, 'সহজ', 360,
-      ['ভিয়েতনামিজ', 'স্যান্ডউইচ']),
-  _stubBideshi('ভিয়েতনামিজ রোল', 'vietnamese', '🥗', 20, 'সহজ', 280,
-      ['ভিয়েতনামিজ', 'রাইস']),
-  _stubBideshi('চিকেন সাতে', 'indonesian', '🍢', 30, 'সহজ', 360,
-      ['ইন্দোনেশিয়ান', 'মাংস']),
-  _stubBideshi('নাসি গোরেং', 'indonesian', '🍚', 25, 'সহজ', 380,
-      ['ইন্দোনেশিয়ান', 'রাইস']),
-  _stubBideshi('মি গোরেং', 'indonesian', '🍜', 22, 'সহজ', 360,
-      ['ইন্দোনেশিয়ান', 'নুডলস']),
-  _stubBideshi('সাটে কাবাব', 'indonesian', '🍢', 28, 'সহজ', 340,
-      ['ইন্দোনেশিয়ান', 'মাংস']),
-  _stubBideshi('চিকেন রেন্ডাং', 'indonesian', '🍛', 50, 'মাঝারি', 460,
-      ['ইন্দোনেশিয়ান', 'মাংস']),
-  _stubBideshi(
-      'লাকসা', 'malaysian', '🍜', 35, 'মাঝারি', 420, ['মালয়েশিয়ান', 'নুডলস']),
-  _stubBideshi(
-      'চিকেন ক্যাসারোল', 'american', '🍲', 45, 'মাঝারি', 440, ['মাংস', 'বেকড']),
-  _stubBideshi(
-      'ম্যাশড পটেটো', 'american', '🥔', 20, 'সহজ', 240, ['আলু', 'সাইড']),
-  _stubBideshi(
-      'চিকেন পাই', 'british', '🥧', 50, 'মাঝারি', 480, ['ব্রিটিশ', 'মাংস']),
-  _stubBideshi(
-      'শেফার্ডস পাই', 'british', '🥧', 55, 'মাঝারি', 500, ['ব্রিটিশ', 'মাংস']),
-  _stubBideshi(
-      'ফিশ অ্যান্ড চিপস', 'british', '🐟', 30, 'সহজ', 420, ['ব্রিটিশ', 'মাছ']),
-  _stubBideshi(
-      'ওনিয়ন রিং', 'american', '🧅', 20, 'সহজ', 280, ['স্ন্যাকস', 'ভাজা']),
-  _stubBideshi(
-      'চিকেন পপকর্ন', 'american', '🍗', 25, 'সহজ', 340, ['মাংস', 'ফ্রাই']),
-  _stubBideshi(
-      'চুরোস', 'spanish', '🍩', 25, 'সহজ', 300, ['স্প্যানিশ', 'মিষ্টি']),
-  _stubBideshi(
-      'তিরামিসু', 'italian', '🍰', 40, 'মাঝারি', 380, ['ইতালিয়ান', 'মিষ্টি']),
-  _stubBideshi('পানা কোট্টা', 'italian', '🍮', 35, 'মাঝারি', 340,
-      ['ইতালিয়ান', 'মিষ্টি']),
-  _stubBideshi('চিজকেক', 'american', '🍰', 60, 'কঠিন', 420, ['মিষ্টি', 'চিজ']),
-  _stubBideshi('মুস', 'french', '🍮', 30, 'মাঝারি', 320, ['ফ্রেঞ্চ', 'মিষ্টি']),
-  _stubBideshi('কাস্টার্ড', 'british', '🍮', 25, 'সহজ', 280, ['মিষ্টি', 'দুধ']),
-  _stubBideshi('কুকিজ', 'american', '🍪', 30, 'সহজ', 260, ['মিষ্টি', 'বেকড']),
-  _stubBideshi(
-      'ওটমিল', 'american', '🥣', 15, 'সহজ', 220, ['নাস্তা', 'স্বাস্থ্যকর']),
-  _stubBideshi(
-      'গ্রানোলা', 'american', '🥣', 20, 'সহজ', 280, ['নাস্তা', 'স্বাস্থ্যকর']),
-  _stubBideshi(
-      'স্মুদি বোল', 'american', '🥣', 15, 'সহজ', 240, ['নাস্তা', 'ফল']),
-  _stubBideshi(
-      'চকো লাভা কেক', 'french', '🍫', 35, 'মাঝারি', 420, ['মিষ্টি', 'চকলেট']),
-  _stubBideshi('কফি লাটে', 'coffee', '☕', 10, 'সহজ', 180, ['কফি', 'পানীয়']),
-  _stubBideshi('ক্যাপুচিনো', 'coffee', '☕', 12, 'সহজ', 160, ['কফি', 'পানীয়']),
-  _stubBideshi('মোকা', 'coffee', '☕', 12, 'সহজ', 200, ['কফি', 'চকলেট']),
-  _stubBideshi(
-      'হট চকোলেট', 'coffee', '🍫', 10, 'সহজ', 220, ['চকলেট', 'পানীয়']),
-  _stubBideshi(
-      'বাবল টি', 'taiwanese', '🧋', 15, 'সহজ', 280, ['পানীয়', 'মিষ্টি']),
-  _stubBideshi(
-      'ম্যাচা লাটে', 'japanese', '🍵', 12, 'সহজ', 200, ['জাপানি', 'চা']),
-  _stubBideshi('আইসড কফি', 'coffee', '🧊', 10, 'সহজ', 160, ['কফি', 'ঠান্ডা']),
-  _stubBideshi('লেমনেড', 'american', '🍋', 10, 'সহজ', 140, ['পানীয়', 'লেবু']),
-  _stubBideshi('অরেঞ্জ জুস', 'american', '🍊', 8, 'সহজ', 120, ['পানীয়', 'ফল']),
-  _stubBideshi(
-      'বেরি স্মুদি', 'american', '🫐', 12, 'সহজ', 200, ['পানীয়', 'ফল']),
-  _stubBideshi('অ্যাভোকাডো টোস্ট', 'american', '🥑', 15, 'সহজ', 280,
-      ['নাস্তা', 'স্বাস্থ্যকর']),
-  _stubBideshi(
-      'এগ বেনেডিক্ট', 'american', '🍳', 25, 'মাঝারি', 420, ['নাস্তা', 'ডিম']),
-  _stubBideshi('ব্যাগেল', 'american', '🥯', 20, 'সহজ', 300, ['নাস্তা', 'রুটি']),
-  _stubBideshi(
-      'ক্রসোঁ', 'french', '🥐', 30, 'মাঝারি', 320, ['ফ্রেঞ্চ', 'নাস্তা']),
-  _stubBideshi(
-      'চিকেন ক্রোকেট', 'japanese', '🍗', 30, 'মাঝারি', 360, ['জাপানি', 'মাংস']),
-  _stubBideshi(
-      'বিফ মিটবল', 'italian', '🍝', 35, 'মাঝারি', 420, ['ইতালিয়ান', 'মাংস']),
-  _stubBideshi(
-      'স্প্যানিশ অমলেট', 'spanish', '🍳', 25, 'সহজ', 320, ['স্প্যানিশ', 'ডিম']),
-  _stubBideshi('পাওলা', 'italian', '🍞', 20, 'সহজ', 240, ['ইতালিয়ান', 'রুটি']),
-  _stubBideshi(
-      'গাজপাচো', 'spanish', '🍅', 15, 'সহজ', 160, ['স্প্যানিশ', 'স্যুপ']),
-  _stubBideshi(
-      'টাপাস', 'spanish', '🍽️', 30, 'মাঝারি', 340, ['স্প্যানিশ', 'স্টার্টার']),
-  _stubBideshi(
-      'এম্পানাডা', 'latin', '🥟', 35, 'মাঝারি', 380, ['ল্যাটিন', 'স্ন্যাকস']),
-  _stubBideshi(
-      'আরেপা', 'venezuelan', '🫓', 25, 'সহজ', 320, ['ভেনেজুয়েলান', 'রুটি']),
-  _stubBideshi('চিকেন এনচিলাদা', 'mexican', '🌮', 40, 'মাঝারি', 440,
-      ['মেক্সিকান', 'মাংস']),
-  _stubBideshi(
-      'চিকেন কেসাডিলা', 'mexican', '🧀', 30, 'সহজ', 400, ['মেক্সিকান', 'চিজ']),
-  _stubBideshi(
-      'টাকো বোল', 'mexican', '🥗', 25, 'সহজ', 380, ['মেক্সিকান', 'সালাদ']),
-  _stubBideshi(
-      'বেকড নাচোস', 'mexican', '🧀', 25, 'সহজ', 420, ['মেক্সিকান', 'চিজ']),
-  _stubBideshi(
-      'হানি চিকেন', 'chinese', '🍗', 30, 'সহজ', 420, ['চাইনিজ', 'মাংস']),
-  _stubBideshi(
-      'অরেঞ্জ চিকেন', 'chinese', '🍗', 32, 'সহজ', 430, ['চাইনিজ', 'মাংস']),
-  _stubBideshi(
-      'সিজলিং বিফ', 'chinese', '🥩', 35, 'মাঝারি', 460, ['চাইনিজ', 'মাংস']),
-  _stubBideshi(
-      'চিকেন সিজলার', 'chinese', '🍗', 33, 'মাঝারি', 440, ['চাইনিজ', 'মাংস']),
-  _stubBideshi(
-      'পেরি পেরি চিকেন', 'japanese', '🍗', 30, 'সহজ', 400, ['জাপানি', 'মাংস']),
-  _stubBideshi(
-      'গ্রিলড ফিশ', 'mediterranean', '🐟', 25, 'সহজ', 320, ['মাছ', 'গ্রিল']),
-  _stubBideshi(
-      'স্মোকড চিকেন', 'american', '🍗', 45, 'মাঝারি', 440, ['মাংস', 'স্মোক']),
-  _stubBideshi('চিজ বল', 'american', '🧀', 20, 'সহজ', 300, ['চিজ', 'স্ন্যাকস']),
-  _stubBideshi(
-      'পটেটো ওয়েজেস', 'american', '🍟', 22, 'সহজ', 320, ['আলু', 'ফ্রাই']),
-  _stubBideshi(
-      'চিকেন স্ট্রিপস', 'american', '🍗', 25, 'সহজ', 360, ['মাংস', 'ফ্রাই']),
-  _stubBideshi(
-      'চিকেন সসেজ', 'american', '🌭', 20, 'সহজ', 340, ['মাংস', 'সসেজ']),
-  _stubBideshi(
-      'গার্লিক পাস্তা', 'italian', '🍝', 25, 'সহজ', 380, ['পাস্তা', 'রসুন']),
-  _stubBideshi(
-      'চিলি চিকেন', 'chinese', '🍗', 30, 'সহজ', 400, ['চাইনিজ', 'ঝাল']),
+
+  // 42. টাকো
+  const FoodItem(
+      id: 'bideshi_042',
+      name: 'টাকো',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌮',
+      description:
+          'মেক্সিকান স্টাইল টাকো — মশলাদার মাংস ও টাটকা টপিংয়ের পারফেক্ট কম্বিনেশন।',
+      ingredients: [
+        '৮ টি টাকো শেল',
+        '৩০০ গ্রাম গ্রাউন্ড বিফ/চিকেন',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি টমেটো কুচি',
+        'লেটুস কুচি',
+        'চেডার চিজ',
+        '১ চা চামচ টাকো সিজনিং',
+        'সালসা সস',
+        'সোর ক্রিম',
+        'লেবু'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস রান্না',
+            description:
+                'তেলে পেঁয়াজ ভেজে মাংস ও টাকো সিজনিং দিয়ে ভালো করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শেল গরম',
+            description: 'টাকো শেল ওভেন বা তাওয়ায় হালকা গরম করে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টপিং প্রস্তুত',
+            description: 'টমেটো, লেটুস, চিজ ও সস প্রস্তুত রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'শেলে মাংস দিয়ে টপিং সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও সালসা সস সহ তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['মেক্সিকান', 'মাংস', 'দ্রুত'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 43. বুরিটো
+  const FoodItem(
+      id: 'bideshi_043',
+      name: 'বুরিটো',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌯',
+      description:
+          'মেক্সিকান বুরিটো — ভাত, মাংস, বীন ও চিজের হার্ট-ফিলিং র‍্যাপ।',
+      ingredients: [
+        '৪ টি বড় টর্টিলা',
+        '৩০০ গ্রাম চিকেন/বিফ',
+        '১ কাপ রান্না ভাত',
+        '১/২ কাপ ব্ল্যাক বীন',
+        '১/২ কাপ কর্ন',
+        'চেডার চিজ',
+        'সালসা',
+        'সোর ক্রিম',
+        'গুয়াকামোলি',
+        'লেটুস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস প্রস্তুত',
+            description: 'মাংস মেক্সিকান মশলা দিয়ে রান্না করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টর্টিলা গরম',
+            description: 'টর্টিলা হালকা গরম করে নমনীয় করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফিলিং',
+            description: 'টর্টিলায় ভাত, মাংস, বীন, কর্ন, চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রোল',
+            description: 'টর্টিলা শক্ত করে রোল করে প্রান্ত সিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সালসা, সোর ক্রিম ও গুয়াকামোলি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['মেক্সিকান', 'রাইস', 'হার্ট-ফিলিং'],
+      rating: 4.7,
+      viewCount: 5400),
+
+  // 44. নাচোস
+  const FoodItem(
+      id: 'bideshi_044',
+      name: 'নাচোস',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🧀',
+      description:
+          'ক্রিসপি টর্টিলা চিপস ও গলানো চিজের নাচোস — পার্টি স্ন্যাকস হিসেবে অসাধারণ।',
+      ingredients: [
+        '১ প্যাকেট টর্টিলা চিপস',
+        '১ কাপ চেডার চিজ',
+        '১/২ কাপ জালাপেনো',
+        '১/২ কাপ ব্ল্যাক বীন',
+        '১/২ কাপ কর্ন',
+        'সালসা',
+        'সোর ক্রিম',
+        'গুয়াকামোলি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিপস সাজান',
+            description: 'বেকিং ট্রেতে টর্টিলা চিপস এক সারিতে সাজান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টপিং',
+            description: 'চিপসের উপর চিজ, বীন, কর্ন ও জালাপেনো ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মেল্ট',
+            description:
+                'ওভেনে ১৮০°C তাপমাত্রায় ৫-৭ মিনিট চিজ গলানো পর্যন্ত বেক করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'সালসা, সোর ক্রিম ও গুয়াকামোলি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['মেক্সিকান', 'চিপস', 'পার্টি'],
+      rating: 4.6,
+      viewCount: 4900),
+
+  // 45. কেসাডিয়া
+  const FoodItem(
+      id: 'bideshi_045',
+      name: 'কেসাডিয়া',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🧀',
+      description:
+          'গলানো চিজ ও মাংস ভরা কেসাডিয়া — মেক্সিকান রান্নার ক্রিসপি ডিশ।',
+      ingredients: [
+        '৪ টি টর্টিলা',
+        '২০০ গ্রাম চিকেন/বিফ',
+        '১.৫ কাপ মোজারেলা/চেডার চিজ',
+        '১/২ কাপ বেল পেপার',
+        '১/২ কাপ পেঁয়াজ',
+        '১ চা চামচ টাকো সিজনিং',
+        'মাখন/তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফিলিং',
+            description:
+                'মাংস মশলা দিয়ে রান্না করে পেঁয়াজ ও বেল পেপার মেশান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'অ্যাসেম্বল',
+            description:
+                'টর্টিলায় চিজ ও ফিলিং দিয়ে আরেকটি টর্টিলা দিয়ে ঢাকুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল',
+            description:
+                'প্যানে মাখন দিয়ে উভয় পাশ ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কাটা',
+            description: 'কেসাডিয়া ত্রিকোণাকারে কেটে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সালসা ও সোর ক্রিম সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['মেক্সিকান', 'চিজ', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 46. ফাহিতা
+  const FoodItem(
+      id: 'bideshi_046',
+      name: 'ফাহিতা',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🥘',
+      description:
+          'সিজলিং ফাহিতা — গ্রিলড মাংস ও রঙিন সবজির মেক্সিকান ক্লাসিক।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন/বিফ স্ট্রিপ',
+        '২ টি বেল পেপার (রঙিন)',
+        '১ টি পেঁয়াজ স্লাইস',
+        '২ টেবিল চামচ ফাহিতা সিজনিং',
+        '২ টেবিল চামচ লাইম জুস',
+        '১ চা চামচ অলিভ অয়েল',
+        'টর্টিলা পরিবেশনে',
+        'সালসা',
+        'গুয়াকামোলি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'মাংসে ফাহিতা সিজনিং, লাইম জুস ও অয়েল মাখিয়ে ৩০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description: 'হট প্যানে মাংস হাই হিটে ৫-৭ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সবজি',
+            description: 'একই প্যানে পেঁয়াজ ও বেল পেপার হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'মাংস ও সবজি মিশিয়ে সিজলিং অবস্থায় রাখুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম টর্টিলা, সালসা ও গুয়াকামোলি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 35,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['মেক্সিকান', 'মাংস', 'গ্রিল'],
+      rating: 4.8,
+      viewCount: 5600),
+
+  // 47. গুয়াকামোলি
+  const FoodItem(
+      id: 'bideshi_047',
+      name: 'গুয়াকামোলি',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🥑',
+      description:
+          'টাটকা অ্যাভোকাডো ও মশলার গুয়াকামোলি — মেক্সিকান রান্নার হেলদি ডিপ।',
+      ingredients: [
+        '৩ টি পাকা অ্যাভোকাডো',
+        '১ টি টমেটো কুচি',
+        '১/৪ কাপ পেঁয়াজ কুচি',
+        '১-২ টি জালাপেনো',
+        '২ টেবিল চামচ লাইম জুস',
+        '২ টেবিল চামচ ধনেপাতা',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'অ্যাভোকাডো',
+            description: 'অ্যাভোকাডো কেটে মাংস বের করে বাটিতে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যাশ',
+            description:
+                'অ্যাভোকাডো ফর্ক দিয়ে হালকা ম্যাশ করুন (খুব বেশি না)।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description:
+                'টমেটো, পেঁয়াজ, জালাপেনো, লাইম জুস, ধনেপাতা, লবণ ও গোলমরিচ মেশান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টেস্ট',
+            description:
+                'স্বাদ চেক করে প্রয়োজন হলে লবণ/লাইম অ্যাডজাস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'টর্টিলা চিপস বা নাচোসের সাথে ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['মেক্সিকান', 'অ্যাভোকাডো', 'হেলদি'],
+      rating: 4.7,
+      viewCount: 4500),
+
+  // 48. মেক্সিকান রাইস
+  const FoodItem(
+      id: 'bideshi_048',
+      name: 'মেক্সিকান রাইস',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🍚',
+      description:
+          'টমেটো ও মশলার মেক্সিকান রাইস — বুরিটো বা ফাহিতার পারফেক্ট সাইড।',
+      ingredients: [
+        '২ কাপ বাসমতী চাল',
+        '১ কাপ টমেটো সস',
+        '৩ কাপ চিকেন ব্রথ',
+        '১/২ কাপ মিক্সড সবজি',
+        '১ চা চামচ জিরা',
+        '১ চা চামচ গার্লিক পাউডার',
+        'লবণ',
+        'অলিভ অয়েল',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চাল ভাজা',
+            description: 'তেলে চাল হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি',
+            description: 'সবজি ও মশলা যোগ করে ১ মিনিট নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লিকুইড',
+            description: 'টমেটো সস ও ব্রথ যোগ করে ফুটান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রান্না',
+            description: 'ঢেকে কম আঁচে ১৫-১৮ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ধনেপাতা ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['মেক্সিকান', 'রাইস', 'সাইড'],
+      rating: 4.5,
+      viewCount: 3900),
+
+  // 49. চিকেন টাকো
+  const FoodItem(
+      id: 'bideshi_049',
+      name: 'চিকেন টাকো',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌮',
+      description:
+          'মশলাদার চিকেন টাকো — হালকা কিন্তু ফ্লেভারফুল মেক্সিকান নাস্তা।',
+      ingredients: [
+        '৮ টি টাকো শেল',
+        '৩০০ গ্রাম চিকেন ব্রেস্ট',
+        '১ চা চামচ চিলি পাউডার',
+        '১ চা চামচ জিরা',
+        '১/২ চা চামচ গার্লিক পাউডার',
+        'লেটুস',
+        'টমেটো',
+        'চেডার চিজ',
+        'সালসা',
+        'লাইম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ম্যারিনেট',
+            description: 'চিকেনে মশলা মাখিয়ে ১৫ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description: 'প্যানে চিকেন গ্রিল করে ছোট টুকরা করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'শেল গরম',
+            description: 'টাকো শেল হালকা গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'শেলে চিকেন, লেটুস, টমেটো, চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সালসা ও লাইম সহ তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['মেক্সিকান', 'মাংস', 'হালকা'],
+      rating: 4.7,
+      viewCount: 5000),
+
+  // 50. বিফ বুরিটো
+  const FoodItem(
+      id: 'bideshi_050',
+      name: 'বিফ বুরিটো',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌯',
+      description:
+          'জুসি বিফ ও ক্রিমি সসের বুরিটো — মেক্সিকান রান্নার হার্ট-ফিলিং ডিশ।',
+      ingredients: [
+        '৪ টি বড় টর্টিলা',
+        '৪০০ গ্রাম গ্রাউন্ড বিফ',
+        '১ কাপ রান্না ভাত',
+        '১/২ কাপ ব্ল্যাক বীন',
+        '১/২ কাপ কর্ন',
+        'চেডার চিজ',
+        'সালসা',
+        'সোর ক্রিম',
+        'গুয়াকামোলি',
+        'টাকো সিজনিং'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বিফ রান্না',
+            description: 'বিফে টাকো সিজনিং দিয়ে ভালো করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টর্টিলা গরম',
+            description: 'টর্টিলা হালকা গরম করে নমনীয় করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফিলিং',
+            description: 'টর্টিলায় ভাত, বিফ, বীন, কর্ন, চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রোল',
+            description: 'টর্টিলা শক্ত করে রোল করে প্রান্ত সিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সালসা, সোর ক্রিম ও গুয়াকামোলি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 440,
+      tags: ['মেক্সিকান', 'মাংস', 'হার্ট-ফিলিং'],
+      rating: 4.8,
+      viewCount: 5800),
+
+  // 51. লোডেড নাচোস
+  const FoodItem(
+      id: 'bideshi_051',
+      name: 'লোডেড নাচোস',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🧀',
+      description:
+          'এক্সট্রা টপিং ও গলানো চিজের লোডেড নাচোস — পার্টির সেরা স্ন্যাকস।',
+      ingredients: [
+        '১ প্যাকেট টর্টিলা চিপস',
+        '২০০ গ্রাম গ্রাউন্ড বিফ/চিকেন',
+        '১.৫ কাপ চেডার চিজ',
+        '১/২ কাপ জালাপেনো',
+        '১/২ কাপ ব্ল্যাক বীন',
+        '১/২ কাপ কর্ন',
+        'সালসা',
+        'সোর ক্রিম',
+        'গুয়াকামোলি',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস রান্না',
+            description: 'মাংস মশলা দিয়ে রান্না করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'লেয়ার ১',
+            description: 'বেকিং ডিশে চিপসের লেয়ার দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ার ২',
+            description: 'মাংস, বীন, কর্ন, জালাপেনো ও চিজ ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মেল্ট',
+            description:
+                'ওভেনে ১৮০°C তাপমাত্রায় ৭-১০ মিনিট চিজ গলানো পর্যন্ত বেক করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'সালসা, সোর ক্রিম, গুয়াকামোলি ও ধনেপাতা ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 6,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['মেক্সিকান', 'চিজ', 'পার্টি'],
+      rating: 4.8,
+      viewCount: 5400),
+
+  // 52. শাওয়ারমা
+  const FoodItem(
+      id: 'bideshi_052',
+      name: 'শাওয়ারমা',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🌯',
+      description:
+          'মিডল ইস্টার্ন শাওয়ারমা — মশলাদার মাংস ও গার্লিক সসের র‍্যাপ।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন/বিফ স্লাইস',
+        '১/৪ কাপ দই',
+        '২ টেবিল চামচ শাওয়ারমা মশলা',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '৪ টি পিটা ব্রেড',
+        'টমেটো',
+        'শসা',
+        'পেঁয়াজ',
+        'গার্লিক সস',
+        'লেবু'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'মাংসে দই, শাওয়ারমা মশলা ও আদা-রসুন মাখিয়ে ২ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description: 'প্যানে বা গ্রিলে মাংস হাই হিটে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পিটা গরম',
+            description: 'পিটা ব্রেড হালকা গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'পিটায় মাংস, সবজি ও গার্লিক সস দিয়ে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও অতিরিক্ত সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 130,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['মিডল ইস্ট', 'মাংস', 'র‍্যাপ'],
+      rating: 4.8,
+      viewCount: 6100),
+
+  // 53. ফালাফেল
+  const FoodItem(
+      id: 'bideshi_053',
+      name: 'ফালাফেল',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🧆',
+      description:
+          'ভাজা ছোলার ফালাফেল — মিডল ইস্টার্ন রান্নার জনপ্রিয় ভেজিটেরিয়ান স্ন্যাকস।',
+      ingredients: [
+        '১ কাপ শুকনো ছোলা (ভেজানো)',
+        '১ টি পেঁয়াজ',
+        '৩ কোয়া রসুন',
+        '১/৪ কাপ ধনেপাতা',
+        '১ চা চামচ জিরা',
+        '১ চা চামচ ধনিয়া গুঁড়া',
+        '১/২ চা চামচ বেকিং পাউডার',
+        'লবণ',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ছোলা প্রস্তুত',
+            description: 'ছোলা রাতে ভিজিয়ে রাখুন, পানি ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্লেন্ড',
+            description:
+                'ছোলা, পেঁয়াজ, রসুন, ধনেপাতা ও মশলা ব্লেন্ড করে মোটা পেস্ট বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'আকার',
+            description: 'পেস্ট দিয়ে ছোট বল বা ডিস্ক আকার দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'হামুস, পিটা ব্রেড ও সালাদ সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 480,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['মিডল ইস্ট', 'ভেজিটেরিয়ান', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 54. হামুস
+  const FoodItem(
+      id: 'bideshi_054',
+      name: 'হামুস',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🫘',
+      description: 'ক্রিমি ছোলার হামুস — মিডল ইস্টার্ন রান্নার ক্লাসিক ডিপ।',
+      ingredients: [
+        '১ কাপ সিদ্ধ ছোলা',
+        '১/৪ কাপ তাহিনি',
+        '২ টেবিল চামচ লেবুর রস',
+        '১ কোয়া রসুন',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১/২ চা চামচ জিরা',
+        'লবণ',
+        'পাপরিকা গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্লেন্ড',
+            description:
+                'ছোলা, তাহিনি, লেবুর রস, রসুন ও জিরা ব্লেন্ডারে মসৃণ হওয়া পর্যন্ত ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সিজনিং',
+            description:
+                'লবণ দিয়ে স্বাদ ঠিক করুন, প্রয়োজন হলে অল্প পানি যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'প্লেটিং',
+            description:
+                'হামুস প্লেটে নিয়ে মাঝখানে অলিভ অয়েল ও পাপরিকা ছিটান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পিটা ব্রেড বা সবজি স্টিকস সহ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['মিডল ইস্ট', 'ছোলা', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4200),
+
+  // 55. কাবাব (মিডল ইস্ট)
+  const FoodItem(
+      id: 'bideshi_055',
+      name: 'কাবাব',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🍢',
+      description: 'মিডল ইস্টার্ন স্টাইল কাবাব — মশলাদার মাংসের গ্রিলড ডিশ।',
+      ingredients: [
+        '৫০০ গ্রাম গ্রাউন্ড ল্যাম্ব/বিফ',
+        '১ টি পেঁয়াজ কুচি',
+        '২ কোয়া রসুন বাটা',
+        '১ চা চামচ গরম মশলা',
+        '১ চা চামচ জিরা',
+        '১/২ চা চামচ দারচিনি',
+        'লবণ',
+        'গোলমরিচ',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স',
+            description:
+                'মাংস, পেঁয়াজ, রসুন ও সব মশলা ভালো করে মিশিয়ে মণ্ড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আকার',
+            description: 'মণ্ড দিয়ে লম্বা কাবাব আকার দিন, শিকে পরান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল',
+            description: 'গ্রিল বা প্যানে উভয় পাশ সোনালি করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পিটা ব্রেড, হামুস ও সালাদ সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['মিডল ইস্ট', 'মাংস', 'গ্রিল'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 56. চিকেন শাওয়ারমা
+  const FoodItem(
+      id: 'bideshi_056',
+      name: 'চিকেন শাওয়ারমা',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🌯',
+      description:
+          'মশলাদার চিকেন শাওয়ারমা — মিডল ইস্টার্ন স্ট্রিট ফুডের সেরা।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন থাই',
+        '১/৪ কাপ দই',
+        '২ টেবিল চামচ শাওয়ারমা মশলা',
+        '১ চা চামচ আদা-রসুন',
+        '১ চা চামচ গারাম মাসালা',
+        '৪ টি পিটা ব্রেড',
+        'টাহিনি সস',
+        'টমেটো',
+        'শসা',
+        'পেঁয়াজ',
+        'পার্সলে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেনে দই, শাওয়ারমা মশলা, আদা-রসুন ও মশলা মাখিয়ে ৪ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description:
+                'ওভেন/গ্রিলে ২০০°C তাপমাত্রায় ২৫-৩০ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কাটা',
+            description: 'গ্রিল করা চিকেন পাতলা স্লাইস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'পিটায় চিকেন, সবজি ও তাহিনি সস দিয়ে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও অতিরিক্ত সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 38,
+      prepTime: 250,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['মিডল ইস্ট', 'মাংস', 'স্ট্রিট ফুড'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 57. পিটা ব্রেড
+  const FoodItem(
+      id: 'bideshi_057',
+      name: 'পিটা ব্রেড',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🫓',
+      description:
+          'নরম ও ফোলানো পিটা ব্রেড — মিডল ইস্টার্ন রান্নার পারফেক্ট সাইড।',
+      ingredients: [
+        '৩ কাপ ময়দা',
+        '১ চা চামচ ইস্ট',
+        '১ চা চামচ চিনি',
+        '১ চা চামচ লবণ',
+        '১ কাপ গরম পানি',
+        '২ টেবিল চামচ অলিভ অয়েল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ইস্ট অ্যাক্টিভেট',
+            description: 'গরম পানিতে চিনি ও ইস্ট মিশিয়ে ১০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডো তৈরি',
+            description: 'ময়দা, লবণ, অয়েল ও ইস্ট মিশিয়ে নরম ডো বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফারমেন্ট',
+            description: 'ডো ঢেকে ১ ঘণ্টা উষ্ণ জায়গায় রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেলা',
+            description: 'ডো ছোট বল করে পাতলা গোল বেলুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'রান্না',
+            description:
+                'খুব গরম তাওয়ায় ২-৩ মিনিট প্রতি পাশে রান্না করুন (ফুলে যাবে)।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'গরম গরম হামুস বা কাবাবের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 75,
+      servings: 8,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['মিডল ইস্ট', 'রুটি', 'ফোলানো'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 58. তুর্কিশ কাবাব
+  const FoodItem(
+      id: 'bideshi_058',
+      name: 'তুর্কিশ কাবাব',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🍢',
+      description: 'তুর্কিশ স্টাইল মশলাদার কাবাব — গ্রিলের সুগন্ধি স্বাদ।',
+      ingredients: [
+        '৫০০ গ্রাম ল্যাম্ব/বিফ কিমা',
+        '১ টি পেঁয়াজ বাটা',
+        '২ কোয়া রসুন বাটা',
+        '১ চা চামচ তুর্কিশ মশলা',
+        '১ চা চামচ পাপরিকা',
+        '১/২ চা চামচ জিরা',
+        'লবণ',
+        'গোলমরিচ',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স',
+            description:
+                'কিমা, পেঁয়াজ বাটা, রসুন ও মশলা ভালো করে মিশিয়ে মণ্ড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আকার',
+            description: 'মণ্ড দিয়ে লম্বা কাবাব আকার দিন, শিকে পরান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল',
+            description: 'গ্রিল বা চারকোলে উভয় পাশ সোনালি করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'পিটা ব্রেড, গ্রিলড সবজি ও যোগার্ট সস সহ পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['তুর্কিশ', 'মাংস', 'গ্রিল'],
+      rating: 4.7,
+      viewCount: 5100),
+
+  // 59. লেন্টিল স্যুপ
+  const FoodItem(
+      id: 'bideshi_059',
+      name: 'লেন্টিল স্যুপ',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🍲',
+      description:
+          'পুষ্টিকর লেন্টিল স্যুপ — মিডল ইস্টার্ন রান্নার হেলদি ও আরামদায়ক ডিশ।',
+      ingredients: [
+        '১ কাপ রেড লেন্টিল',
+        '১ টি পেঁয়াজ কুচি',
+        '২ কোয়া রসুন বাটা',
+        '১ চা চামচ জিরা',
+        '১ চা চামচ ধনিয়া গুঁড়া',
+        '৪ কাপ ভেজিটেবল ব্রথ',
+        '১ টেবিল চামচ লেবুর রস',
+        'লবণ',
+        'অলিভ অয়েল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'লেন্টিল ধোয়া',
+            description: 'লেন্টিল ধুয়ে পানি ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি ভাজা',
+            description: 'তেলে পেঁয়াজ ও রসুন ভেজে মশলা যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্যুপ',
+            description:
+                'লেন্টিল ও ব্রথ যোগ করে ফুটিয়ে নিন, ২০-২৫ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ব্লেন্ড (ঐচ্ছিক)',
+            description: 'স্মুথ টেক্সচার চাইলে হালকা ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবুর রস ও অলিভ অয়েল ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['মিডল ইস্ট', 'ডাল', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4100),
+
+  // 60. রাইস পিলাফ
+  const FoodItem(
+      id: 'bideshi_060',
+      name: 'রাইস পিলাফ',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🍚',
+      description:
+          'সুগন্ধি মশলার মিডল ইস্টার্ন পিলাফ — মাংস বা সবজির সাথে পারফেক্ট ম্যাচ।',
+      ingredients: [
+        '২ কাপ বাসমতী চাল',
+        '১ টি পেঁয়াজ কুচি',
+        '২ কাপ চিকেন ব্রথ',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ চা চামচ জিরা',
+        '১/২ চা চামচ দারচিনি',
+        '১/৪ কাপ কিশমিশ (ঐচ্ছিক)',
+        '১/৪ কাপ বাদাম কুচি',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চাল ভাজা',
+            description: 'তেলে চাল হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি',
+            description: 'পেঁয়াজ ও মশলা যোগ করে ১ মিনিট নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রান্না',
+            description:
+                'ব্রথ যোগ করে ফুটিয়ে ঢেকে কম আঁচে ১৫-১৮ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টপিং',
+            description: 'কিশমিশ ও বাদাম যোগ করে হালকা মেশান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম গরম কাবাব বা স্টুর সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['মিডল ইস্ট', 'রাইস', 'সুগন্ধি'],
+      rating: 4.5,
+      viewCount: 3800),
+
+  // 61. গার্লিক সস চিকেন
+  const FoodItem(
+      id: 'bideshi_061',
+      name: 'গার্লিক সস চিকেন',
+      category: 'bideshi',
+      subCategory: 'middle_eastern',
+      emoji: '🍗',
+      description:
+          'ক্রিমি গার্লিক সসে চিকেন — মিডল ইস্টার্ন রান্নার সুস্বাদু ডিশ।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন থাই',
+        '১/২ কাপ দই',
+        '৪ কোয়া রসুন বাটা',
+        '২ টেবিল চামচ লেবুর রস',
+        '১ চা চামচ অরিগানো',
+        'লবণ',
+        'গোলমরিচ',
+        'অলিভ অয়েল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেনে দই, রসুন, লেবুর রস, অরিগানো ও লবণ মাখিয়ে ২ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description:
+                'প্যানে অলিভ অয়েল দিয়ে চিকেন গ্রিল করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস',
+            description:
+                'বাকি ম্যারিনেড লিকুইড কড়াইতে নিয়ে ঘন করে সস বানান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'সস ঢেলে ভাত বা পিটার সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 32,
+      prepTime: 130,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['মিডল ইস্ট', 'মাংস', 'গার্লিক'],
+      rating: 4.7,
+      viewCount: 4900),
+
+  // 62. ফ্রেঞ্চ টোস্ট
+  const FoodItem(
+      id: 'bideshi_062',
+      name: 'ফ্রেঞ্চ টোস্ট',
+      category: 'bideshi',
+      subCategory: 'french',
+      emoji: '🍞',
+      description:
+          'ডিম-দুধে ভেজানো মিষ্টি ফ্রেঞ্চ টোস্ট — ফ্রেঞ্চ ব্রেকফাস্টের ক্লাসিক।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '২ টি ডিম',
+        '১/২ কাপ দুধ',
+        '১ টেবিল চামচ চিনি',
+        '১/২ চা চামচ ভ্যানিলা',
+        '১/২ চা চামচ দারচিনি',
+        '২ টেবিল চামচ মাখন',
+        'ম্যাপল সিরাপ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার',
+            description:
+                'ডিম, দুধ, চিনি, ভ্যানিলা ও দারচিনি ভালো করে ফেটে ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ভিজানো',
+            description:
+                'পাউরুটির স্লাইস ব্যাটারে ডুবিয়ে উভয় পাশ ভিজিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: 'মাখন গরম করে উভয় পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'ম্যাপল সিরাপ ও তাজা ফল দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['ফ্রেঞ্চ', 'নাস্তা', 'মিষ্টি'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 63. ক্রেপ
+  const FoodItem(
+      id: 'bideshi_063',
+      name: 'ক্রেপ',
+      category: 'bideshi',
+      subCategory: 'french',
+      emoji: '🥞',
+      description:
+          'পাতলা ফ্রেঞ্চ ক্রেপ — মিষ্টি বা লবণাক্ত ফিলিংয়ে ভার্সাটাইল ডিশ।',
+      ingredients: [
+        '১ কাপ ময়দা',
+        '২ টি ডিম',
+        '১/২ কাপ দুধ',
+        '১/২ কাপ পানি',
+        '২ টেবিল চামচ গলানো বাটার',
+        '১ চা চামচ চিনি',
+        'চিমটি লবণ',
+        'ফিলিং: নুটেলা/ফল/চিজ/হ্যাম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার',
+            description:
+                'ময়দা, ডিম, দুধ, পানি, বাটার, চিনি ও লবণ মিশিয়ে মসৃণ ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রেস্ট',
+            description: 'ব্যাটার ৩০ মিনিট রেस्ट দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রান্না',
+            description:
+                'নন-স্টিক প্যানে অল্প বাটার দিয়ে পাতলা ক্রেপ বানান, উভয় পাশ হালকা ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিলিং',
+            description: 'ক্রেপে পছন্দের ফিলিং দিয়ে ভাঁজ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'আইসিং সুগার বা ম্যাপল সিরাপ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['ফ্রেঞ্চ', 'মিষ্টি', 'ভার্সাটাইল'],
+      rating: 4.6,
+      viewCount: 4500),
+
+  // 64. মোজারেলা স্টিক
+  const FoodItem(
+      id: 'bideshi_064',
+      name: 'মোজারেলা স্টিক',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🧀',
+      description:
+          'গলানো চিজের ক্রিসপি মোজারেলা স্টিক — ইতালিয়ান-আমেরিকান ফিউশন স্ন্যাকস।',
+      ingredients: [
+        '২০০ গ্রাম মোজারেলা চিজ স্টিক',
+        '১/২ কাপ ময়দা',
+        '২ টি ডিম (ফেটা)',
+        '১ কাপ পanko ব্রেডক্রাম্ব',
+        '১ চা চামচ ইতালিয়ান সিজনিং',
+        'লবণ',
+        'গোলমরিচ',
+        'মারিনারা সস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিজ প্রস্তুত',
+            description: 'মোজারেলা স্টিক ফ্রিজে ৩০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কোটিং স্টেশন',
+            description:
+                'তিনটি বাটিতে ময়দা, ফেটা ডিম ও পanko (সিজনিং মেশানো) রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'চিজ স্টিক ময়দা → ডিম → পanko এভাবে ডাবল কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফ্রিজ',
+            description: 'কোট করা স্টিক ১৫ মিনিট ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে দ্রুত ভাজুন যাতে চিজ গলে না বের হয়।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'মারিনারা সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 50,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['ইতালিয়ান', 'চিজ', 'ক্রিসপি'],
+      rating: 4.7,
+      viewCount: 4900),
+
+  // 65. চিকেন উইংস (আমেরিকান)
+  const FoodItem(
+      id: 'bideshi_065',
+      name: 'চিকেন উইংস',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍗',
+      description:
+          'বাফেলো স্টাইল স্পাইসি চিকেন উইংস — আমেরিকান পার্টির আইকনিক স্ন্যাকস।',
+      ingredients: [
+        '১ কেজি চিকেন উইংস',
+        '১/২ কাপ ময়দা',
+        '১ চা চামচ গার্লিক পাউডার',
+        '১ চা চামচ পাপরিকা',
+        '১/৪ কাপ হট সস',
+        '২ টেবিল চামচ মাখন',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'উইংস প্রস্তুত',
+            description: 'উইংস ধুয়ে মুছে জয়েন্টে কেটে দুই ভাগ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রাই রাব',
+            description:
+                'ময়দা, গার্লিক, পাপরিকা, লবণ ও গোলমরিচ মিশিয়ে উইংস কোট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'বেক/ভাজা',
+            description:
+                '২০০°C ওভেনে ৪০-৪৫ মিনিট বা তেলে ভাজুন যতক্ষণ না ক্রিসপি হয়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস',
+            description: 'মাখন গলিয়ে হট সস মিশিয়ে বাফেলো সস বানান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'টস',
+            description: 'ভাজা উইংস সস দিয়ে টস করুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'সেলেরি স্টিক ও ব্লু চিজ ডিপ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['মাংস', 'ফ্রাই', 'পার্টি'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 66. স্টেক
+  const FoodItem(
+      id: 'bideshi_066',
+      name: 'স্টেক',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥩',
+      description: 'জুসি গ্রিলড বিফ স্টেক — আমেরিকান রান্নার প্রিমিয়াম ডিশ।',
+      ingredients: [
+        '২ টি রিবআই/সারলয়েন স্টেক (২৫০গ্রাম)',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '২ কোয়া রসুন',
+        '২ টেবিল চামচ মাখন',
+        '১ চা চামচ রোজমেরি',
+        'লবণ',
+        'কালো গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'স্টেক প্রস্তুত',
+            description:
+                'স্টেক রুম টেম্পারেচারে ৩০ মিনিট রাখুন, উভয় পাশ লবণ ও গোলমরিচ মাখান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সিয়ার',
+            description:
+                'খুব গরম প্যানে অয়েল দিয়ে স্টেক উভয় পাশ ২-৩ মিনিট সিয়ার করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মাখন বাস্টিং',
+            description:
+                'মাখন, রসুন ও রোজমেরি যোগ করে স্টেকের উপর বাস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রেস্ট',
+            description: 'স্টেক ৫-১০ মিনিট রেस्ट দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'স্লাইস করে গ্রিলড সবজি বা ম্যাশড পটেটোর সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 35,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 520,
+      tags: ['মাংস', 'গ্রিল', 'প্রিমিয়াম'],
+      rating: 4.9,
+      viewCount: 7100),
+
+  // 67. গ্রিলড চিকেন
+  const FoodItem(
+      id: 'bideshi_067',
+      name: 'গ্রিলড চিকেন',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍗',
+      description:
+          'হেলদি গ্রিলড চিকেন — প্রোটিন সমৃদ্ধ ও ফ্লেভারফুল আমেরিকান স্টাইল।',
+      ingredients: [
+        '৪ টি চিকেন ব্রেস্ট',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ চা চামচ গার্লিক পাউডার',
+        '১ চা চামচ পাপরিকা',
+        '১ চা চামচ অরিগানো',
+        'লেবুর রস',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেনে অয়েল, মশলা ও লেবুর রস মাখিয়ে ৩০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল',
+            description:
+                'গ্রিল প্যানে মাঝারি-জোরে আঁচে উভয় পাশ ৬-৭ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টেম্পারেচার',
+            description: 'চিকেনের ভেতরের তাপমাত্রা ৭৪°C হওয়া নিশ্চিত করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রেস্ট',
+            description: 'গ্রিল করা চিকেন ৫ মিনিট রেस्ट দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সালাদ বা গ্রিলড সবজির সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 35,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['মাংস', 'গ্রিল', 'হেলদি'],
+      rating: 4.7,
+      viewCount: 5300),
+
+  // 68. সিজার সালাদ
+  const FoodItem(
+      id: 'bideshi_068',
+      name: 'সিজার সালাদ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥗',
+      description: 'ক্রিসপি রোমেইন ও পারমেজানের ক্লাসিক সিজার সালাদ।',
+      ingredients: [
+        '১ মাথা রোমেইন লেটুস',
+        '১/২ কাপ পারমেজান চিজ',
+        '১ কাপ ক্রুটন',
+        '৩ টেবিল চামচ সিজার ড্রেসিং',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        'লেবুর রস',
+        'কালো গোলমরিচ',
+        'অ্যাঞ্চোভি (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'লেটুস প্রস্তুত',
+            description: 'লেটুস ধুয়ে শুকিয়ে ছোট টুকরা করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ক্রুটন',
+            description: 'পাউরুটি কিউব করে অলিভ অয়েলে ক্রিসপি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ড্রেসিং',
+            description: 'সিজার ড্রেসিং, লেবুর রস ও গোলমরিচ মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'লেটুস, ক্রুটন, পারমেজান ও ড্রেসিং মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'অতিরিক্ত চিজ ও গোলমরিচ ছিটিয়ে ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['সালাদ', 'স্বাস্থ্যকর', 'ক্লাসিক'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 69. গ্রীক সালাদ
+  const FoodItem(
+      id: 'bideshi_069',
+      name: 'গ্রীক সালাদ',
+      category: 'bideshi',
+      subCategory: 'greek',
+      emoji: '🥗',
+      description:
+          'টাটকা সবজি ও ফেটা চিজের গ্রীক সালাদ — মেডিটেরেনিয়ান হেলদি খাবার।',
+      ingredients: [
+        '২ টি টমেটো (কোয়া)',
+        '১ টি শসা (কোয়া)',
+        '১/২ কাপ লাল পেঁয়াজ স্লাইস',
+        '১/২ কাপ ক্যালামাটা অলিভ',
+        '১/২ কাপ ফেটা চিজ',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ রেড ওয়াইন ভিনেগার',
+        '১ চা চামচ অরিগানো',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সবজি প্রস্তুত',
+            description: 'টমেটো, শসা ও পেঁয়াজ কোয়া/স্লাইস করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রেসিং',
+            description:
+                'অলিভ অয়েল, ভিনেগার, অরিগানো, লবণ ও গোলমরিচ মিশিয়ে ড্রেসিং বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description: 'বড় বাটিতে সব সবজি, অলিভ ও ফেটা চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'ড্রেসিং ঢেলে হালকা মেশান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পিটা ব্রেডের সাথে ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['গ্রীক', 'সালাদ', 'হেলদি'],
+      rating: 4.7,
+      viewCount: 4600),
+
+  // 70. টর্টিলা র‍্যাপ
+  const FoodItem(
+      id: 'bideshi_070',
+      name: 'টর্টিলা র‍্যাপ',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌯',
+      description:
+          'কাস্টমাইজেবল টর্টিলা র‍্যাপ — দ্রুত তৈরি ও ভার্সাটাইল মেক্সিকান স্টাইল লঞ্চ।',
+      ingredients: [
+        '৪ টি বড় টর্টিলা',
+        '২০০ গ্রাম চিকেন/টোফু',
+        '১/২ কাপ লেটুস',
+        '১/২ কাপ টমেটো কুচি',
+        '১/৪ কাপ পেঁয়াজ',
+        '১/৪ কাপ চেডার চিজ',
+        'সালসা/গুয়াকামোলি',
+        'সোর ক্রিম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফিলিং প্রস্তুত',
+            description: 'মাংস/টোফু মশলা দিয়ে রান্না করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টর্টিলা গরম',
+            description: 'টর্টিলা হালকা গরম করে নমনীয় করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description: 'টর্টিলায় মাংস, সবজি, চিজ ও সস সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রোল',
+            description: 'টর্টিলা শক্ত করে রোল করে প্রান্ত সিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'অতিরিক্ত সস সহ তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['মেক্সিকান', 'র‍্যাপ', 'দ্রুত'],
+      rating: 4.6,
+      viewCount: 4300),
+
+  // 71. চিকেন র‍্যাপ
+  const FoodItem(
+      id: 'bideshi_071',
+      name: 'চিকেন র‍্যাপ',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌯',
+      description:
+          'মশলাদার চিকেন ও টাটকা সবজির মেক্সিকান র‍্যাপ — দ্রুত তৈরি ও ফ্লেভারফুল লঞ্চ।',
+      ingredients: [
+        '৪ টি বড় টর্টিলা',
+        '৩০০ গ্রাম চিকেন ব্রেস্ট',
+        '১/২ কাপ লেটুস',
+        '১/২ কাপ টমেটো কুচি',
+        '১/৪ কাপ পেঁয়াজ',
+        '১/৪ কাপ চেডার চিজ',
+        '২ টেবিল চামচ সালসা',
+        '২ টেবিল চামচ সোর ক্রিম',
+        '১ চা চামচ টাকো সিজনিং',
+        'লেবুর রস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description:
+                'চিকেনে টাকো সিজনিং ও লেবুর রস মাখিয়ে প্যানে গ্রিল করে ছোট টুকরা করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টর্টিলা গরম',
+            description: 'টর্টিলা হালকা গরম করে নমনীয় করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description: 'টর্টিলায় চিকেন, লেটুস, টমেটো, পেঁয়াজ, চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস ও রোল',
+            description: 'সালসা ও সোর ক্রিম দিয়ে টর্টিলা শক্ত করে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'অতিরিক্ত সস সহ তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['মেক্সিকান', 'মাংস', 'দ্রুত'],
+      rating: 4.7,
+      viewCount: 5100),
+
+  // 72. বিফ র‍্যাপ
+  const FoodItem(
+      id: 'bideshi_072',
+      name: 'বিফ র‍্যাপ',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌯',
+      description:
+          'জুসি বিফ ও ক্রিমি সসের মেক্সিকান র‍্যাপ — হার্ট-ফিলিং ও সুস্বাদু।',
+      ingredients: [
+        '৪ টি বড় টর্টিলা',
+        '৩০০ গ্রাম গ্রাউন্ড বিফ',
+        '১/২ কাপ লেটুস',
+        '১/২ কাপ টমেটো',
+        '১/৪ কাপ পেঁয়াজ',
+        '১/৪ কাপ চেডার চিজ',
+        '২ টেবিল চামচ সালসা',
+        '২ টেবিল চামচ গুয়াকামোলি',
+        '১ চা চামচ টাকো সিজনিং',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বিফ রান্না',
+            description:
+                'বিফে টাকো সিজনিং, লবণ ও গোলমরিচ দিয়ে ভালো করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টর্টিলা গরম',
+            description: 'টর্টিলা হালকা গরম করে নমনীয় করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description: 'টর্টিলায় বিফ, লেটুস, টমেটো, পেঁয়াজ, চিজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস ও রোল',
+            description:
+                'সালসা ও গুয়াকামোলি দিয়ে টর্টিলা শক্ত করে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'অতিরিক্ত সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['মেক্সিকান', 'মাংস', 'হার্ট-ফিলিং'],
+      rating: 4.7,
+      viewCount: 5000),
+
+  // 73. চিকেন সাব
+  const FoodItem(
+      id: 'bideshi_073',
+      name: 'চিকেন সাব',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥪',
+      description:
+          'আমেরিকান স্টাইল চিকেন সাবমেরিন স্যান্ডউইচ — জুসি চিকেন ও টাটকা সবজির কম্বিনেশন।',
+      ingredients: [
+        '৪ টি সাব রোল/ফ্রেঞ্চ ব্রেড',
+        '৩০০ গ্রাম গ্রিলড চিকেন',
+        'লেটুস পাতা',
+        '২ টি টমেটো স্লাইস',
+        '১/২ কাপ শসা স্লাইস',
+        '১/৪ কাপ পেঁয়াজ রিং',
+        '৪ স্লাইস আমেরিকান চিজ',
+        'মায়োনেজ',
+        'মাস্টার্ড',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'রোল প্রস্তুত',
+            description: 'সাব রোল মাঝখান থেকে কেটে হালকা টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস লাগানো',
+            description: 'রোলের ভেতরে মায়োনেজ ও মাস্টার্ড লাগান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ার সাজানো',
+            description: 'লেটুস → চিকেন → চিজ → টমেটো → শসা → পেঁয়াজ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গ্রিল (ঐচ্ছিক)',
+            description: 'চিজ গলানোর জন্য ১ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ফ্রেঞ্চ ফ্রাই বা চিপস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['স্যান্ডউইচ', 'মাংস', 'আমেরিকান'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 74. টুনা স্যান্ডউইচ
+  const FoodItem(
+      id: 'bideshi_074',
+      name: 'টুনা স্যান্ডউইচ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥪',
+      description:
+          'হালকা ও প্রোটিন সমৃদ্ধ টুনা স্যান্ডউইচ — দ্রুত তৈরি হেলদি লঞ্চ।',
+      ingredients: [
+        '৪ স্লাইস হোল ওহিট ব্রেড',
+        '১ ক্যান টুনা (পানি ঝরানো)',
+        '২ টেবিল চামচ মায়োনেজ',
+        '১ টেবিল চামচ মাস্টার্ড',
+        '১/৪ কাপ সেলারি কুচি',
+        '১/৪ কাপ পেঁয়াজ কুচি',
+        'লেটুস পাতা',
+        'টমেটো স্লাইস',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'টুনা মিক্স',
+            description:
+                'টুনা, মায়োনেজ, মাস্টার্ড, সেলারি, পেঁয়াজ, লবণ ও গোলমরিচ মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্রেড টোস্ট',
+            description: 'ব্রেড স্লাইস হালকা টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description:
+                'ব্রেডে লেটুস, টুনা মিক্স ও টমেটো স্লাইস দিয়ে আরেক স্লাইস দিয়ে ঢাকুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'ত্রিকোণাকারে কেটে সালাদ বা চিপস সহ পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['স্যান্ডউইচ', 'মাছ', 'হেলদি'],
+      rating: 4.5,
+      viewCount: 4200),
+
+  // 75. চিকেন সালাদ
+  const FoodItem(
+      id: 'bideshi_075',
+      name: 'চিকেন সালাদ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥗',
+      description: 'প্রোটিন সমৃদ্ধ চিকেন সালাদ — হেলদি ও ফ্লেভারফুল লঞ্চ অপশন।',
+      ingredients: [
+        '৩০০ গ্রাম গ্রিলড চিকেন',
+        '৪ কাপ মিক্সড গ্রিন',
+        '১/২ কাপ চেরি টমেটো',
+        '১/২ কাপ শসা',
+        '১/৪ কাপ লাল পেঁয়াজ',
+        '১/৪ কাপ ফেটা চিজ',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ লেবুর রস',
+        '১ চা চামচ মাস্টার্ড',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description: 'চিকেন গ্রিল করে ছোট টুকরা বা স্ট্রিপ করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রেসিং',
+            description:
+                'অলিভ অয়েল, লেবুর রস, মাস্টার্ড, লবণ ও গোলমরিচ মিশিয়ে ড্রেসিং বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সালাদ অ্যাসেম্বল',
+            description:
+                'বড় বাটিতে গ্রিন, টমেটো, শসা, পেঁয়াজ ও চিকেন সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'ড্রেসিং ও ফেটা চিজ ছিটিয়ে হালকা মেশান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ঠান্ডা বা রুম টেম্পারেচারে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['সালাদ', 'মাংস', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4500),
+
+  // 76. পাস্তা সালাদ
+  const FoodItem(
+      id: 'bideshi_076',
+      name: 'পাস্তা সালাদ',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🥗',
+      description:
+          'ইতালিয়ান স্টাইল ঠান্ডা পাস্তা সালাদ — পার্টি বা পিকনিকের পারফেক্ট ডিশ।',
+      ingredients: [
+        '২০০ গ্রাম পেনে/ফারফালে পাস্তা',
+        '১/২ কাপ চেরি টমেটো',
+        '১/২ কাপ শসা কুচি',
+        '১/৪ কাপ লাল পেঁয়াজ',
+        '১/৪ কাপ অলিভ',
+        '১/৪ কাপ ফেটা চিজ',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ রেড ওয়াইন ভিনেগার',
+        '১ চা চামচ ইতালিয়ান সিজনিং',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description:
+                'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে ঠান্ডা পানিতে ধুয়ে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রেসিং',
+            description:
+                'অলিভ অয়েল, ভিনেগার, সিজনিং, লবণ ও গোলমরিচ মিশিয়ে ড্রেসিং বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description:
+                'পাস্তা, সবজি, অলিভ ও ফেটা চিজ মিশিয়ে ড্রেসিং ঢালুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'চিল',
+            description: '৩০ মিনিট ফ্রিজে রেখে ফ্লেভার সেট করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ঠান্ডা অবস্থায় পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['পাস্তা', 'সালাদ', 'ইতালিয়ান'],
+      rating: 4.5,
+      viewCount: 4100),
+
+  // 77. চিকেন আলফ্রেডো
+  const FoodItem(
+      id: 'bideshi_077',
+      name: 'চিকেন আলফ্রেডো',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'ক্রিমি আলফ্রেডো সসে চিকেন পাস্তা — ইতালিয়ান-আমেরিকান ফিউশনের ক্লাসিক।',
+      ingredients: [
+        '২০০ গ্রাম ফেটুচিনি পাস্তা',
+        '৩০০ গ্রাম চিকেন ব্রেস্ট',
+        '১ কাপ হেভি ক্রিম',
+        '১/২ কাপ পারমেজান চিজ',
+        '৩ কোয়া রসুন কুচি',
+        '২ টেবিল চামচ মাখন',
+        '১ চা চামচ ইতালিয়ান সিজনিং',
+        'লবণ',
+        'গোলমরিচ',
+        'পার্সলে গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description: 'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিকেন গ্রিল',
+            description: 'চিকেনে সিজনিং মাখিয়ে প্যানে গ্রিল করে স্লাইস করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস তৈরি',
+            description:
+                'মাখনে রসুন ভেজে ক্রিম যোগ করুন, ফুটে উঠলে পারমেজান মিশিয়ে ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description:
+                'পাস্তা ও চিকেন সস দিয়ে মিশিয়ে ২ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পার্সলে ও অতিরিক্ত চিজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['পাস্তা', 'ক্রিম', 'ইতালিয়ান'],
+      rating: 4.8,
+      viewCount: 6100),
+
+  // 78. মাশরুম স্যুপ
+  const FoodItem(
+      id: 'bideshi_078',
+      name: 'মাশরুম স্যুপ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍲',
+      description:
+          'ক্রিমি মাশরুম স্যুপ — আরামদায়ক ও পুষ্টিকর আমেরিকান ক্লাসিক।',
+      ingredients: [
+        '৩০০ গ্রাম মাশরুম স্লাইস',
+        '১ টি পেঁয়াজ কুচি',
+        '২ কোয়া রসুন বাটা',
+        '৩ কাপ চিকেন/ভেজিটেবল ব্রথ',
+        '১/২ কাপ হেভি ক্রিম',
+        '২ টেবিল চামচ মাখন',
+        '১ চা চামচ থাইম',
+        'লবণ',
+        'গোলমরিচ',
+        'পার্সলে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সবজি ভাজা',
+            description:
+                'মাখনে পেঁয়াজ ও রসুন ভেজে মাশরুম যোগ করুন, নরম হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্রথ যোগ',
+            description: 'ব্রথ ও থাইম যোগ করে ১০ মিনিট ফুটান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ব্লেন্ড (ঐচ্ছিক)',
+            description: 'স্মুথ টেক্সচার চাইলে হালকা ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ক্রিম যোগ',
+            description: 'ক্রিম যোগ করে হালকা গরম করুন (ফুটাবেন না)।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পার্সলে ও ক্রুটন ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['স্যুপ', 'মাশরুম', 'ক্রিমি'],
+      rating: 4.6,
+      viewCount: 4300),
+
+  // 79. চিকেন কর্ন স্যুপ
+  const FoodItem(
+      id: 'bideshi_079',
+      name: 'চিকেন কর্ন স্যুপ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍲',
+      description:
+          'মিষ্টি কর্ন ও চিকেনের আরামদায়ক স্যুপ — আমেরিকান কমফোর্ট ফুড।',
+      ingredients: [
+        '২০০ গ্রাম চিকেন ব্রেস্ট',
+        '১ কাপ ফ্রোজেন/ফ্রেশ কর্ন',
+        '১ টি পেঁয়াজ কুচি',
+        '২ কোয়া রসুন',
+        '৩ কাপ চিকেন ব্রথ',
+        '১/২ কাপ হেভি ক্রিম',
+        '১ চা চামচ থাইম',
+        '১ চা চামচ পাপরিকা',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন রান্না',
+            description:
+                'চিকেন ছোট টুকরা করে লবণ ও গোলমরিচ মাখিয়ে হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'স্যুপ বেস',
+            description:
+                'তেলে পেঁয়াজ ও রসুন ভেজে ব্রথ, কর্ন ও মশলা যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রান্না',
+            description: '১০-১২ মিনিট ফুটিয়ে চিকেন যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ক্রিম যোগ',
+            description: 'ক্রিম যোগ করে হালকা গরম করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ক্রুটন বা ওয়েস্টার ক্র্যাকার সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 260,
+      tags: ['স্যুপ', 'মাংস', 'কমফোর্ট'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 80. সি ফুড পাস্তা
+  const FoodItem(
+      id: 'bideshi_080',
+      name: 'সি ফুড পাস্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'সামুদ্রিক খাবারের ইতালিয়ান পাস্তা — প্রিমিয়াম ও ফ্লেভারফুল ডিনার।',
+      ingredients: [
+        '২০০ গ্রাম লিঙ্গুইনি পাস্তা',
+        '১৫০ গ্রাম চিংড়ি',
+        '১৫০ গ্রাম স্ক্যালপ/মাসেল',
+        '৩ কোয়া রসুন কুচি',
+        '১/২ কাপ হোয়াইট ওয়াইন',
+        '১ কাপ টমেটো সস',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ চা চামচ রেড চিলি ফ্লেকস',
+        'লবণ',
+        'পার্সলে',
+        'লেবু'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description: 'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সি ফুড রান্না',
+            description:
+                'অলিভ অয়েলে রসুন ভেজে চিংড়ি ও স্ক্যালপ হাই হিটে ৩-৪ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস',
+            description:
+                'হোয়াইট ওয়াইন ও টমেটো সস যোগ করে ৫ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'পাস্তা যোগ করে সব ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পার্সলে ও লেবু ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['পাস্তা', 'সিফুড', 'ইতালিয়ান'],
+      rating: 4.8,
+      viewCount: 5600),
+
+  // 81. চিজ পাস্তা
+  const FoodItem(
+      id: 'bideshi_081',
+      name: 'চিজ পাস্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'গলানো চিজের ইতালিয়ান পাস্তা — চিজ প্রেমীদের জন্য পারফেক্ট কমফোর্ট ফুড।',
+      ingredients: [
+        '২০০ গ্রাম পেনে পাস্তা',
+        '১ কাপ চেডার চিজ',
+        '১/২ কাপ পারমেজান চিজ',
+        '১/২ কাপ হেভি ক্রিম',
+        '২ টেবিল চামচ মাখন',
+        '১ চা চামচ মাস্টার্ড পাউডার',
+        '১/২ চা চামচ গার্লিক পাউডার',
+        'লবণ',
+        'গোলমরিচ',
+        'পার্সলে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description: 'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিজ সস',
+            description:
+                'মাখন গলিয়ে ক্রিম, মাস্টার্ড ও গার্লিক পাউডার মিশিয়ে ফুটান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ মেল্ট',
+            description: 'চেডার ও পারমেজান যোগ করে মসৃণ হওয়া পর্যন্ত নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'পাস্তা সস দিয়ে মিশিয়ে ২ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পার্সলে ও অতিরিক্ত চিজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 400,
+      tags: ['পাস্তা', 'চিজ', 'কমফোর্ট'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 82. পেনে পাস্তা
+  const FoodItem(
+      id: 'bideshi_082',
+      name: 'পেনে পাস্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'ক্লাসিক ইতালিয়ান পেনে পাস্তা — টমেটো সস ও হার্বসের সরল কিন্তু সুস্বাদু কম্বিনেশন।',
+      ingredients: [
+        '২০০ গ্রাম পেনে পাস্তা',
+        '১ কাপ টমেটো সস',
+        '৩ কোয়া রসুন কুচি',
+        '১/৪ কাপ অলিভ অয়েল',
+        '১ চা চামচ ইতালিয়ান সিজনিং',
+        '১/২ চা চামচ রেড চিলি ফ্লেকস',
+        '১/৪ কাপ পারমেজান চিজ',
+        'লবণ',
+        'পার্সলে',
+        'তাজা বেসিল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description: 'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description:
+                'অলিভ অয়েলে রসুন ও চিলি ফ্লেকস ভেজে টমেটো সস ও সিজনিং যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description: 'পাস্তা সস দিয়ে মিশিয়ে ২ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিনিশ',
+            description: 'পারমেজান ও তাজা বেসিল যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['পাস্তা', 'ইতালিয়ান', 'ক্লাসিক'],
+      rating: 4.6,
+      viewCount: 4700),
+
+  // 83. ফেটুচিনি
+  const FoodItem(
+      id: 'bideshi_083',
+      name: 'ফেটুচিনি',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'পাতলা ফেটুচিনি পাস্তা — হালকা সস বা ক্রিমি আলফ্রেডোর সাথে পারফেক্ট ম্যাচ।',
+      ingredients: [
+        '২০০ গ্রাম ফেটুচিনি পাস্তা',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '৩ কোয়া রসুন কুচি',
+        '১/২ কাপ পারমেজান চিজ',
+        '১/৪ কাপ ফ্রেশ পার্সলে',
+        '১ চা চামচ লেবুর জেস্ট',
+        'লবণ',
+        'গোলমরিচ',
+        'চিলি ফ্লেকস (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা সিদ্ধ',
+            description:
+                'পাস্তা প্যাকেটের নির্দেশমতো সিদ্ধ করে অল্প পানি রেখে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস',
+            description:
+                'অলিভ অয়েলে রসুন হালকা ভেজে পাস্তা ও অল্প পানি যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'এমালসিফাই',
+            description: 'পারমেজান ও লেবুর জেস্ট যোগ করে ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিনিশ',
+            description: 'পার্সলে, লবণ ও গোলমরিচ দিয়ে সিজনিং করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'অতিরিক্ত চিজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 400,
+      tags: ['পাস্তা', 'ইতালিয়ান', 'সিম্পল'],
+      rating: 4.6,
+      viewCount: 4500),
+
+  // 84. র‍্যাভিওলি
+  const FoodItem(
+      id: 'bideshi_084',
+      name: 'র‍্যাভিওলি',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🥟',
+      description:
+          'পুর ভরা ইতালিয়ান র‍্যাভিওলি — চিজ বা মাংসের পুরে ভরা ডিলিকেট পাস্তা।',
+      ingredients: [
+        '২০০ গ্রাম র‍্যাভিওলি (ফ্রেশ/ফ্রোজেন)',
+        '১ কাপ টমেটো সস',
+        '১/২ কাপ হেভি ক্রিম',
+        '১/৪ কাপ পারমেজান চিজ',
+        '২ টেবিল চামচ মাখন',
+        '২ কোয়া রসুন কুচি',
+        '১ চা চামচ ইতালিয়ান সিজনিং',
+        'লবণ',
+        'পার্সলে',
+        'তাজা বেসিল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'র‍্যাভিওলি সিদ্ধ',
+            description:
+                'র‍্যাভিওলি প্যাকেটের নির্দেশমতো সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description:
+                'মাখনে রসুন ভেজে টমেটো সস ও সিজনিং যোগ করে ৫ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ক্রিম যোগ',
+            description: 'ক্রিম যোগ করে হালকা ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশ্রণ',
+            description: 'র‍্যাভিওলি সস দিয়ে হালকা মেশান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পারমেজান, পার্সলে ও বেসিল ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['পাস্তা', 'ইতালিয়ান', 'পুর'],
+      rating: 4.7,
+      viewCount: 4900),
+
+  // 85. গ্নোচি
+  const FoodItem(
+      id: 'bideshi_085',
+      name: 'গ্নোচি',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🥔',
+      description:
+          'আলুর ইতালিয়ান গ্নোচি — নরম ও ফ্লাফি টেক্সচারের ইউনিক পাস্তা।',
+      ingredients: [
+        '৫০০ গ্রাম আলু (সিদ্ধ)',
+        '১ কাপ ময়দা',
+        '১ টি ডিম',
+        '১/২ চা চামচ লবণ',
+        '১/৪ চা চামচ জায়ফল',
+        '৩ টেবিল চামচ মাখন',
+        '১/২ কাপ পারমেজান চিজ',
+        'তাজা সেজ/বেসিল',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু প্রস্তুত',
+            description:
+                'সিদ্ধ আলু খোসা ছাড়িয়ে গরম অবস্থায় ম্যাশ করুন, ঠান্ডা করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডো তৈরি',
+            description: 'আলু, ময়দা, ডিম, লবণ ও জায়ফল মিশিয়ে নরম ডো বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'আকার',
+            description:
+                'ডো লম্বা রোল করে ছোট ছোট টুকরা করে কাঁটা দিয়ে দাগ দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিদ্ধ',
+            description: 'লবণ পানিতে গ্নোচি সিদ্ধ করুন, ভেসে উঠলে তুলে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'সস',
+            description:
+                'মাখনে সেজ/বেসিল ভেজে গ্নোচি ও পারমেজান যোগ করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'গরম গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['পাস্তা', 'আলু', 'ইতালিয়ান'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 86. ব্রুশেত্তা
+  const FoodItem(
+      id: 'bideshi_086',
+      name: 'ব্রুশেত্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍅',
+      description:
+          'টাটকা টমেটো ও বেসিলের ইতালিয়ান ব্রুশেত্তা — সিম্পল কিন্তু ফ্লেভারফুল স্টার্টার।',
+      ingredients: [
+        '৪ স্লাইস বাগেট/ইতালিয়ান ব্রেড',
+        '৩ টি টমেটো (কুচি)',
+        '৩ কোয়া রসুন',
+        '১/৪ কাপ তাজা বেসিল কুচি',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ বালসামিক ভিনেগার',
+        'লবণ',
+        'গোলমরিচ',
+        'পারমেজান (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রেড টোস্ট',
+            description:
+                'ব্রেড স্লাইস গ্রিল বা তাওয়ায় ক্রিসপি করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রসুন',
+            description: 'গরম ব্রেডে রসুন ঘষে সুগন্ধি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টপিং',
+            description:
+                'টমেটো, বেসিল, অলিভ অয়েল, ভিনেগার, লবণ ও গোলমরিচ মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'টোস্টে টমেটো মিক্স ঢেলে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তাজা বেসিল ও পারমেজান ছিটিয়ে তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['ইতালিয়ান', 'স্টার্টার', 'টাটকা'],
+      rating: 4.7,
+      viewCount: 4600),
+
+// ৮৭. ক্যালজোন
+  const FoodItem(
+      id: 'bideshi_087',
+      name: 'ক্যালজোন',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🥟',
+      description:
+          'ভেতরে চিজি চিকেন ও সসের পুর ভরা ইতালিয়ান ফোল্ডেড পিজ্জা বা পিজ্জা পকেট।',
+      ingredients: [
+        '১.৫ কাপ পিজ্জা ডো',
+        '১/২ কাপ রান্না করা চিকেন',
+        '১/২ কাপ মোজারেলা চিজ',
+        '১/৪ কাপ পিজ্জা সস',
+        '১/২ চা চামচ ওরেগানো',
+        '১টি ডিমের কুসুম (ব্রাশ করার জন্য)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো বেলা',
+            description: 'পিজ্জার ডো গোল করে রুটির মতো বেলে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পুর দেওয়া',
+            description:
+                'রুটির অর্ধেক অংশে পিজ্জা সস মাখিয়ে চিকেন, চিজ ও ওরেগানো সাজিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফোল্ড করা',
+            description:
+                'রুটির বাকি অর্ধেক অংশ উল্টে এনে পুর ঢেকে দিন এবং চারপাশ চেপে লক করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং',
+            description:
+                'ওপরে ডিমের কুসুম ব্রাশ করে ২০০ ডিগ্রি সেলসিয়াসে ১৫-২০ মিনিট বেক করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['ইতালিয়ান', 'পিজ্জা'],
+      rating: 4.7,
+      viewCount: 3200),
+
+// ৮৮. সসেজ পিজ্জা
+  const FoodItem(
+      id: 'bideshi_088',
+      name: 'সসেজ পিজ্জা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍕',
+      description:
+          'প্রচুর চিজ, মেরিনারা সস এবং গোল করে কাটা সসেজ টপিংসের ক্লাসিক পিজ্জা।',
+      ingredients: [
+        '১টি পিজ্জা ক্রাস্ট/ডো',
+        '৩টি চিকেন সসেজ (স্লাইস করা)',
+        '১/২ কাপ পিজ্জা সস',
+        '১ কাপ মোজারেলা চিজ',
+        '১/৪ কাপ ক্যাপসিকাম',
+        '১/২ চা চামচ চিলি ফ্লেক্স'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বেস প্রস্তুত',
+            description:
+                'পিজ্জা প্যানে ডো ছড়িয়ে দিয়ে কাঁটাচামচ দিয়ে হালকা ছিদ্র করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস ও চিজ',
+            description:
+                'ডোর ওপর জেনারসলি পিজ্জা সস মাখিয়ে অর্ধেক মোজারেলা চিজ ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টপিংস',
+            description:
+                'সসেজ স্লাইস এবং ক্যাপসিকাম সুন্দর করে সাজিয়ে বাকি চিজ ও চিলি ফ্লেক্স দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেক করা',
+            description:
+                'প্রি-হিটেড ওভেনে ২২০ ডিগ্রি সেলসিয়াসে ১২-১৫ মিনিট চিজ গলে যাওয়া পর্যন্ত বেক করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['পিজ্জা', 'সসেজ'],
+      rating: 4.6,
+      viewCount: 5400),
+
+// ৮৯. ভেজ পিজ্জা
+  const FoodItem(
+      id: 'bideshi_089',
+      name: 'ভেজ পিজ্জা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍕',
+      description:
+          'রঙিন বেল পেপার, মাশরুম, কর্ন ও ওলিভ দিয়ে তৈরি স্বাস্থ্যকর ও সুস্বাদু পিজ্জা।',
+      ingredients: [
+        '১টি পিজ্জা ক্রাস্ট',
+        '১/২ কাপ মিক্সড বেল পেপার',
+        '১/৪ কাপ মাশরুম স্লাইস',
+        '২ টেবিল চামচ সুইট কর্ন',
+        '১/২ কাপ পিজ্জা সস',
+        '৩/৪ কাপ চিজ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সস লেয়ার',
+            description:
+                'পিজ্জা বেসের ওপর টমেটো পিজ্জা সস সমানভাবে ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি সাজানো',
+            description:
+                'বেল পেপার, মাশরুম, কর্ন ও ব্ল্যাক ওলিভ দিয়ে পুরো পিজ্জা টপ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ লোড',
+            description:
+                'সবজির ওপর প্রচুর পরিমাণে গ্রেটেড মোজারেলা চিজ ও ওরেগানো দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং ও সার্ভ',
+            description:
+                '২০০ ডিগ্রি সেলসিয়াসে ১৫ মিনিট বেক করে স্লাইস করে গরম গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['পিজ্জা', 'ভেজিটেরিয়ান'],
+      rating: 4.5,
+      viewCount: 4100),
+
+// ৯০. হাওয়াইয়ান পিজ্জা
+  const FoodItem(
+      id: 'bideshi_090',
+      name: 'হাওয়াইয়ান পিজ্জা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍕',
+      description:
+          'মিষ্টি আনারসের টুকরো এবং নোনতা চিকেন/বিফ হ্যামের চমৎকার টক-মিষ্টি স্বাদের পিজ্জা।',
+      ingredients: [
+        '১টি পিজ্জা বেস',
+        '১/২ কাপ আনারস কিউব',
+        '১/২ কাপ চিকেন হ্যাম বা কিউব',
+        '১/২ কাপ পিজ্জা সস',
+        '১ কাপ মোজারেলা চিজ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সস অ্যাপ্লাই',
+            description: 'পিজ্জা ক্রাস্টের ওপর টমেটো সস ভালো করে লেপে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টপিংস বিন্যাস',
+            description:
+                'আনারসের টুকরো এবং ম্যারিনেট করা চিকেনের টুকরোগুলো সমান দূরত্বে ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ টপিং',
+            description:
+                'ওপর থেকে মোজারেলা চিজ দিয়ে টপিংসগুলো ভালো করে ঢেকে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ওভেন বেক',
+            description:
+                '২২০ ডিগ্রিতে ১২ মিনিট বেক করুন যতক্ষণ না পিজ্জার ধারগুলো ক্রিসপি গোল্ডেন হয়।')
+      ],
+      cookTime: 32,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['পিজ্জা', 'আনারস'],
+      rating: 4.4,
+      viewCount: 2900),
+
+// ৯১. চিকেন লাসাগনা
+  const FoodItem(
+      id: 'bideshi_091',
+      name: 'চিকেন লাসাগনা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'লাসাগনা শিট, চিজি হোয়াইট সস এবং স্পাইসি চিকেন কিমার লেয়ারে তৈরি রিচ ইতালিয়ান ডিশ।',
+      ingredients: [
+        '৬টি লাসাগনা শিট',
+        '১.৫ কাপ চিকেন কিমা',
+        '১ কাপ টমেটো পিউরি',
+        '১ কাপ হোয়াইট (বেসামেল) সস',
+        '১.৫ কাপ মোজারেলা চিজ',
+        '১ চা চামচ ইতালিয়ান হার্বস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংসের সস',
+            description:
+                'তেলে রসুন ও চিকেন কিমা ভেজে টমেটো পিউরি ও মসলা দিয়ে রেড মিট সস বানিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শিট প্রস্তুত',
+            description:
+                'লাসাগনা শিটগুলো ফুটন্ত পানিতে সামান্য তেল দিয়ে আধা-সেদ্ধ করে জল ঝরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ারিং',
+            description:
+                'বেকিং ডিশে প্রথমে হোয়াইট সস, তারপর শিট, মাংসের সস ও চিজ এভাবে ৩টি লেয়ার তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেক করা',
+            description:
+                'ওপরে থিক চিজের লেয়ার দিয়ে ১৮০ ডিগ্রিতে ২৫-৩০ মিনিট গোল্ডেন হওয়া পর্যন্ত বেক করুন।')
+      ],
+      cookTime: 55,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 520,
+      tags: ['পাস্টা', 'মাংস'],
+      rating: 4.9,
+      viewCount: 7800),
+
+// ৯২. বেকড পাস্তা
+  const FoodItem(
+      id: 'bideshi_092',
+      name: 'বেকড পাস্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'মিক্সড সসে মাখানো পাস্তার ওপর মোজারেলা চিজের পুরু আস্তরণ দিয়ে ওভেনে বেক করা পাস্তা।',
+      ingredients: [
+        '১.৫ কাপ ম্যাকারনি বা পেনে পাস্তা',
+        '১/২ কাপ চিকেন কিউব',
+        '১/২ কাপ হোয়াইট সস',
+        '১/২ কাপ পিজ্জা সস',
+        '১ কাপ গ্রেটেড চিজ',
+        '১ টেবিল চামচ বাটার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা ও চিকেন',
+            description:
+                'পাস্তা সেদ্ধ করুন এবং অন্য প্যানে বাটার দিয়ে চিকেন ও সামান্য গোলমরিচ ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস মিক্সিং',
+            description:
+                'একটি বোলে সেদ্ধ পাস্তা, চিকেন, হোয়াইট সস ও পিজ্জা সস একসাথে ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description:
+                'মিশ্রণটি বেকিং বোলে ঢেলে ওপর থেকে মোজারেলা চিজের ডবল লেয়ার দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মেল্টিং ও বেক',
+            description:
+                'ওভেনে ২০০ ডিগ্রিতে ১০-১২ মিনিট বেক করুন যতক্ষণ না উপরের চিজ বাবলি ও ব্রাউন হয়।')
+      ],
+      cookTime: 45,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 480,
+      tags: ['পাস্টা', 'বেকড'],
+      rating: 4.8,
+      viewCount: 9100),
+
+// ৯৩. চিকেন পারমেজান
+  const FoodItem(
+      id: 'bideshi_093',
+      name: 'চিকেন পারমেজান',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍗',
+      description:
+          'ব্রেডক্রাম্বে কোট করা ক্রিসপি চিকেন ব্রেস্টের ওপর মেরিনারা সস ও পারমেজান চিজের মেল্ট।',
+      ingredients: [
+        '২টি চিকেন ব্রেস্ট ফিলানি',
+        '১/২ কাপ ব্রেডক্রাম্ব',
+        '১টি ডিম',
+        '১/২ কাপ মেরিনারা সস',
+        '১/৪ কাপ পারমেজান চিজ',
+        '১/২ কাপ মোজারেলা চিজ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ফ্রাই',
+            description:
+                'চিকেন ডিমে ডুবিয়ে ব্রেডক্রাম্বে কোট করে তেলে ডিপ ফ্রাই বা প্যান ফ্রাই করে ক্রিসপি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস লেয়ার',
+            description:
+                'ভাজা চিকেন ফিলানির ওপর ২ চামচ করে মেরিনারা টমেটো সস ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ টপিং',
+            description:
+                'সসের ওপর পারমেজান ও মোজারেলা চিজের মিশ্রণ স্তূপ করে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেক বা গ্রিল',
+            description:
+                'ওভেনের ব্রয়লার মোডে ৩-৫ মিনিট রাখুন চিজ গলে চিকেনের সাথে সেট হওয়া পর্যন্ত।')
+      ],
+      cookTime: 40,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['ইতালিয়ান', 'মাংস'],
+      rating: 4.7,
+      viewCount: 3600),
+
+// ৯৪. টেরিয়াকি রাইস
+  const FoodItem(
+      id: 'bideshi_094',
+      name: 'টেরিয়াকি রাইস',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍚',
+      description:
+          'জাপানি মিষ্টি-নোনতা টেরিয়াকি সসে রান্না করা জুসি চিকেন ও স্টিমড রাইসের বোল।',
+      ingredients: [
+        '১ কাপ আঠালো বা বাসমতি চালের ভাত',
+        '১ কাপ চিকেন থাই কিউব',
+        '১/৪ কাপ টেরিয়াকি সস',
+        '১ টেবিল চামচ মধু',
+        '১ চা চামচ সাদা তিল',
+        '১টি স্প্রিং অনিয়ন কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন সতে',
+            description:
+                'প্যানে সামান্য তেল দিয়ে চিকেনের টুকরোগুলো হালকা বাদামী করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্লেজিং',
+            description:
+                'চিকেনে টেরিয়াকি সস ও মধু দিন। সস ঘন হয়ে চিকেনের গায়ে আঠালোভাবে লেগে যাওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রাইস বেস',
+            description:
+                'একটি সার্ভিং বোলে গরম ধোঁয়া ওঠা স্টিমড রাইস বা সাদা ভাত নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'প্লেটিং',
+            description:
+                'ভাতের ওপর টেরিয়াকি চিকেন সাজিয়ে দিন এবং ওপর থেকে সাদা তিল ও স্প্রিং অনিয়ন ছড়িয়ে দিন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['জাপানি', 'রাইস'],
+      rating: 4.6,
+      viewCount: 4300),
+
+// ৯৫. কোরিয়ান বারবিকিউ
+  const FoodItem(
+      id: 'bideshi_095',
+      name: 'কোরিয়ান বারবিকিউ',
+      category: 'bideshi',
+      subCategory: 'korean',
+      emoji: '🥩',
+      description:
+          'সয়া সস, নাশপাতির রস ও তিলের তেলে ম্যারিনেট করা পাতলা বিফ স্ট্রিপসের হট গ্রিল।',
+      ingredients: [
+        '১.৫ কাপ পাতলা স্লাইস করা বিফ (Bulgogi)',
+        '২ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ তিলের তেল',
+        '১ টেবিল চামচ ব্রাউন সুগার',
+        '২ কোয়া রসুন পেস্ট'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেশন',
+            description:
+                'বিফ স্লাইসগুলো সয়া সস, তিলের তেল, চিনি ও রসুন দিয়ে অন্তত ১ ঘণ্টা ম্যারিনেট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিল প্যান হিট',
+            description:
+                'কাস্ট আয়রন বা গ্রিল প্যান ধোঁয়া ওঠা গরম করে সামান্য তেল ব্রাশ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কুইক গ্রিল',
+            description:
+                'পাতলা মাংসের স্লাইসগুলো প্যানে দিয়ে প্রতি পিঠ ১-২ মিনিট হাই হিটে গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'লেটুস র‍্যাপ',
+            description:
+                'লেটুস পাতার ভেতর গ্রিলড বিফ ও কোরিয়ান সামজ্যাং সস দিয়ে গোল করে মুড়ে মুখে পুরুন।')
+      ],
+      cookTime: 45,
+      prepTime: 30,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 480,
+      tags: ['কোরিয়ান', 'মাংস'],
+      rating: 4.9,
+      viewCount: 6500),
+
+// ৯৬. সুশি রোল
+  const FoodItem(
+      id: 'bideshi_096',
+      name: 'সুশি রোল',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍣',
+      description:
+          'ভিনেগার রাইস, ক্র্যাব স্টিক এবং শসা নোরি সী-উইড শিটে মুড়ে তৈরি ঐতিহ্যবাহী মাকি সুশি।',
+      ingredients: [
+        '১ কাপ সুশি রাইস (ভিনেগার ও চিনি মেশানো)',
+        '২টি নোরি শিট',
+        '২টি ক্র্যাব স্টিক বা টুনা',
+        '১/২টি শসা লম্বালম্বি কাটা',
+        'ওয়াসাবি ও সয়া সস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'রাইস স্প্রেড',
+            description:
+                'বাঁশের সুশি ম্যাটের ওপর নোরি শিট রেখে তার ওপর আঠালো সুশি ভাত সমানভাবে বিছিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ফিলিং দেওয়া',
+            description:
+                'ভাতের একপ্রান্তে লম্বালম্বিভাবে ক্র্যাব স্টিক ও শসার টুকরো সাজিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রোলিং',
+            description:
+                'ম্যাটের সাহায্যে নোরি শিটটি শক্ত করে চেপে সিলিন্ডার আকারে রোল করে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কাটিং ও সার্ভ',
+            description:
+                'একটি ধারালো ভেজা ছুরি দিয়ে রোলটি সমান ৮টি টুকরোয় কেটে ওয়াসাবি ও সয়া সস দিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 25,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 340,
+      tags: ['জাপানি', 'মাছ'],
+      rating: 4.5,
+      viewCount: 5100),
+
+// ৯৭. স্যামন সুশি
+  const FoodItem(
+      id: 'bideshi_097',
+      name: 'স্যামন সুশি',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍣',
+      description:
+          'ছোট ভাতের ব্লকের ওপর ফ্রেশ প্রিমিয়াম স্যামন মাছের স্লাইস বসানো নিগিরি সুশি।',
+      ingredients: [
+        '১ কাপ রান্না করা সুশি রাইস',
+        '১০০ গ্রাম সুশি-গ্রেড কাঁচা স্যামন ফিশ স্লাইস',
+        '১ চা চামচ ওয়াসাবি পেস্ট',
+        'জাপানি সয়া সস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'রাইস বল',
+            description:
+                'হাতে সামান্য পানি নিয়ে সুশি রাইস চেপে ওভাল বা ডিম্বাকৃতির ছোট ছোট ব্লক বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ওয়াসাবি ডট',
+            description:
+                'প্রতিটি রাইস ব্লকের ওপর একদম সামান্য (এক চিমটি) ওয়াসাবি পেস্ট লাগিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্যামন প্লেসিং',
+            description:
+                'পাতলা করে কাটা স্যামন মাছের স্লাইসটি আলতো করে ভাতের ব্লকের ওপর বসিয়ে চেপে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'স্যামন যেন ভাতের সাথে লেগে থাকে তা নিশ্চিত করে আদা ও সয়া সসের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 320,
+      tags: ['জাপানি', 'মাছ'],
+      rating: 4.7,
+      viewCount: 4700),
+
+// ৯৮. চিকেন ইয়াকিতোরি
+  const FoodItem(
+      id: 'bideshi_098',
+      name: 'চিকেন ইয়াকিতোরি',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍢',
+      description:
+          'বাঁশের কাঠিতে গাঁথা চিকেন ও ক্যাপসিকামের জাপানি স্কিউয়ার বা তিল ছড়ানো ছোট কাবাব।',
+      ingredients: [
+        '১ কাপ মুরগির মাংসের কিউব',
+        '৪টি কাঠি (বাঁশের)',
+        '১টি বড় ক্যাপসিকাম কিউব',
+        '৩ টেবিল চামচ ইয়াকিতোরি/মিষ্টি সয়া সস',
+        '১ চা চামচ তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কাঠি গাঁথুনি',
+            description:
+                'কাঠিতে একটি চিকেন কিউব ও একটি ক্যাপসিকাম এভাবে অল্টারনেট করে গেঁথে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিলিং স্টার্ট',
+            description:
+                'প্যানে সামান্য তেল দিয়ে কাঠিগুলো এপিঠ-ওপিঠ করে মাঝারি আঁচে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস ব্রাশ',
+            description:
+                'মাংস আধা-ভাজা হলে ইয়াকিতোরি সস চামচ বা ব্রাশ দিয়ে মাংসের গায়ে বারবার মাখিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ক্যারামেলাইজ',
+            description:
+                'সস শুকিয়ে মাংসের গায়ে চকচকে গ্লেজ আসলে নামিয়ে গরম গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['জাপানি', 'মাংস'],
+      rating: 4.6,
+      viewCount: 3300),
+
+// ৯৯. এগ ড্রপ স্যুপ
+  const FoodItem(
+      id: 'bideshi_099',
+      name: 'এগ ড্রপ স্যুপ',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍲',
+      description:
+          'চিকেন স্টকে ডিমের রিবন বা সুতো ছড়ানো অত্যন্ত লাইট ও আরামদায়ক চাইনিজ স্যুপ।',
+      ingredients: [
+        '২.৫ কাপ চিকেন স্টক',
+        '১টি ডিম (ভালো করে ফেটানো)',
+        '১ টেবিল চামচ কর্নফ্লাওয়ার',
+        '১/৪ চা চামচ সাদা গোলমরিচ গুঁড়া',
+        '১টি স্প্রিং অনিয়ন কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'স্টক গরম',
+            description:
+                'প্যানে চিকেন স্টক, গোলমরিচ গুঁড়া ও লবণ দিয়ে ভালো করে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'থিকেনিং',
+            description:
+                'কর্নফ্লাওয়ার সামান্য পানিতে গুলে ফুটন্ত স্টকে ঢেলে দিন এবং চামচ দিয়ে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডিম ছাড়ানো',
+            description:
+                'চুলার আঁচ একদম কমিয়ে স্যুপটি গোল করে নাড়তে নাড়তে ফেটানো ডিম উপর থেকে সুতোর মতো ঢালুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গার্নিশ',
+            description:
+                'ডিম জমে পাতলা ফিনফিনে সুতোর মতো হলে ওপরে পেঁয়াজ পাতা কুচি দিয়ে নামিয়ে নিন।')
+      ],
+      cookTime: 15,
+      prepTime: 5,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 180,
+      tags: ['চাইনিজ', 'স্যুপ'],
+      rating: 4.4,
+      viewCount: 6100),
+
+// ১০০. ওয়ানটন স্যুপ
+  const FoodItem(
+      id: 'bideshi_100',
+      name: 'ওয়ানটন স্যুপ',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍲',
+      description:
+          'চিকেন কিমায় ঠাসা সেদ্ধ ওয়ানটন ও ক্লিয়ার চিকেন ব্রথের সুস্বাদু ক্ল্যাসিক চাইনিজ স্যুপ।',
+      ingredients: [
+        '৬টি ওয়ানটন (চিকেন কিমা ভরা)',
+        '৩ কাপ ক্লিয়ার চিকেন স্টক',
+        '১ চা চামচ রসুন কুচি',
+        '১ চা চামচ সয়া সস',
+        '১/২ কাপ বাঁধাকপি কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রথ তৈরি',
+            description:
+                'স্টকের মধ্যে রসুন কুচি, সয়া সস ও বাঁধাকপি কুচি দিয়ে ৫ মিনিট ফুটিয়ে স্যুপ বেস বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ওয়ানটন যোগ',
+            description:
+                'ফুটন্ত গরম ব্রথের মধ্যে কাঁচা ওয়ানটনগুলো সরাসরি ছেড়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সিমারিং',
+            description:
+                'মাঝারি আঁচে ৪-৫ মিনিট ফোটান, ওয়ানটনগুলো সেদ্ধ হয়ে স্যুপের ওপরে ভেসে উঠবে।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সার্ভিং',
+            description:
+                'স্বাদ দেখে ওপরে সামান্য তিলের তেল ও চিলি অয়েল দিয়ে গরম গরম বাটিতে ঢালুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['চাইনিজ', 'স্যুপ'],
+      rating: 4.7,
+      viewCount: 4900),
+
+// ১০১. বিফ নুডল স্যুপ
+  const FoodItem(
+      id: 'bideshi_101',
+      name: 'বিফ নুডল স্যুপ',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍜',
+      description:
+          'ধীরে ধীরে সেদ্ধ করা তুলতুলে নরম বিফ, এগ নুডলস ও রিচ স্পাইসি ব্রথের চাইনিজ কমফোর্ট ফুড।',
+      ingredients: [
+        '১ কাপ এগ নুডলস',
+        '১/২ কাপ সেদ্ধ বিফ চাংকস',
+        '৩ কাপ বিফ স্টক',
+        '১টি স্টার অ্যানিস (মশলা)',
+        '১ টেবিল চামচ ডার্ক সয়া সস',
+        '১ গুচ্ছ বকচয় বা শাক'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'স্টক সিজনিং',
+            description:
+                'বিফ স্টকে স্টার অ্যানিস, সয়া সস ও আদা দিয়ে ১০ মিনিট ফুটিয়ে ফ্লেভার বের করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'নুডলস সেদ্ধ',
+            description:
+                'আলাদা পাত্রে নুডলস সেদ্ধ করে পানি ঝরিয়ে সার্ভিং বোলে তুলে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিট ও ভেজি',
+            description:
+                'স্টকের মধ্যে সেদ্ধ নরম বিফ এবং বকচয় বা শাক দিয়ে আরও ২ মিনিট ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description:
+                'ভরা বোলে নুডলসের ওপর গরম গরম সুগন্ধি বিফ ব্রথ ও মাংসের টুকরোগুলো ঢেলে দিন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['চাইনিজ', 'নুডলস'],
+      rating: 4.8,
+      viewCount: 5200),
+
+// ১০২. ফো
+  const FoodItem(
+      id: 'bideshi_102',
+      name: 'ফো',
+      category: 'bideshi',
+      subCategory: 'vietnamese',
+      emoji: '🍲',
+      description:
+          'দারুচিনি ও এলাচের ফ্লেভারযুক্ত ক্লিয়ার ব্রথ, রাইস নুডলস এবং বিফ স্লাইসের ভিয়েতনামিজ জাতীয় খাবার।',
+      ingredients: [
+        '১ কাপ ফ্ল্যাট রাইস নুডলস',
+        '১/২ কাপ পাতলা বিফ স্লাইস',
+        '৩ কাপ সুগন্ধি ফো ব্রথ',
+        '১ কাপ ধনেপাতা ও পুদিনা',
+        '১/২ কাপ শিমের অঙ্কুর (Bean sprouts)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস প্রিপ',
+            description:
+                'রাইস নুডলস গরম পানিতে ভিজিয়ে নরম করে ছেঁকে বোলে সাজিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কাঁচা বিফ প্লেসিং',
+            description:
+                'নুডলসের ঠিক ওপরে পাতলা কাঁচা বিফ স্লাইসগুলো ছড়িয়ে দিন (ফুটন্ত ব্রথেই এটি সেদ্ধ হবে)।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'হট ব্রথ পোরিং',
+            description:
+                'চুলা থেকে ফুটন্ত টগবগে গরম ফো ব্রথ সরাসরি বিফ ও নুডলসের ওপর ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টপিং ও লেমন',
+            description:
+                'ওপর থেকে বিন স্প্রাউটস, পুদিনা পাতা ও লেবুর রস চিপে গরম গরম টস করে নিন।')
+      ],
+      cookTime: 40,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 400,
+      tags: ['vietnamese', 'স্যুপ'],
+      rating: 4.9,
+      viewCount: 6800),
+
+  // 103. বান মি
+  const FoodItem(
+    id: 'bideshi_103',
+    name: 'বান মি',
+    category: 'bideshi',
+    subCategory: 'vietnamese',
+    emoji: '🥖',
+    description:
+        'ক্রিসপি ফ্রেঞ্চ ব্যাগেটের ভেতর ম্যারিনেট করা গ্রিলড চিকেন ও টক-মিষ্টি আচারের ভিয়েতনামিজ স্যান্ডউইচ।',
+    ingredients: [
+      '১টি ছোট ফ্রেঞ্চ ব্যাগেট/ব্রেড',
+      '১/২ কাপ গ্রিলড চিকেন স্ট্রিপস',
+      '১/৪ কাপ গাজর ও মুলার আচার (Pickled)',
+      '১ টেবিল চামচ মেয়োনিজ',
+      'কয়েকটি ধনেপাতা ও কাঁচামরিচ স্লাইস',
+    ],
+    steps: [
+      RecipeStep(
+          stepNumber: 1,
+          title: 'ব্রেড টোস্ট',
+          description:
+              'ব্যাগেট ব্রেড মাঝখান থেকে কেটে ওভেনে বা প্যানে হালকা ক্রিসপি করে টোস্ট করুন।'),
+      RecipeStep(
+          stepNumber: 2,
+          title: 'স্প্রেড মাখানো',
+          description:
+              'রুটির ভেতরের দুপাশে ভালো করে মেয়োনিজ ও সামান্য সয়া সস মেখে নিন।'),
+      RecipeStep(
+          stepNumber: 3,
+          title: 'স্টাফিং',
+          description:
+              'ভেতরে গ্রিলড চিকেন এবং পানি ঝরানো গাজর-মুলার টক আচার ঠেলে দিন।'),
+      RecipeStep(
+          stepNumber: 4,
+          title: 'ফিনিশিং',
+          description:
+              'ধনেপাতা ও কাঁচামরিচ স্লাইস ভেতরে গুঁজে দিয়ে চেপে ধরে কামড় দিন।'),
+    ],
+    cookTime: 25,
+    prepTime: 15,
+    servings: 1,
+    difficulty: 'সহজ',
+    calories: 360,
+    tags: ['vietnamese', 'স্যান্ডউইচ'],
+    rating: 4.7,
+    viewCount: 4200,
+  ),
+
+  // 104. ভিয়েতনামিজ রোল
+  const FoodItem(
+      id: 'bideshi_104',
+      name: 'ভিয়েতনামিজ রোল',
+      category: 'bideshi',
+      subCategory: 'vietnamese',
+      emoji: '🥗',
+      description:
+          'ফ্রেশ রাইস পেপারে মোড়ানো ভিয়েতনামিজ রোল — হালকা, হেলদি ও রিফ্রেশিং।',
+      ingredients: [
+        '৮ টি রাইস পেপার',
+        '১০০ গ্রাম চিংড়ি/চিকেন',
+        '১/২ কাপ রাইস নুডলস',
+        'লেটুস পাতা',
+        'মিন্ট ও ধনেপাতা',
+        'গাজর জুলিয়েন',
+        'শসা জুলিয়েন',
+        'ফিশ সস ডিপিং'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'উপকরণ প্রস্তুত',
+            description:
+                'চিংড়ি/চিকেন রান্না করে নিন, নুডলস সিদ্ধ করুন, সবজি কাটুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রাইস পেপার ভেজানো',
+            description:
+                'রাইস পেপার কুসুম গরম পানিতে ১০ সেকেন্ড ডুবিয়ে নরম করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রোল তৈরি',
+            description:
+                'রাইস পেপারে লেটুস, নুডলস, প্রোটিন ও সবজি সাজিয়ে শক্ত করে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'ফিশ সস, লাইম ও চিলি মিশিয়ে ডিপিং সস বানিয়ে ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['ভিয়েতনামিজ', 'রাইস', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4100),
+
+  // 105. চিকেন সাতে
+  const FoodItem(
+      id: 'bideshi_105',
+      name: 'চিকেন সাতে',
+      category: 'bideshi',
+      subCategory: 'indonesian',
+      emoji: '🍢',
+      description:
+          'ইন্দোনেশিয়ান স্টাইল চিকেন সাতে — চিনাবাদাম সসে ডুবানো গ্রিলড চিকেন স্কেওয়ার।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন থাই (কিউব)',
+        '১/২ কাপ চিনাবাদাম বাটার',
+        '২ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ লাইম জুস',
+        '১ চা চামচ গার্লিক বাটা',
+        '১ চা চামচ লাল মরিচ',
+        '১ চা চামচ চিনি',
+        'শিকে',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেনে সয়া সস, গার্লিক, লাইম ও মশলা মাখিয়ে ১ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শিকে পরানো',
+            description: 'ম্যারিনেট চিকেন শিকে পরান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল',
+            description: 'গ্রিল বা প্যানে উভয় পাশ সোনালি করে গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস তৈরি',
+            description:
+                'চিনাবাদাম বাটার, চিনি, মরিচ ও অল্প পানি মিশিয়ে ঘন সস বানান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'গ্রিলড সাতে চিনাবাদাম সস ও লাইম ওয়েজ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 70,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['ইন্দোনেশিয়ান', 'মাংস', 'গ্রিল'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 106. নাসি গোরেং
+  const FoodItem(
+      id: 'bideshi_106',
+      name: 'নাসি গোরেং',
+      category: 'bideshi',
+      subCategory: 'indonesian',
+      emoji: '🍚',
+      description:
+          'ইন্দোনেশিয়ান স্টাইল ফ্রাইড রাইস — মিষ্টি সয়া সস ও মশলার ফ্লেভারফুল ডিশ।',
+      ingredients: [
+        '৩ কাপ ঠান্ডা ভাত',
+        '২০০ গ্রাম চিকেন/চিংড়ি',
+        '২ টি ডিম',
+        '১ কাপ মিক্সড সবজি',
+        '৩ টেবিল চামচ মিষ্টি সয়া সস',
+        '১ চা চামচ সাম্বল ওলেক',
+        '২ টি সবুজ পেঁয়াজ',
+        'রসুন',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস ভাজা',
+            description: 'তেলে চিকেন/চিংড়ি দ্রুত ভেজে তুলুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম ও সবজি',
+            description: 'একই প্যানে ডিম স্ক্র্যাম্বল করে সবজি যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাত ও সস',
+            description:
+                'ভাত দিয়ে মিষ্টি সয়া সস ও সাম্বল মিশিয়ে হাই হিটে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিনিশ',
+            description: 'ভাজা মাংস ফেরত দিন, সবুজ পেঁয়াজ ছিটান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'ক্রুপুক (চিংড়ি চিপস) ও লাইম ওয়েজ সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['ইন্দোনেশিয়ান', 'রাইস', 'ফ্রাই'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 107. মি গোরেং
+  const FoodItem(
+      id: 'bideshi_107',
+      name: 'মি গোরেং',
+      category: 'bideshi',
+      subCategory: 'indonesian',
+      emoji: '🍜',
+      description:
+          'ইন্দোনেশিয়ান ফ্রাইড নুডলস — মিষ্টি-ঝাল সসের দ্রুত তৈরি নাস্তা।',
+      ingredients: [
+        '২০০ গ্রাম ইন্দোনেশিয়ান নুডলস',
+        '১৫০ গ্রাম চিকেন/চিংড়ি',
+        '২ টি ডিম',
+        '১ কাপ বাঁধাকপি কুচি',
+        '২ টেবিল চামচ মিষ্টি সয়া সস',
+        '১ চা চামচ সাম্বল',
+        '২ টি সবুজ পেঁয়াজ',
+        'রসুন',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস প্রস্তুত',
+            description: 'নুডলস আধা সিদ্ধ করে ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাংস ও ডিম',
+            description: 'তেলে মাংস ভেজে ডিম স্ক্র্যাম্বল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সবজি ও নুডলস',
+            description: 'সবজি ও নুডলস যোগ করে হাই হিটে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস',
+            description: 'মিষ্টি সয়া সস ও সাম্বল মিশিয়ে ফিনিশ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সবুজ পেঁয়াজ ও ক্রুপুক ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['ইন্দোনেশিয়ান', 'নুডলস', 'দ্রুত'],
+      rating: 4.6,
+      viewCount: 4700),
+
+  // 108. সাটে কাবাব
+  const FoodItem(
+      id: 'bideshi_108',
+      name: 'সাটে কাবাব',
+      category: 'bideshi',
+      subCategory: 'indonesian',
+      emoji: '🍢',
+      description:
+          'ইন্দোনেশিয়ান স্টাইল মশলাদার সাটে কাবাব — চিনাবাদাম সসের সাথে পারফেক্ট ম্যাচ।',
+      ingredients: [
+        '৫০০ গ্রাম বিফ/চিকেন কিমা',
+        '১ টি পেঁয়াজ কুচি',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১ চা চামচ কোরিয়ান্ডার',
+        '১/২ চা চামচ টারমেরিক',
+        '১ চা চামচ চিনি',
+        'লবণ',
+        'শিকে',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স তৈরি',
+            description:
+                'কিমা, পেঁয়াজ, আদা-রসুন ও সব মশলা মিশিয়ে মণ্ড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আকার',
+            description: 'মণ্ড দিয়ে লম্বা কাবাব আকার দিন, শিকে পরান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল',
+            description: 'গ্রিল বা প্যানে উভয় পাশ সোনালি করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস',
+            description: 'চিনাবাদাম বাটার, চিনি ও মরিচ মিশিয়ে ঘন সস বানান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'কাবাব চিনাবাদাম সস ও পেঁয়াজ রিং সহ পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['ইন্দোনেশিয়ান', 'মাংস', 'গ্রিল'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 109. চিকেন রেন্ডাং
+  const FoodItem(
+      id: 'bideshi_109',
+      name: 'চিকেন রেন্ডাং',
+      category: 'bideshi',
+      subCategory: 'indonesian',
+      emoji: '🍛',
+      description:
+          'ইন্দোনেশিয়ান রেন্ডাং — নারিকেল দুধ ও মশলার ধীরে রান্না করা সুগন্ধি কারি।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন',
+        '১ কাপ নারিকেল দুধ',
+        '২ টেবিল চামচ রেন্ডাং পেস্ট',
+        '১ টি লেমনগ্রাস',
+        '৩ টি লেবু পাতা',
+        '১ চা চামচ তেঁতুল',
+        'লবণ',
+        'চিনি',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মশলা ভাজা',
+            description:
+                'তেলে রেন্ডাং পেস্ট, লেমনগ্রাস ও লেবু পাতা ভেজে সুগন্ধি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিকেন যোগ',
+            description: 'চিকেন যোগ করে হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'নারিকেল দুধ',
+            description: 'নারিকেল দুধ যোগ করে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ধীরে রান্না',
+            description:
+                'ঢেকে কম আঁচে ৩০-৪০ মিনিট রান্না করুন যতক্ষণ না সস ঘন ও তেল আলাদা হয়।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত বা নাসি গোরেংয়ের সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 50,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['ইন্দোনেশিয়ান', 'মাংস', 'কারি'],
+      rating: 4.8,
+      viewCount: 5600),
+
+  // 110. লাকসা
+  const FoodItem(
+      id: 'bideshi_110',
+      name: 'লাকসা',
+      category: 'bideshi',
+      subCategory: 'malaysian',
+      emoji: '🍜',
+      description:
+          'মালয়েশিয়ান লাকসা — নারিকেল কারি ব্রথে নুডলস ও চিংড়ির সুগন্ধি কম্বিনেশন।',
+      ingredients: [
+        '২০০ গ্রাম রাইস নুডলস',
+        '২০০ গ্রাম চিংড়ি',
+        '১ কাপ নারিকেল দুধ',
+        '২ টেবিল চামচ লাকসা পেস্ট',
+        '১ কাপ চিকেন ব্রথ',
+        '১/২ কাপ বীন স্প্রাউট',
+        '২ টি কাঁচা মরিচ',
+        'ধনেপাতা',
+        'লাইম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস প্রস্তুত',
+            description: 'রাইস নুডলস ভিজিয়ে নরম করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্রথ তৈরি',
+            description:
+                'তেলে লাকসা পেস্ট ভেজে নারিকেল দুধ ও ব্রথ যোগ করে ফুটান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিংড়ি রান্না',
+            description: 'চিংড়ি যোগ করে ৩-৪ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'বাটিতে নুডলস, ব্রথ, চিংড়ি ও বীন স্প্রাউট সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'কাঁচা মরিচ, ধনেপাতা ও লাইম ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['মালয়েশিয়ান', 'নুডলস', 'কারি'],
+      rating: 4.8,
+      viewCount: 5400),
+
+  // 111. চিকেন ক্যাসারোল
+  const FoodItem(
+      id: 'bideshi_111',
+      name: 'চিকেন ক্যাসারোল',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍲',
+      description:
+          'আমেরিকান স্টাইল বেকড চিকেন ক্যাসারোল — আরামদায়ক ও হার্ট-ফিলিং ফ্যামিলি ডিনার।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন কিউব',
+        '২ কাপ মিক্সড সবজি',
+        '১ কাপ চিজ',
+        '১/২ কাপ ক্রিম অফ মুশরুম স্যুপ',
+        '১/২ কাপ দুধ',
+        '১ কাপ ব্রেডক্রাম্ব',
+        '২ টেবিল চামচ মাখন',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন রান্না',
+            description: 'চিকেন লবণ ও গোলমরিচ দিয়ে হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস তৈরি',
+            description: 'ক্রিম অফ মুশরুম স্যুপ ও দুধ মিশিয়ে সস বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ার',
+            description:
+                'বেকিং ডিশে চিকেন, সবজি ও সস লেয়ার করুন, উপরে চিজ ছড়ান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টপিং',
+            description: 'ব্রেডক্রাম্ব ও গলানো মাখন মিশিয়ে উপরে ছড়ান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'বেক',
+            description:
+                '১৮০°C ওভেনে ৩০-৩৫ মিনিট বেক করুন যতক্ষণ না গোল্ডেন হয়।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: '৫ মিনিট রেस्ट দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 45,
+      prepTime: 20,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['মাংস', 'বেকড', 'কমফোর্ট'],
+      rating: 4.7,
+      viewCount: 4900),
+
+  // 112. ম্যাশড পটেটো
+  const FoodItem(
+      id: 'bideshi_112',
+      name: 'ম্যাশড পটেটো',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥔',
+      description:
+          'ক্রিমি ও বাটারি ম্যাশড পটেটো — আমেরিকান ডিনারের ক্লাসিক সাইড ডিশ।',
+      ingredients: [
+        '৪ টি বড় আলু',
+        '১/২ কাপ দুধ',
+        '৩ টেবিল চামচ মাখন',
+        '১/৪ কাপ পারমেজান চিজ (ঐচ্ছিক)',
+        'লবণ',
+        'সাদা গোলমরিচ',
+        'চাইভস গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু সিদ্ধ',
+            description:
+                'আলু খোসা ছাড়িয়ে কিউব করে লবণ পানিতে নরম হওয়া পর্যন্ত সিদ্ধ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যাশ',
+            description:
+                'পানি ঝরিয়ে আলু ম্যাশার বা ফর্ক দিয়ে মসৃণ হওয়া পর্যন্ত ম্যাশ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ক্রিম যোগ',
+            description: 'গরম দুধ ও মাখন ধীরে ধীরে যোগ করে নাড়তে থাকুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজনিং',
+            description: 'লবণ, সাদা গোলমরিচ ও চিজ যোগ করে স্বাদ ঠিক করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'গরম গরম চাইভস ছিটিয়ে স্টেক বা চিকেনের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['আলু', 'সাইড', 'ক্রিমি'],
+      rating: 4.5,
+      viewCount: 3900),
+
+  // 113. চিকেন পাই
+  const FoodItem(
+      id: 'bideshi_113',
+      name: 'চিকেন পাই',
+      category: 'bideshi',
+      subCategory: 'british',
+      emoji: '🥧',
+      description:
+          'ব্রিটিশ স্টাইল চিকেন পাই — ক্রিসপি পেস্ট্রি ও জুসি চিকেন ফিলিংয়ের কমফোর্ট ফুড।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন কিউব',
+        '১ শিট পফ পেস্ট্রি',
+        '১ টি পেঁয়াজ কুচি',
+        '১ কাপ মিক্সড সবজি',
+        '১/২ কাপ চিকেন ব্রথ',
+        '২ টেবিল চামচ মাখন',
+        '২ টেবিল চামচ ময়দা',
+        '১/২ কাপ দুধ',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফিলিং',
+            description:
+                'মাখনে পেঁয়াজ ভেজে চিকেন ও সবজি যোগ করুন, ময়দা ছিটিয়ে ব্রথ ও দুধ দিয়ে ঘন সস বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পাই অ্যাসেম্বল',
+            description:
+                'বেকিং ডিশে ফিলিং ঢেলে পেস্ট্রি দিয়ে ঢাকুন, প্রান্ত সিল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভেন্ট',
+            description:
+                'পেস্ট্রির উপরে ছোট ছিদ্র করে দিন যাতে বাষ্প বের হতে পারে।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেক',
+            description:
+                '২০০°C ওভেনে ৩০-৩৫ মিনিট বেক করুন যতক্ষণ না পেস্ট্রি গোল্ডেন হয়।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: '৫ মিনিট রেस्ट দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 50,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 480,
+      tags: ['ব্রিটিশ', 'মাংস', 'পাই'],
+      rating: 4.8,
+      viewCount: 5300),
+
+  // 114. শেফার্ডস পাই
+  const FoodItem(
+      id: 'bideshi_114',
+      name: 'শেফার্ডস পাই',
+      category: 'bideshi',
+      subCategory: 'british',
+      emoji: '🥧',
+      description:
+          'ব্রিটিশ ক্লাসিক শেফার্ডস পাই — মাংসের ফিলিং ও ম্যাশড পটেটোর টপিংয়ের কমফোর্ট ডিশ।',
+      ingredients: [
+        '৫০০ গ্রাম ল্যাম্ব/বিফ কিমা',
+        '১ টি পেঁয়াজ কুচি',
+        '১ কাপ মিক্সড সবজি',
+        '১/২ কাপ ব্রথ',
+        '১ চা চামচ ওরচেস্টার সস',
+        '৪ টি আলু (ম্যাশড)',
+        '৩ টেবিল চামচ মাখন',
+        '১/৪ কাপ দুধ',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফিলিং',
+            description:
+                'তেলে পেঁয়াজ ভেজে কিমা ও সবজি যোগ করুন, ব্রথ ও ওরচেস্টার সস দিয়ে ঘন করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যাশড পটেটো',
+            description: 'সিদ্ধ আলু মাখন ও দুধ দিয়ে ক্রিমি ম্যাশ বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ার',
+            description:
+                'বেকিং ডিশে ফিলিং ঢেলে উপরে ম্যাশড পটেটো সমান করে ছড়ান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টেক্সচার',
+            description: 'ফর্ক দিয়ে ম্যাশের উপর দাগ কাটুন যাতে ক্রিসপি হয়।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'বেক',
+            description:
+                '২০০°C ওভেনে ২৫-৩০ মিনিট বেক করুন যতক্ষণ না টপিং গোল্ডেন হয়।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'গরম গরম পরিবেশন করুন।')
+      ],
+      cookTime: 55,
+      prepTime: 30,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 500,
+      tags: ['ব্রিটিশ', 'মাংস', 'কমফোর্ট'],
+      rating: 4.8,
+      viewCount: 5500),
+
+  // 115. ফিশ অ্যান্ড চিপস
+  const FoodItem(
+      id: 'bideshi_115',
+      name: 'ফিশ অ্যান্ড চিপস',
+      category: 'bideshi',
+      subCategory: 'british',
+      emoji: '🐟',
+      description:
+          'ব্রিটিশ আইকন ফিশ অ্যান্ড চিপস — ক্রিসপি ব্যাটারে ভাজা মাছ ও ফ্রেঞ্চ ফ্রাই।',
+      ingredients: [
+        '৪ টি হোয়াইট ফিশ ফিলে',
+        '৪ টি বড় আলু',
+        '১ কাপ ময়দা',
+        '১/২ কাপ বিয়ার/সোডা',
+        '১ চা চামচ বেকিং পাউডার',
+        'লবণ',
+        'গোলমরিচ',
+        'ডুবো ভাজার তেল',
+        'মাল্ট ভিনেগার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু প্রস্তুত',
+            description: 'আলু লম্বা স্টিক কেটে পানিতে ভিজিয়ে শুকিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্যাটার',
+            description:
+                'ময়দা, বেকিং পাউডার, লবণ ও বিয়ার/সোডা মিশিয়ে ঘন ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফ্রাই',
+            description: 'আলু ১৮০°C তেলে ক্রিসপি ফ্রাই করে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মাছ ভাজা',
+            description:
+                'মাছ ব্যাটারে ডুবিয়ে একই তাপমাত্রায় ক্রিসপি হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'মাল্ট ভিনেগার, লবণ ও টারটার সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['ব্রিটিশ', 'মাছ', 'ফ্রাই'],
+      rating: 4.7,
+      viewCount: 5800),
+
+  // 116. ওনিয়ন রিং
+  const FoodItem(
+      id: 'bideshi_116',
+      name: 'ওনিয়ন রিং',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🧅',
+      description:
+          'ক্রিসপি ব্যাটারে ভাজা ওনিয়ন রিং — আমেরিকান স্ন্যাকস বারের স্ট্যাপল।',
+      ingredients: [
+        '২ টি বড় পেঁয়াজ',
+        '১/২ কাপ ময়দা',
+        '১/২ কাপ ব্রেডক্রাম্ব',
+        '১ টি ডিম',
+        '১/৪ কাপ দুধ',
+        '১ চা চামচ পাপরিকা',
+        '১/২ চা চামচ গার্লিক পাউডার',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পেঁয়াজ প্রস্তুত',
+            description: 'পেঁয়াজ ১ সেমি পুরু রিং কেটে আলাদা করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কোটিং স্টেশন',
+            description:
+                'তিনটি বাটিতে ময়দা (মশলা মেশানো), ফেটা ডিম+দুধ ও ব্রেডক্রাম্ব রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'রিং ময়দা → ডিম → ব্রেডক্রাম্ব এভাবে ডাবল কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'র্যাঞ্চ বা চিলি সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['স্ন্যাকস', 'ভাজা', 'ক্রিসপি'],
+      rating: 4.6,
+      viewCount: 4400),
+
+  // 117. চিকেন পপকর্ন
+  const FoodItem(
+      id: 'bideshi_117',
+      name: 'চিকেন পপকর্ন',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍗',
+      description:
+          'ক্রিসপি বাইরে, জুসি ভেতরে চিকেন পপকর্ন — বাচ্চাদের ও বড়দের সবার প্রিয়।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন ব্রেস্ট (ছোট কিউব)',
+        '১/২ কাপ ময়দা',
+        '১/২ কাপ কর্নস্টার্চ',
+        '১ চা চামচ গার্লিক পাউডার',
+        '১ চা চামচ পাপরিকা',
+        '১ টি ডিম',
+        '১/৪ কাপ দুধ',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ম্যারিনেট',
+            description:
+                'চিকেন কিউব লবণ, গার্লিক ও পাপরিকা মাখিয়ে ১৫ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্যাটার',
+            description:
+                'ময়দা, কর্নস্টার্চ, ডিম ও দুধ মিশিয়ে ঘন ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'চিকেন ব্যাটারে ডুবিয়ে ভালো করে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                '১৮০°C তেলে ৩-৪ মিনিট ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'বারবিকিউ বা হানি মাস্টার্ড সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['মাংস', 'ফ্রাই', 'বাচ্চাদের'],
+      rating: 4.7,
+      viewCount: 5100),
+
+  // 118. চুরোস
+  const FoodItem(
+      id: 'bideshi_118',
+      name: 'চুরোস',
+      category: 'bideshi',
+      subCategory: 'spanish',
+      emoji: '🍩',
+      description:
+          'স্প্যানিশ স্টাইল চুরোস — চিনি ও দারচিনিতে কোটেড ক্রিসপি ফ্রাইড ডো।',
+      ingredients: [
+        '১ কাপ পানি',
+        '২ টেবিল চামচ চিনি',
+        '১/২ চা চামচ লবণ',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ কাপ ময়দা',
+        '২ টি ডিম',
+        'ডুবো ভাজার তেল',
+        '১/২ কাপ চিনি + ১ চা চামচ দারচিনি (কোটিং)',
+        'চকোলেট সস ডিপিং'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো তৈরি',
+            description:
+                'পানি, চিনি, লবণ ও অয়েল ফুটিয়ে ময়দা যোগ করে নাড়তে থাকুন, ঠান্ডা করে ডিম একে একে মেশান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পাইপিং',
+            description:
+                'ডো পাইপিং ব্যাগে নিয়ে স্টার নজল দিয়ে ১০ সেমি লম্বা স্ট্রিপ দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কোটিং',
+            description: 'গরম চুরোস চিনি-দারচিনি মিক্সে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম চকোলেট সস ডিপিং সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['স্প্যানিশ', 'মিষ্টি', 'ফ্রাই'],
+      rating: 4.7,
+      viewCount: 4800),
+
+  // 119. তিরামিসু
+  const FoodItem(
+      id: 'bideshi_119',
+      name: 'তিরামিসু',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍰',
+      description:
+          'ইতালিয়ান ক্লাসিক তিরামিসু — কফি, মাস্কারপোন ও কোকোর লেয়ারড ডেজার্ট।',
+      ingredients: [
+        '২৪ টি লেডিফিঙ্গার বিস্কুট',
+        '১ কাপ এসপ্রেসো কফি',
+        '২৫০ গ্রাম মাস্কারপোন চিজ',
+        '৩ টি ডিম কুসুম',
+        '১/৪ কাপ চিনি',
+        '১/২ কাপ হেভি ক্রিম',
+        '১ চা চামচ ভ্যানিলা',
+        'কোকো পাউডার গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কফি প্রস্তুত',
+            description: 'এসপ্রেসো কফি বানিয়ে ঠান্ডা করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ক্রিম',
+            description:
+                'ডিম কুসুম ও চিনি হুইস্ক করে মাস্কারপোন, ক্রিম ও ভ্যানিলা মিশিয়ে ফ্লাফি ক্রিম বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ার ১',
+            description:
+                'ডিশে লেডিফিঙ্গার কফিতে ডুবিয়ে এক সারি সাজান, উপরে ক্রিম ছড়ান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'লেয়ার ২',
+            description: 'আরেক সারি লেডিফিঙ্গার ও ক্রিম দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'চিল',
+            description:
+                '৪ ঘণ্টা ফ্রিজে রেখে সেট করুন, পরিবেশনের আগে কোকো পাউডার ছিটান।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'ঠান্ডা অবস্থায় পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 250,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['ইতালিয়ান', 'মিষ্টি', 'কফি'],
+      rating: 4.9,
+      viewCount: 6200),
+
+  // 120. পানা কোট্টা
+  const FoodItem(
+      id: 'bideshi_120',
+      name: 'পানা কোট্টা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍮',
+      description:
+          'ইতালিয়ান পানা কোট্টা — ভ্যানিলা ও ক্রিমের মসৃণ, জেলি-লাইক ডেজার্ট।',
+      ingredients: [
+        '২ কাপ হেভি ক্রিম',
+        '১/২ কাপ দুধ',
+        '১/৪ কাপ চিনি',
+        '১ চা চামচ ভ্যানিলা এক্সট্র্যাক্ট',
+        '১ চা চামচ জেলাটিন পাউডার',
+        '২ টেবিল চামচ পানি',
+        'ফলের সস গার্নিশে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'জেলাটিন প্রস্তুত',
+            description: 'জেলাটিন পানিতে ৫ মিনিট ভিজিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ক্রিম মিক্স',
+            description:
+                'ক্রিম, দুধ ও চিনি হালকা গরম করে চিনি গলান (ফুটাবেন না)।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description:
+                'গরম ক্রিমে জেলাটিন ও ভ্যানিলা মিশিয়ে ভালো করে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মোল্ড',
+            description:
+                'মিক্স রামেকিন বা কাপে ঢেলে ৪ ঘণ্টা ফ্রিজে রেখে সেট করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'মোল্ড থেকে উল্টে প্লেটে নিয়ে ফলের সস বা বেরি ছিটিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 250,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 340,
+      tags: ['ইতালিয়ান', 'মিষ্টি', 'ক্রিমি'],
+      rating: 4.7,
+      viewCount: 4600),
+
+// ১২১. চিজকেক
+  const FoodItem(
+      id: 'bideshi_121',
+      name: 'চিজকেক',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍰',
+      description:
+          'ক্র্যাকার ক্রাস্টের ওপর ক্রিম চিজ ও চিনির মসৃণ লেয়ারে তৈরি চমৎকার ক্লাসিক ডেজার্ট।',
+      ingredients: [
+        '১.৫ কাপ বিস্কুট গুঁড়া',
+        '৩ টেবিল চামচ গলানো মাখন',
+        '২ কাপ ক্রিম চিজ',
+        '৩/৪ কাপ চিনি',
+        '২টি ডিম',
+        '১ চা চামচ ভ্যানিলা এক্সট্র্যাক্ট'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ক্রাস্ট তৈরি',
+            description:
+                'বিস্কুটের গুঁড়ার সাথে মাখন মিশিয়ে বেকিং প্যানের নিচে চেপে ক্রাস্ট বানিয়ে ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্যাটার মিক্স',
+            description:
+                'ক্রিম চিজ ও চিনি একসাথে বিট করে মসৃণ করুন; তারপর এক এক করে ডিম ও ভ্যানিলা মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'বেকিং',
+            description:
+                'ক্রাস্টের ওপর চিজের মিশ্রণ ঢেলে ওয়াটার বাথ পদ্ধতিতে ১৬০ ডিগ্রিতে ৫০-৬০ মিনিট বেক করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ঠান্ডা ও পরিবেশন',
+            description:
+                'ওভেন থেকে বের করে পুরোপুরি ঠান্ডা হতে দিন এবং ফ্রিজে অন্তত ৪ ঘণ্টা রেখে সেট করে কেটে নিন।')
+      ],
+      cookTime: 60,
+      prepTime: 25,
+      servings: 6,
+      difficulty: 'কঠিন',
+      calories: 420,
+      tags: ['মিষ্টি', 'চিজ'],
+      rating: 4.9,
+      viewCount: 7500),
+
+// ১২২. মুস
+  const FoodItem(
+      id: 'bideshi_122',
+      name: 'মুস',
+      category: 'bideshi',
+      subCategory: 'french',
+      emoji: '🍮',
+      description:
+          'হুইপড ক্রিম ও ডার্ক চকলেটের মেলবন্ধনে তৈরি ফরাসি ফ্রদি এবং লাইট এয়ারি ডেজার্ট।',
+      ingredients: [
+        '১ কাপ ডার্ক চকলেট টুকরো',
+        '২ টেবিল চামচ মাখন',
+        '৩টি ডিম (কুসুম ও সাদা অংশ আলাদা)',
+        '১/৪ কাপ চিনি',
+        '১/২ কাপ হেভি হুইপড ক্রিম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চকলেট গলানো',
+            description:
+                'ডাবল বয়লারে চকলেট ও মাখন একসাথে গলিয়ে হালকা ঠান্ডা হতে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম প্রিপারেশন',
+            description:
+                'ডিমের কুসুম চকলেটে মেশান। অন্য বাটিতে ডিমের সাদা অংশ ও চিনি বিট করে শক্ত ফোম বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফোল্ডিং',
+            description:
+                'চকলেটের মিশ্রণে প্রথমে হুইপড ক্রিম এবং তারপর ডিমের সাদা অংশের ফোম হালকা হাতে আলতো করে মেশান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'চিলিং',
+            description:
+                'ছোট গ্লাসে ঢেলে ফ্রিজে অন্তত ৩ ঘণ্টা রেখে ঠান্ডা ও সেট করে পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 320,
+      tags: ['ফ্রেঞ্চ', 'মিষ্টি'],
+      rating: 4.7,
+      viewCount: 3800),
+
+// ১২৩. কাস্টার্ড
+  const FoodItem(
+      id: 'bideshi_123',
+      name: 'কাস্টার্ড',
+      category: 'bideshi',
+      subCategory: 'british',
+      emoji: '🍮',
+      description:
+          'দুধ, চিনি এবং কাস্টার্ড পাউডার ফুটিয়ে তৈরি ঘন, ক্রিমি এবং ফল দিয়ে খাওয়ার মতো ডেজার্ট।',
+      ingredients: [
+        '২ কাপ লিকুইড দুধ',
+        '২ টেবিল চামচ কাস্টার্ড পাউডার',
+        '৩ টেবিল চামচ চিনি',
+        '১/২ কাপ মিক্সড ফল (কলা, আপেল, আঙুর)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাউডার গোলানো',
+            description:
+                '১/৪ কাপ ঠান্ডা দুধে কাস্টার্ড পাউডার ভালো করে গুলে একপাশে সরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'দুধ ফুটানো',
+            description:
+                'বাকি দুধ ও চিনি একসাথে পাত্রে নিয়ে মাঝারি আঁচে বলক আসা পর্যন্ত ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ঘন করা',
+            description:
+                'ফুটন্ত দুধে গোলানো কাস্টার্ড আস্তে আস্তে ঢালুন এবং অনবরত নাড়তে থাকুন যেন দলা না পাকায়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'মিশ্রণটি ঘন হলে নামিয়ে ঠান্ডা করুন এবং ফ্রিজে রেখে খাওয়ার আগে কাটা ফল মিশিয়ে দিন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['মিষ্টি', 'দুধ'],
+      rating: 4.6,
+      viewCount: 6400),
+
+// ১২৪. কুকিজ
+  const FoodItem(
+      id: 'bideshi_124',
+      name: 'কুকিজ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍪',
+      description:
+          'বাইরে ক্রিসপি ও ভেতরে নরম চকোলেট চিপসে ঠাসা বেকড আমেরিকান কুকিজ।',
+      ingredients: [
+        '১ কাপ ময়দা',
+        '১/২ কাপ মাখন (নরম)',
+        '১/৩ কাপ ব্রাউন সুগার',
+        '১টি ডিম',
+        '১/২ চা চামচ বেকিং সোডা',
+        '১/২ কাপ চকোলেট চিপস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ক্রিমিং',
+            description:
+                'মাখন ও চিনি একসাথে নিয়ে স্প্যাচুলা বা বিটার দিয়ে ক্রিমি হওয়া পর্যন্ত মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডো তৈরি',
+            description:
+                'এতে ডিম দিয়ে মেশান, তারপর ময়দা ও বেকিং সোডা চেলে যোগ করে চকোলেট চিপস মিশিয়ে ডো বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'শেপিং',
+            description:
+                'বেকিং ট্রে-তে চামচ দিয়ে ছোট ছোট গোল বলের মতো করে কিছুটা দূরত্ব বজায় রেখে রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং ও কুল',
+            description:
+                '১৮০ ডিগ্রি সেলসিয়াসে ১০-১২ মিনিট বেক করুন। নামানোর পর ঠান্ডা হলে মচমচে হবে।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 6,
+      difficulty: 'সহজ',
+      calories: 260,
+      tags: ['মিষ্টি', 'বেকড'],
+      rating: 4.8,
+      viewCount: 8100),
+
+// ১২৫. ওটমিল
+  const FoodItem(
+      id: 'bideshi_125',
+      name: 'ওটমিল',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥣',
+      description:
+          'দুধে সেদ্ধ ওটস, মধু ও ড্রাই ফ্রুটস দিয়ে তৈরি সকালের অত্যন্ত পুষ্টিকর ও দ্রুত নাস্তা।',
+      ingredients: [
+        '১/২ কাপ রোলড ওটস',
+        '১ কাপ লিকুইড দুধ বা পানি',
+        '১ টেবিল চামচ মধু',
+        '১ চা চামচ চিয়া সিড',
+        'কয়েকটি বাদাম কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ওটস রান্না',
+            description:
+                'একটি পাত্রে ওটস এবং দুধ/পানি একসাথে দিয়ে মাঝারি আঁচে ৪-৫ মিনিট ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ঘনত্ব ঠিক করা',
+            description:
+                'ওটস নরম হয়ে দুধ শুষে ঘন হয়ে এলে চুলা থেকে নামিয়ে বাটিতে ঢালুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিষ্টি যোগ',
+            description:
+                'সামান্য ঠান্ডা হলে ওটমিলে মধু দিয়ে ভালো করে নেড়ে মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টপিং',
+            description:
+                'ওপর থেকে চিয়া সিড, বাদাম কুচি এবং পছন্দের ফলের স্লাইস সাজিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['নাস্তা', 'স্বাস্থ্যকর'],
+      rating: 4.5,
+      viewCount: 5200),
+
+// ১২৬. গ্রানোলা
+  const FoodItem(
+      id: 'bideshi_126',
+      name: 'গ্রানোলা',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥣',
+      description:
+          'ওটস, মধু, বিভিন্ন ধরনের বাদাম ও ড্রাই ফ্রুটসের ওভেনে টোস্ট করা ক্রিসপি মিক্স।',
+      ingredients: [
+        '২ কাপ ওটস',
+        '১/২ কাপ মিক্সড বাদাম ও বীজ',
+        '৩ টেবিল চামচ মধু বা ম্যাপেল সিরাপ',
+        '২ টেবিল চামচ নারকেল তেল',
+        '১/৪ কাপ কিসমিস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্সিং',
+            description:
+                'ওটস, বাদাম ও বীজের সাথে মধু ও নারকেল তেল দিয়ে খুব ভালো করে মেখে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ছড়িয়ে দেওয়া',
+            description:
+                'বেকিং ট্রের ওপর পার্চমেন্ট পেপার বিছিয়ে মিশ্রণটি পাতলা করে সমানভাবে ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টোস্টিং',
+            description:
+                '১৫০ ডিগ্রিতে ২০ মিনিট বেক করুন, মাঝে একবার নেড়ে দিন যেন সবদিক সমান মচমচে হয়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'স্টোরিং',
+            description:
+                'ওভেন থেকে বের করে কিসমিস মেশান এবং পুরোপুরি ঠান্ডা করে এয়ারটাইট বয়ামে সংরক্ষণ করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 5,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['নাস্তা', 'স্বাস্থ্যকর'],
+      rating: 4.7,
+      viewCount: 3900),
+
+// ১২৭. স্মুদি বোল
+  const FoodItem(
+      id: 'bideshi_127',
+      name: 'স্মুদি বোল',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥣',
+      description:
+          'হিমায়িত কলা ও বেরির ঘন স্মুদি, যা বাটিতে ঢেলে গ্রানোলা ও তাজা ফল দিয়ে সাজানো হয়।',
+      ingredients: [
+        '১টি হিমায়িত (Frozen) কলা',
+        '১/২ কাপ ফ্রোজেন বেরি',
+        '১/৪ কাপ টক দই বা বাদাম দুধ',
+        '১ টেবিল চামচ গ্রানোলা',
+        '১ চা চামচ পাম্পকিন সিড'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্লেন্ডিং',
+            description:
+                'ব্লেন্ডারে ফ্রোজেন কলা, বেরি ও দই দিয়ে পানি ছাড়া একদম ঘন ও মসৃণ করে ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বাটিতে ঢালা',
+            description:
+                'স্মুদিটি আইসক্রিমের মতো থিক হতে হবে, এটি একটি সুন্দর ছড়ানো বাটিতে ঢেলে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডেকর',
+            description:
+                'স্মুদির ওপর লম্বালম্বি সারিতে গ্রানোলা, পাম্পকিন সিড ও তাজা ফলের টুকরো সাজিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'তৈরির সাথে সাথেই চামচ দিয়ে খাওয়ার জন্য ঠান্ডা ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['নাস্তা', 'ফল'],
+      rating: 4.6,
+      viewCount: 4500),
+
+// ১২৮. চকো লাভা কেক
+  const FoodItem(
+      id: 'bideshi_128',
+      name: 'চকো লাভা কেক',
+      category: 'bideshi',
+      subCategory: 'french',
+      emoji: '🍫',
+      description:
+          'বাইরে নরম স্পঞ্জ কেক এবং চামচ ছোঁয়ালেই ভেতর থেকে গলে পড়া চকলেটের লাভা।',
+      ingredients: [
+        '১/২ কাপ ডার্ক চকলেট',
+        '৩ টেবিল চামচ মাখন',
+        '১টি আস্ত ডিম ও ১টি কুসুম',
+        '২ টেবিল চামচ চিনি',
+        '২ টেবিল চামচ ময়দা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চকলেট মেল্ট',
+            description:
+                'চকলেট ও মাখন একসাথে ওভেনে বা ডাবল বয়লারে গলিয়ে মসৃণ লিকুইড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম বিট',
+            description:
+                'ডিম, ডিমের কুসুম ও চিনি একসাথে সাদাটে ও ফোমি হওয়া পর্যন্ত ভালো করে বিট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফোল্ডিং',
+            description:
+                'ডিমের মিশ্রণে গলানো চকলেট ও চালিত ময়দা আলতো করে কাট-অ্যান্ড-ফোল্ড পদ্ধতিতে মেশান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'শর্ট বেক',
+            description:
+                'গ্রিজ করা র‍্যামেকিন বা বাটিতে ঢেলে ২০০ ডিগ্রিতে মাত্র ৮-১০ মিনিট বেক করুন যেন ভেতরটা কাঁচা থাকে।')
+      ],
+      cookTime: 35,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['মিষ্টি', 'চকলেট'],
+      rating: 4.9,
+      viewCount: 9300),
+
+// ১২৯. কফি লাটে
+  const FoodItem(
+      id: 'bideshi_129',
+      name: 'কফি লাটে',
+      category: 'bideshi',
+      subCategory: 'coffee',
+      emoji: '☕',
+      description:
+          'এক শট কড়া এক্সপ্রেসো এবং প্রচুর পরিমাণে স্টিমড মিল্কের ক্রিমি ও মাইল্ড ইতালিয়ান কফি।',
+      ingredients: [
+        '১ শট (৩০ মিলি) এক্সপ্রেসো কফি ডেকোশন',
+        '১ কাপ লিকুইড ফুল ক্রিম দুধ',
+        '১ চা চামচ চিনি (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'এক্সপ্রেসো রেডি',
+            description:
+                'কফি মেকার বা ইনস্ট্যান্ট কফি দিয়ে কড়া এক শট এক্সপ্রেসো কফি কাপে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'দুধ ফোমিং',
+            description:
+                'দুধ ভালো করে গরম করে মিল্ক ফ্রোদার বা ব্লেন্ডার দিয়ে ফুসকুড়ি বা ফেনা তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিক্সিং',
+            description:
+                'কাপের এক্সপ্রেসোর ওপর স্টিমড গরম দুধটি একটু ওপর থেকে পাতলা ধারায় ঢালুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ল্যাটে আর্ট',
+            description:
+                'একেবারে শেষে ওপরের পাতলা দুধের সাদা ফেনা দিয়ে মনের মতো আর্ট করে পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 180,
+      tags: ['কফি', 'পানীয়'],
+      rating: 4.7,
+      viewCount: 5600),
+
+// ১৩০. ক্যাপুচিনো
+  const FoodItem(
+      id: 'bideshi_130',
+      name: 'ক্যাপুচিনো',
+      category: 'bideshi',
+      subCategory: 'coffee',
+      emoji: '☕',
+      description:
+          'সমপরিমাণ এক্সপ্রেসো, স্টিমড মিল্ক এবং থিক মিল্ক ফোমের ক্লাসিক স্ট্রং কফি।',
+      ingredients: [
+        '১ শট স্ট্রং এক্সপ্রেসো কফি',
+        '১/২ কাপ দুধ',
+        '১/৪ চা চামচ কোকো পাউডার (গার্নিশ)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বেস শট',
+            description: 'কফি কাপে কড়া গরম এক্সপ্রেসো শট ঢেলে বেস তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ফোথ তৈরি',
+            description:
+                'দুধ গরম করে ফ্রোদার দিয়ে ঘন, মখমলের মতো মাইক্রো-ফোম বা থিক ফেনা তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেয়ারিং',
+            description:
+                'প্রথমে স্টিমড দুধ এবং এরপর চামচ দিয়ে ঘন ফেনাটি এক্সপ্রেসোর ওপর ১:১:১ অনুপাতে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গার্নিশ',
+            description:
+                'ফোমের ওপর সামান্য কোকো পাউডার বা দারুচিনির গুঁড়া ছিটিয়ে আকর্ষণীয় করে পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 160,
+      tags: ['কফি', 'পানীয়'],
+      rating: 4.8,
+      viewCount: 7200),
+
+// ১৩১. মোকা
+  const FoodItem(
+      id: 'bideshi_131',
+      name: 'মোকা',
+      category: 'bideshi',
+      subCategory: 'coffee',
+      emoji: '☕',
+      description:
+          'এক্সপ্রেসো কফি এবং রিচ চকোলেট সিরাপের মিশ্রণে তৈরি চমৎকার চকলেট ফ্লেভারড কফি।',
+      ingredients: [
+        '১ শট এক্সপ্রেসো কফি',
+        '১ টেবিল চামচ ডার্ক চকোলেট সিরাপ',
+        '৩/৪ কাপ দুধ',
+        '১ টেবিল চামচ হুইপড ক্রিম'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চকলেট বেস',
+            description:
+                'কফি মগের নিচে প্রথমে চকোলেট সিরাপ বা গলানো চকলেট টুকু দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কফি মিক্স',
+            description:
+                'সিরাপের ওপর গরম এক্সপ্রেসো শট ঢেলে চামচ দিয়ে ভালো করে নেড়ে মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'দুধ যোগ',
+            description:
+                'গরম করা গরম স্টিমড দুধ কফি ও চকলেটের মিশ্রণে ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ক্রিম টপিং',
+            description:
+                'ওপর থেকে প্রচুর হুইপড ক্রিম এবং সামান্য চকোলেট সস ড্রিপ করে পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['কফি', 'চকলেট'],
+      rating: 4.8,
+      viewCount: 6100),
+
+// ১৩২. হট চকোলেট
+  const FoodItem(
+      id: 'bideshi_132',
+      name: 'হট চকোলেট',
+      category: 'bideshi',
+      subCategory: 'coffee',
+      emoji: '🍫',
+      description:
+          'খাঁটি চকোলেট ও ফুল ক্রিম দুধের মেল্টিংয়ে তৈরি শীতের বা বৃষ্টির দিনের সেরা আরামদায়ক পানীয়।',
+      ingredients: [
+        '১ কাপ ফুল ক্রিম লিকুইড দুধ',
+        '১/৩ কাপ ডার্ক চকোলেট চিপস বা বার',
+        '১ চা চামচ চিনি',
+        '২টি মার্শমেলো'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'দুধ গরম',
+            description:
+                'সসপ্যানে দুধ ও চিনি দিয়ে মাঝারি আঁচে হালকা গরম করে নিন (ফুটানো যাবে না)।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চকলেট মেল্ট',
+            description:
+                'হালকা গরম দুধে চকোলেট চিপসগুলো দিয়ে অনবরত নাড়তে থাকুন যতক্ষণ না গলে।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ঘন করা',
+            description:
+                'সম্পূর্ণ চকলেট গলে দুধের রঙ গাঢ় এবং ঘন টেক্সচার হওয়া পর্যন্ত মৃদু আঁচে রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সার্ভ',
+            description:
+                'মগে ঢেলে ওপর থেকে মার্শমেলো বা হুইপড ক্রিম দিয়ে গরম গরম উপভোগ করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['চকলেট', 'পানীয়'],
+      rating: 4.9,
+      viewCount: 8400),
+
+// ১৩৩. বাবল টি
+  const FoodItem(
+      id: 'bideshi_133',
+      name: 'বাবল টি',
+      category: 'bideshi',
+      subCategory: 'taiwanese',
+      emoji: '🧋',
+      description:
+          'তাইওয়ানের ঐতিহ্যবাহী চিউই ট্যাপিওকা পার্লস (মুক্তো) এবং ক্রিমি মিল্ক টির ঠান্ডা ফিউশন।',
+      ingredients: [
+        '১/৪ কাপ ট্যাপিওকা পার্লস (বাবল)',
+        '১ কাপ কড়া লিকুইড লিকার চা',
+        '১/৪ কাপ ঘন দুধ বা ক্রিম',
+        '২ টেবিল চামচ ব্রাউন সুগার সিরাপ',
+        'আইস কিউব'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বাবল সেদ্ধ',
+            description:
+                'ট্যাপিওকা পার্লস ফুটন্ত পানিতে ১৫ মিনিট সেদ্ধ করে সুগার সিরাপে ভিজিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টি বেস',
+            description:
+                'চা লিকার, দুধ এবং চিনি একসাথে ভালো করে মিশিয়ে ফ্রিজে রেখে ঠান্ডা করে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্লাস রেডি',
+            description:
+                'পরিবেশন গ্লাসের নিচে প্রথমে সিরাপে ভেজা চিউই বাবল বা পার্লসগুলো দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কম্বাইন',
+            description:
+                'গ্লাসে বরফ কুচি দিন এবং ওপর থেকে ঠান্ডা মিল্ক টি ঢেলে মোটা স্ট্র (Straw) দিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 15,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['পানীয়', 'মিষ্টি'],
+      rating: 4.6,
+      viewCount: 5900),
+
+// ১৩৪. ম্যাচা লাটে
+  const FoodItem(
+      id: 'bideshi_134',
+      name: 'ম্যাচা লাটে',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍵',
+      description:
+          'জাপানি খাঁটি সবুজ ম্যাচা গ্রিন টি পাউডার ও সুইট স্টিমড মিল্কের স্বাস্থ্যকর অনন্য চা।',
+      ingredients: [
+        '১ চা চামচ ম্যাচা গ্রিন টি পাউডার',
+        '২ টেবিল চামচ গরম পানি',
+        '৩/৪ কাপ লিকুইড দুধ',
+        '১ চা চামচ মধু'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যাচা গোলানো',
+            description:
+                'একটি বাটিতে ম্যাচা পাউডার ও গরম পানি নিয়ে বাঁশের হুইস্ক দিয়ে '
+                ' আকারে ভালো করে ফেটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'দুধ রেডি',
+            description:
+                'অন্য পাত্রে দুধ ও মধু একসাথে গরম করে হালকা ফেনা বা ফ্রোথ তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পোরিং',
+            description:
+                'কাপে প্রথমে ফেটানো ঘন সবুজ ম্যাচা লিকুইডটুকু ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিক্সিং',
+            description:
+                'ম্যাচার ওপর আলতো করে গরম ফ্রোদি দুধ ঢেলে সবুজ-সাদার চমৎকার ল্যাটে উপভোগ করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['জাপানি', 'চা'],
+      rating: 4.5,
+      viewCount: 3100),
+
+// ১৩৫. আইসড কফি
+  const FoodItem(
+      id: 'bideshi_135',
+      name: 'আইসড কফি',
+      category: 'bideshi',
+      subCategory: 'coffee',
+      emoji: '🧊',
+      description:
+          'কফি, ঠান্ডা দুধ, চিনি এবং প্রচুর বরফ কুচি দিয়ে তৈরি ক্লান্তি দূর করার রিফ্রেশিং পানীয়।',
+      ingredients: [
+        '১ টেবিল চামচ কফি পাউডার',
+        '১ কাপ ঠান্ডা লিকুইড দুধ',
+        '২ টেবিল চামচ হালকা গরম পানি',
+        '১.৫ টেবিল চামচ চিনি',
+        '৫-৬টি বরফ টুকরো'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কফি মিক্স',
+            description:
+                'গরম পানিতে কফি ও চিনি ভালো করে গুলে কফি ডেকোশন তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আইস লোড',
+            description:
+                'পরিবেশন গ্লাসে ইচ্ছেমতো বরফের টুকরো বা ক্রাশড আইস ভরে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিল্ক পোর',
+            description:
+                'বরফ ভরা গ্লাসে একদম ঠান্ডা করে রাখা ঘন লিকুইড দুধ ঢালুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফাইনাল টাচ',
+            description:
+                'দুধের ওপর তৈরি করা কফি মিক্সটি ঢেলে আলতো করে নেড়ে স্ট্র দিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 160,
+      tags: ['কফি', 'ঠান্ডা'],
+      rating: 4.7,
+      viewCount: 6800),
+
+// ১৩৬. লেমনেড
+  const FoodItem(
+      id: 'bideshi_136',
+      name: 'লেমনেড',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍋',
+      description:
+          'ফ্রেশ লেবুর রস, সুগার সিরাপ এবং ঠান্ডা পানির চিরাচরিত পারফেক্ট রিহাইড্রেটিং শরবত।',
+      ingredients: [
+        '১টি বড় কাগজি লেবু',
+        '১.৫ কাপ ঠান্ডা পানি',
+        '২ টেবিল চামচ চিনি বা সিরাপ',
+        '১ চিমটি বিট লবণ',
+        'পুদিনা পাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'রস বের করা',
+            description:
+                'লেবু ভালো করে ধুয়ে মাঝখান থেকে কেটে স্কুইজার দিয়ে টাটকা রস বের করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সিরাপ মিক্স',
+            description:
+                'ঠান্ডা পানিতে চিনি ও বিট লবণ সম্পূর্ণ গলে যাওয়া পর্যন্ত ভালো করে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'লেমন টক',
+            description:
+                'চিনির পানিতে লেবুর রসটুকু ঢেলে ভালো করে চামচ দিয়ে স্টার করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গার্নিশ',
+            description:
+                'গ্লাসে ঢেলে বরফ কুচি এবং ১টি পুদিনা পাতা ও লেবুর স্লাইস দিয়ে সাজিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 140,
+      tags: ['পানীয়', 'লেবু'],
+      rating: 4.6,
+      viewCount: 5500),
+
+// ৩৭. অরেঞ্জ জুস
+  const FoodItem(
+      id: 'bideshi_137',
+      name: 'অরেঞ্জ জুস',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍊',
+      description:
+          'মিষ্টি পাকা কমলার কোয়া থেকে তৈরি ভিটামিন-সি সমৃদ্ধ ১০০% ন্যাচারাল ফ্রুট জুস।',
+      ingredients: [
+        '২টি পাকা মিষ্টি কমলা',
+        '১/৪ কাপ ঠান্ডা পানি (ঐচ্ছিক)',
+        '১ চা চামচ লেবুর রস',
+        '১ চা চামচ চিনি (প্রয়োজন হলে)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'খোসা ছাড়ানো',
+            description:
+                'কমলার খোসা ছাড়িয়ে ভেতরের সাদা আঁশ ও বীজগুলো যতদূর সম্ভব ফেলে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'জুসিং',
+            description:
+                'জুসার বা ব্লেন্ডারে কমলার কোয়া, সামান্য পানি ও লেবুর রস দিয়ে কুইক ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ছাঁকন',
+            description:
+                'একটি বড় ছাঁকনি দিয়ে জুসটি ছেঁকে নিন যেন স্মুথ টেক্সচার পাওয়া যায়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সার্ভিং',
+            description:
+                'কোনো প্রিজারভেটিভ ছাড়াই গ্লাসে ঢেলে সাথে সাথে তাজা ফ্রেশ পান করুন।')
+      ],
+      cookTime: 8,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 120,
+      tags: ['পানীয়', 'ফল'],
+      rating: 4.7,
+      viewCount: 4900),
+
+// ১৩৮. বেরি স্মুদি
+  const FoodItem(
+      id: 'bideshi_138',
+      name: 'বেরি স্মুদি',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🫐',
+      description:
+          'স্ট্রবেরি, ব্লুবেরি, কলা ও ক্র্যাঙ্কবেরি ব্লেন্ড করে তৈরি ঘন ও অ্যান্টিঅক্সিডেন্ট সমৃদ্ধ স্মুদি।',
+      ingredients: [
+        '১/২ কাপ মিক্সড বেরি (ফ্রোজেন)',
+        '১টি পাকা কলা',
+        '১/২ কাপ ঠান্ডা লিকুইড দুধ',
+        '১ টেবিল চামচ মধু'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফল প্রিপ',
+            description:
+                'বেরিগুলো ধুয়ে নিন এবং কলা ছোট টুকরো করে কেটে ব্লেন্ডারে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'লিকুইড যোগ',
+            description:
+                'ফলের সাথে ঠান্ডা দুধ এবং প্রাকৃতিক মিষ্টির জন্য মধু যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্মুথ ব্লেন্ড',
+            description:
+                'ব্লেন্ডারের গতি বাড়িয়ে একদম মখমলে মসৃণ ও ঘন হওয়া পর্যন্ত ১ মিনিট ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সার্ভিং',
+            description:
+                'লং গ্লাসে ঢেলে ওপরে একটি আস্ত ব্লুবেরি বা স্ট্রবেরি গেঁথে স্টাইলিশভাবে পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['পানীয়', 'ফল'],
+      rating: 4.6,
+      viewCount: 4200),
+
+// ১৩৯. অ্যাভোকাটো টোস্ট
+  const FoodItem(
+      id: 'bideshi_139',
+      name: 'অ্যাভোকাটো টোস্ট',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥑',
+      description:
+          'টোস্ট করা মাল্টিগ্রেন ব্রেডের ওপর ম্যাশড অ্যাভোকাডো ও চিলি ফ্লেক্সের হেলদি ব্রেকফাস্ট।',
+      ingredients: [
+        '১টি পাকা অ্যাভোকাডো',
+        '২ স্লাইস হোল হুইট ব্রেড',
+        '১/২ চা চামচ লেবুর রস',
+        '১/২ চা চামচ চিলি ফ্লেক্স',
+        'লবণ ও গোলমরিচ গুঁড়া'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রেড টোস্ট',
+            description:
+                'পাউরুটির স্লাইস দুটি টোস্টারে বা প্যানে সামান্য অলিভ অয়েল দিয়ে মচমচে করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'অ্যাভোকাডো ম্যাশ',
+            description:
+                'অ্যাভোকাডো কেটে বীজ ফেলে ভেতরের বাটার অংশ বের করে চামচ দিয়ে লেবুর রস ও লবণ সহ ম্যাশ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্প্রেডিং',
+            description:
+                'গরম টোস্ট করা পাউরুটির ওপর ম্যাশ করা অ্যাভোকাডোর একটি পুরু লেয়ার সমানভাবে লেপে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজনিং',
+            description:
+                'ওপর থেকে চিলি ফ্লেক্স ও গোলমরিচ গুঁড়া ছিটিয়ে দিন (চাইলে ওপরে একটি পোচড এগ দিতে পারেন)।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['নাস্তা', 'স্বাস্থ্যকর'],
+      rating: 4.5,
+      viewCount: 5100),
+
+// ১৪০. এগ বেনেডিক্ট
+  const FoodItem(
+      id: 'bideshi_140',
+      name: 'এগ বেনেডিক্ট',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍳',
+      description:
+          'ইংলিশ মাফিনের ওপর সতে করা টার্কি হ্যাম, পারফেক্ট পোচড এগ এবং ক্রিমি হল্যান্ডাইজ সস।',
+      ingredients: [
+        '১টি ইংলিশ মাফিন (মাঝখানে কাটা)',
+        '২টি ডিম',
+        '২ স্লাইস চিকেন/টার্কি হ্যাম',
+        '১/৪ কাপ হল্যান্ডাইজ সস',
+        '১ চা চামচ ভিনেগার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাফিন ও হ্যাম',
+            description:
+                'ইংলিশ মাফিন মাখনে টোস্ট করুন এবং হ্যামের স্লাইস হালকা সতে করে মাফিনের ওপর রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম পোচিং',
+            description:
+                'পানিতে ভিনেগার দিয়ে ফুটিয়ে চামচ দিয়ে ঘূর্ণি বানিয়ে ডিম ছেড়ে ৩ মিনিট পোচ করে তুলে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description:
+                'টোস্টেড মাফিন ও হ্যামের ওপর সাবধানে নরম নরম পোচ করা ডিমটি বসিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস ও সার্ভ',
+            description:
+                'ডিমের ওপর গরম গরম মাখনের তৈরি রিচ হল্যান্ডাইজ সস ঢেলে দিন এবং পেঁয়াজ পাতা কুচি ছড়িয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 1,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['নাস্তা', 'ডিম'],
+      rating: 4.8,
+      viewCount: 3300),
+
+// ১৪১. ব্যাগেল
+  const FoodItem(
+      id: 'bideshi_141',
+      name: 'ব্যাগেল',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🥯',
+      description:
+          'মাঝখানে ফুটো থাকা চিউই রিং আকৃতির ব্রেড, যাতে ক্রিম চিজের ক্লাসিক স্প্রেড দেওয়া হয়।',
+      ingredients: [
+        '১টি ক্লাসিক ব্যাগেল ব্রেড',
+        '৩ টেবিল চামচ ক্রিম চিজ',
+        '১ চা চামচ ডিল হার্বস বা গোলমরিচ গুঁড়া'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাগেল কাটিং',
+            description:
+                'রিং আকৃতির ব্যাগেল রুটিটি মাঝখান থেকে কেটে দুটি সমান চাকতি বা স্লাইস করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টোস্টিং',
+            description:
+                'কাটা অংশ ভেতরের দিকে দিয়ে প্যানে বা টোস্টারে হালকা সোনালী ও গরম করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ স্প্রেড',
+            description:
+                'গরম ব্যাগেলের ভেতরের ফ্ল্যাট অংশে জেনারসলি মসৃণ ক্রিম চিজ মাখিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'জোড়া লাগানো',
+            description:
+                'ওপর থেকে সামান্য গোলমরিচ ছিটিয়ে দুই অংশ একসাথে জুড়ে স্যান্ডউইচের মতো কামড় দিয়ে খান।')
+      ],
+      cookTime: 20,
+      prepTime: 5,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['নাস্তা', 'রুটি'],
+      rating: 4.4,
+      viewCount: 2700),
+
+// ১৪২. ক্রসোঁ
+  const FoodItem(
+      id: 'bideshi_142',
+      name: 'ক্রসোঁ',
+      category: 'bideshi',
+      subCategory: 'french',
+      emoji: '🥐',
+      description:
+          'প্রচুর মাখনের লেয়ারে তৈরি অর্ধচন্দ্রাকৃতির ফিনফিনে ক্রিসপি এবং ফ্লেকি ফ্রেঞ্চ পেস্ট্রি ব্রেড।',
+      ingredients: [
+        '১ কাপ পাফ পেস্ট্রি ডাফ (মাল্টি-লেয়ারড)',
+        '১/৪ কাপ মাখন (রোল করার জন্য)',
+        '১টি ডিম (এগ ওয়াশের জন্য)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'লেয়ারিং ডো',
+            description:
+                'পাফ পেস্ট্রি ডো লম্বা ত্রিভুজ আকারে কেটে মাখনের ব্রাশ করে লেয়ার তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রোল করা',
+            description:
+                'ত্রিভুজের চওড়া দিক থেকে শুরু করে সরু কোণার দিকে গোল করে পেঁচিয়ে ক্রিসেন্ট বা অর্ধচন্দ্রাকার শেপ দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'প্রুফিং',
+            description:
+                'বেকিং ট্রিতে রেখে ৩০ মিনিট রেখে দিন যেন রুটি ফুলে দ্বিগুণ সাইজ হয়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'এগ ওয়াশ ও বেক',
+            description:
+                'ওপরে ফেটানো ডিম ব্রাশ করে ১৮০ ডিগ্রিতে ১৫-২০ মিনিট একদম গোল্ডেন ও ফ্ল্যাকি হওয়া পর্যন্ত বেক করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 40,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 320,
+      tags: ['ফ্রেঞ্চ', 'নাস্তা'],
+      rating: 4.9,
+      viewCount: 6200),
+
+// ১৪৩. চিকেন ক্রোকেট
+  const FoodItem(
+      id: 'bideshi_143',
+      name: 'চিকেন ক্রোকেট',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍗',
+      description:
+          'সেদ্ধ আলু ও ক্রিসপি মুরগির কিমার মিশ্রণে তৈরি গোল ডিম্বাকৃতির ক্রিসপি জাপানি কাটলেট।',
+      ingredients: [
+        '১ কাপ সেদ্ধ আলু (ম্যাশড)',
+        '১/২ কাপ মুরগির মাংসের কিমা',
+        '১/২ কাপ পাঙ্কো ব্রেডক্রাম্ব',
+        '১টি ডিম',
+        '১/২ চা চামচ সয়া সস',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পুর রান্না',
+            description:
+                'প্যানে কিমা, পেঁয়াজ ও সয়া সস দিয়ে ভালো করে ভেজে রান্না করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বাইন্ডিং',
+            description:
+                'ম্যাশড আলুর সাথে রান্না করা চিকেন কিমা ভালো করে মেখে ওভাল কাটলেটের আকৃতি দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description:
+                'কাটলেটগুলো প্রথমে ফেটানো ডিমে ডুবিয়ে তারপর জাপানি পাঙ্কো ব্রেডক্রাম্বে গড়িয়ে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ডিপ ফ্রাই',
+            description:
+                'গরম ডুবো তেলে গোল্ডেন ব্রাউন ও মচমচে হওয়া পর্যন্ত ভেজে সস দিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 360,
+      tags: ['জাপানি', 'মাংস'],
+      rating: 4.6,
+      viewCount: 3400),
+
+// ১৪৪. বিফ মিটবল
+  const FoodItem(
+      id: 'bideshi_144',
+      name: 'বিফ মিটবল',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'ইতালিয়ান হার্বস ও পারমেজান চিজে মাখানো নরম ও জুসি গোল বিফ কিমার বল।',
+      ingredients: [
+        '১.৫ কাপ বিফ কিমা',
+        '১/৪ কাপ ব্রেডক্রাম্ব',
+        '১টি ডিম',
+        '১/৪ কাপ পারমেজান চিজ গ্রেটেড',
+        '১ চা চামচ ওরেগানো ও রসুন পেস্ট',
+        '১ কাপ মেরিনারা টমেটো সস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বল তৈরি',
+            description:
+                'বিফ কিমার সাথে ব্রেডক্রাম্ব, ডিম, চিজ ও মসলা মেখে ছোট ছোট গোল বল বানিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্যান সিয়ার',
+            description:
+                'প্যানে সামান্য অলিভ অয়েল দিয়ে মিটবলগুলো ঘুরিয়ে ফিরিয়ে সবদিক বাদামী করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সসে রান্না',
+            description:
+                'অন্য পাত্রে মেরিনারা টমেটো সস ফুটিয়ে ভেজে রাখা মিটবলগুলো সসের মধ্যে ছেড়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিমারিং',
+            description:
+                'মৃদু আঁচে সস ঘন হওয়া পর্যন্ত ১০ মিনিট ঢাকনা দিয়ে রান্না করে স্প্যাগেটির সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['ইতালিয়ান', 'মাংস'],
+      rating: 4.8,
+      viewCount: 5700),
+
+// ১৪৫. স্প্যানিশ অমলেট
+  const FoodItem(
+      id: 'bideshi_145',
+      name: 'স্প্যানিশ অমলেট',
+      category: 'bideshi',
+      subCategory: 'spanish',
+      emoji: '🍳',
+      description:
+          'ডিম, কুচানো আলু ও পেঁয়াজ ধিমে আঁচে অলিভ অয়েলে ভেজে তৈরি ঐতিহ্যবাহী থিক স্প্যানিশ তরতিয়া।',
+      ingredients: [
+        '৪টি ডিম',
+        '২টি মাঝারি আলু (পাতলা স্লাইস)',
+        '১টি পেঁয়াজ কুচি',
+        '১/৪ কাপ অলিভ অয়েল',
+        'লবণ ও গোলমরিচ গুঁড়া'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু ও পেঁয়াজ ভাজা',
+            description:
+                'প্যানে প্রচুর অলিভ অয়েল দিয়ে আলু ও পেঁয়াজের স্লাইস নরম হওয়া পর্যন্ত অল্প আঁচে ভাজুন, রঙ যেন না বদলায়।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম মিক্সিং',
+            description:
+                'ডিমগুলো ভালো করে ফেটিয়ে নিন এবং তেল ছেঁকে নেওয়া গরম আলু-পেঁয়াজের মিশ্রণটি ডিমে দিয়ে ১০ মিনিট রেখে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অমলেট রান্না',
+            description:
+                'প্যানে সামান্য তেল রেখে মিশ্রণটি ঢালুন এবং ধিমে আঁচে নিচে জমে যাওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফ্লিপিং ও সার্ভ',
+            description:
+                'একটি প্লেটের সাহায্যে অমলেটটি উল্টে দিয়ে অন্য পিঠও ২ মিনিট রান্না করে কেকের মতো কেটে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['স্প্যানিশ', 'ডিম'],
+      rating: 4.7,
+      viewCount: 4500),
+
+// ১৪৬. পাওলা
+  const FoodItem(
+      id: 'bideshi_146',
+      name: 'পাওলা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍞',
+      description:
+          'বাইরে মচমচে এবং ভেতরে একদম নরম ও স্পঞ্জি টেক্সচারের ক্লাসিক ইতালিয়ান কান্ট্রি ব্রেড।',
+      ingredients: [
+        '২ কাপ ময়দা',
+        '১ চা চামচ ইনস্ট্যান্ট ইস্ট',
+        '১ চা চামচ চিনি',
+        '৩/৪ কাপ হালকা গরম পানি',
+        '১ টেবিল চামচ অলিভ অয়েল',
+        '১/২ চা চামচ লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো খামির',
+            description:
+                'গরম পানিতে ইস্ট ও চিনি গুলে ৫ মিনিট রাখুন; ফেনা উঠলে ময়দা, লবণ ও তেল দিয়ে নরম ডো মেখে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্রুফিং',
+            description:
+                'ডোটি তেল মাখিয়ে একটি পাত্রে ঢেকে ১ ঘণ্টা রেখে দিন যতক্ষণ না এটি ফুলে দ্বিগুণ হয়।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'শেপিং',
+            description:
+                'ফুলে ওঠা ডোর বাতাস বের করে ওভাল বা গোল রুটির আকৃতি দিয়ে বেকিং ট্রের ওপর আরও ১৫ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং',
+            description:
+                '২২০ ডিগ্রি সেলসিয়াসে ১৫-২০ মিনিট বেক করুন যতক্ষণ না উপরের ক্রাস্ট শক্ত ও সোনালী রঙের হয়।')
+      ],
+      cookTime: 20,
+      prepTime: 70,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['ইতালিয়ান', 'রুটি'],
+      rating: 4.4,
+      viewCount: 2300),
+
+// ১৪৭. গাজপাচো
+  const FoodItem(
+      id: 'bideshi_147',
+      name: 'গাজপাচো',
+      category: 'bideshi',
+      subCategory: 'spanish',
+      emoji: '🍅',
+      description:
+          'পাকা টমেটো, শসা এবং বেল পেপারের ব্লেন্ডে তৈরি অত্যন্ত রিফ্রেশিং স্প্যানিশ কোল্ড স্যুপ।',
+      ingredients: [
+        '৪টি পাকা টমেটো',
+        '১টি শসা (খোসা ছাড়া)',
+        '১টি লাল বেল পেপার',
+        '১ কোয়া রসুন',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ ভিনেগার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সবজি কাটিং',
+            description:
+                'টমেটো, শসা, বেল পেপার ও রসুন ছোট ছোট টুকরো করে কেটে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'স্মুথ ব্লেন্ড',
+            description:
+                'সব সবজি ব্লেন্ডারে নিয়ে অলিভ অয়েল, ভিনেগার ও সামান্য লবণ দিয়ে একদম মসৃণ করে ব্লেন্ড করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ছাঁকন',
+            description:
+                'ঘন পিউরি মসৃণ করতে একটি বড় ছাঁকনি দিয়ে ভালো করে ছেঁকে আঁশ ও বীজ আলাদা করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'চিলিং',
+            description:
+                'স্যুপটি ফ্রিজে অন্তত ২ ঘণ্টা রেখে একদম ঠান্ডা করে ওপরে অলিভ অয়েল ড্রিপ করে পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 160,
+      tags: ['স্প্যানিশ', 'স্যুপ'],
+      rating: 4.5,
+      viewCount: 3100),
+
+// ১৪৮. টাপাস
+  const FoodItem(
+      id: 'bideshi_148',
+      name: 'টাপাস',
+      category: 'bideshi',
+      subCategory: 'spanish',
+      emoji: '🍽️',
+      description:
+          'গার্লিক শ্রিম্প, ওলিভস এবং টোস্টেড ব্রেডের কম্বিনেশনে তৈরি স্প্যানিশ ফিঙ্গার ফুড বা অ্যাপেটাইজার প্ল্যাটিন।',
+      ingredients: [
+        '১০টি খোসা ছাড়ানো চিংড়ি',
+        '৪ স্লাইস ফ্রেঞ্চ ব্রেড',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১ টেবিল চামচ রসুন কুচি',
+        '১/৪ কাপ ব্ল্যাক ওলিভ',
+        '১ চা চামচ চিলি ফ্লেক্স'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'গার্লিক শ্রিম্প',
+            description:
+                'প্যানে অলিভ অয়েল গরম করে রসুন কুচি ও চিলি ফ্লেক্স দিয়ে চিংড়িগুলো লালচে হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্রেড প্রিপ',
+            description:
+                'রুটির স্লাইসগুলো প্যানে সামান্য অলিভ অয়েল দিয়ে মচমচে করে টোস্ট করে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description:
+                'টোস্টেড রুটির ওপর রসুনের তেল সহ একটি করে চিংড়ি এবং পাশে ব্ল্যাক ওলিভ রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'টুথপিক গেঁথে ছোট ছোট পোর্ফনে স্প্যানিশ স্টাইল স্ন্যাকস বা টাপাস হিসেবে পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 340,
+      tags: ['স্প্যানিশ', 'স্টার্টার'],
+      rating: 4.6,
+      viewCount: 3900),
+
+// ১৪৯. এম্পানাডা
+  const FoodItem(
+      id: 'bideshi_149',
+      name: 'এম্পানাডা',
+      category: 'bideshi',
+      subCategory: 'latin',
+      emoji: '🥟',
+      description:
+          'ক্রিসপি পেস্ট্রি শেলে মোড়ানো স্পাইসি বিফ কিমা ও পেঁয়াজের খাস্তা ল্যাটিন আমেরিকান পাই বা প্যাটি।',
+      ingredients: [
+        '১.৫ কাপ ময়দা',
+        '১/৪ কাপ মাখন (ঠান্ডা)',
+        '১/২ কাপ বিফ কিমা',
+        '১/২ কাপ পেঁয়াজ কুচি',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পেস্ট্রি ডো',
+            description:
+                'ময়দা, ঠান্ডা মাখন ও সামান্য ঠান্ডা পানি দিয়ে মেখে শক্ত পেস্ট্রি ডো বানিয়ে ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'কিমার পুর',
+            description:
+                'তেলে পেঁয়াজ কুচি ভেজে বিফ কিমা, জিরা, মরিচ গুঁড়া ও লবণ দিয়ে শুকনো করে কষিয়ে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফোল্ডিং',
+            description:
+                'ডো বেলে ছোট লুচির মতো করে মাঝে কিমার পুর দিন এবং অর্ধচন্দ্রাকৃতিতে মুড়ে চারপাশ মুচড়ে লক করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফ্রাইং',
+            description:
+                'গরম ডুবো তেলে এম্পানাডাগুলো সোনালী ও মচমচে হওয়া পর্যন্ত মাঝারি আঁচে ভাজুন।')
+      ],
+      cookTime: 35,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['ল্যাটিন', 'স্ন্যাকস'],
+      rating: 4.7,
+      viewCount: 4200),
+
+// ১৫০. আরেপা
+  const FoodItem(
+      id: 'bideshi_150',
+      name: 'আরেপা',
+      category: 'bideshi',
+      subCategory: 'venezuelan',
+      emoji: '🫓',
+      description:
+          'ভেনেজুয়েলার কর্নমিল বা ভুট্টার আটার তৈরি ফ্ল্যাটব্রেড, যা মাঝখান থেকে কেটে চিজ ও চিকেন স্টাফ করা হয়।',
+      ingredients: [
+        '১ কাপ প্রি-কুকড সাদা কর্নমিল (P.A.N.)',
+        '১ কাপ হালকা গরম পানি',
+        '১/২ কাপ চিজ গ্রেটেড',
+        '১ চা চামচ মাখন',
+        '১/২ চা চামচ লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আরেপা ডো',
+            description:
+                'পানিতে লবণ ও কর্নমিল আস্তে আস্তে মিশিয়ে ৫ মিনিট মেখে একটি মসৃণ ও নরম ডো তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্যাটি শেপ',
+            description:
+                'ডো থেকে ছোট বল নিয়ে হাত দিয়ে চেপে মাঝারি পুরু চ্যাপ্টা ডিস্ক বা প্যাটির আকার দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিলিং',
+            description:
+                'প্যানে মাখন দিয়ে আরেপাগুলো প্রতি পিঠ ৫-৭ মিনিট করে হালকা পোড়া দাগ ও ক্রাস্ট হওয়া পর্যন্ত সেঁকে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'স্টাফিং',
+            description:
+                'গরম আরেপা মাঝখান থেকে পকেট স্টাইলে কেটে ভেতরে প্রচুর চিজ বা চিকেন ভরে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['ভেনেজুয়েলান', 'রুটি'],
+      rating: 4.5,
+      viewCount: 2800),
+
+// ১৫১. চিকেন এনচিলাদা
+  const FoodItem(
+      id: 'bideshi_151',
+      name: 'চিকেন এনচিলাদা',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🌮',
+      description:
+          'স্পাইসি শ্রাডেড চিকেন ভরা টরটিয়া রোল, যা লাল এনচিলাদা সস ও চিজে ডুবিয়ে বেক করা হয়।',
+      ingredients: [
+        '৪টি টরটিয়া রুটি',
+        '১ কাপ সেদ্ধ ছেঁড়া চিকেন',
+        '১ কাপ এনচিলাদা সস (টমেটো-চিলি বেস)',
+        '১ কাপ মোজারেলা চিজ',
+        '১/২ চা চামচ মেক্সিকান মসলা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ফিলিং',
+            description:
+                'ছেঁড়া চিকেন, সামান্য এনচিলাদা সস এবং মেক্সিকান মসলা একসাথে প্যানে মিশিয়ে পুর তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রোলিং',
+            description:
+                'প্রতিটি টরটিয়া রুটির মাঝে চিকেন ও চিজের পুর দিয়ে শক্ত করে রোলের মতো মুড়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস বাথ',
+            description:
+                'বেকিং ডিশে রোলগুলো পাশাপাশি সাজিয়ে ওপর থেকে বাকি পুরো এনচিলাদা সস ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং',
+            description:
+                'ওপর থেকে প্রচুর মোজারেলা চিজ ছড়িয়ে ১৯০ ডিগ্রিতে ২০ মিনিট বাবলি হওয়া পর্যন্ত বেক করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['মেক্সিকান', 'মাংস'],
+      rating: 4.8,
+      viewCount: 5300),
+
+// ১৫২. চিকেন কেসাডিলা
+  const FoodItem(
+      id: 'bideshi_152',
+      name: 'চিকেন কেসাডিলা',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🧀',
+      description:
+          'টরটিয়া রুটির মাঝে টেস্টি চিকেন ও ক্রাফট মোজারেলা চিজের পুর দিয়ে প্যানে সেঁকা মেক্সিকান স্যান্ডউইচ।',
+      ingredients: [
+        '২টি বড় টরটিয়া রুটি',
+        '১/২ কাপ রান্না করা চিকেন কুচি',
+        '৩/৪ কাপ মোজারেলা চিজ',
+        '২ টেবিল চামচ ক্যাপসিকাম কুচি',
+        '১ চা চামচ মাখন'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বেস প্রস্তুত',
+            description:
+                'প্যানে হালকা মাখন গলিয়ে একটি টরটিয়া রুটি বিছিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'লেয়ারিং',
+            description:
+                'রুটির অর্ধেক অংশে চিজ, চিকেন কুচি ও ক্যাপসিকাম ছড়িয়ে দিয়ে ওপর থেকে আবার চিজ দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফোল্ডিং ও টোস্ট',
+            description:
+                'রুটিটি মাঝখান থেকে ভাজ করে অর্ধচন্দ্রাকার করুন এবং চিজ গলানো পর্যন্ত এপিঠ-ওপিঠ চেপে সেঁকে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কাটিং',
+            description:
+                'রুটি মচমচে হলে নামিয়ে পিৎজার মতো তিনকোণা টুকরো করে কেটে টক দই বা সাওয়ার ক্রিমের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 400,
+      tags: ['মেক্সিকান', 'চিজ'],
+      rating: 4.7,
+      viewCount: 6700),
+
+// ১৫৩. টাকো বোল
+  const FoodItem(
+      id: 'bideshi_153',
+      name: 'টাকো বোল',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🥗',
+      description:
+          'রাইস, স্পাইসি চিকেন কিমা, সুইট কর্ন, ব্ল্যাক বিন্স ও সালসার হেলদি মেক্সিকান সালাদ বোল।',
+      ingredients: [
+        '১/২ কাপ সেদ্ধ ভাত',
+        '১/২ কাপ মেক্সিকান চিকেন কিমা',
+        '১/৪ কাপ ব্ল্যাক বিন্স/কালি শিম',
+        '১/৪ কাপ সুইট কর্ন',
+        '২ টেবিল চামচ টমেটো সালসা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'রাইস বেস',
+            description:
+                'একটি ছড়ানো সালাদ বাটিতে প্রথমে হালকা গরম সেদ্ধ ভাত বিছিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্রোটিন ও ভেজি',
+            description:
+                'ভাতের ওপর একপাশে স্পাইসি মেক্সিকান চিকেন কিমা এবং অন্য পাশে বিন্স ও সুইট কর্ন রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সালসা ড্রপ',
+            description:
+                'মাঝখানে ফ্রেশ টমেটো-পেঁয়াজের কুচানো সালসা এবং সামান্য টক দই বা সাওয়ার ক্রিম দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টস ও সার্ভ',
+            description:
+                'ওপর থেকে সামান্য লেবুর রস ও ধনেপাতা ছিটিয়ে মেখে খাওয়ার জন্য রেডি করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 1,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['মেক্সিকান', 'সালাদ'],
+      rating: 4.6,
+      viewCount: 4100),
+
+// ১৫৪. বেকড নাচোস
+  const FoodItem(
+      id: 'bideshi_154',
+      name: 'বেকড নাচোস',
+      category: 'bideshi',
+      subCategory: 'mexican',
+      emoji: '🧀',
+      description:
+          'ক্রিসপি টরটিয়া চিপসের ওপর চিজি সস, কিমা ও ওলিভ লেয়ার করে ওভেনে বেক করা ক্রিসপি নাচোস।',
+      ingredients: [
+        '১ প্যাকেট টরটিয়া নাচোস চিপস',
+        '১/২ কাপ রান্না করা কিমা',
+        '৩/৪ কাপ চিজ সস/মোজারেলা চিজ',
+        '২ টেবিল চামচ হ্যাপালিনো স্লাইস'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'প্রথম লেয়ার',
+            description:
+                'বেকিং ট্রের ওপর নাচোস চিপসগুলো ছড়িয়ে দিয়ে প্রথম স্তর তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'টপিংস লোড',
+            description:
+                'চিপসের ওপর রান্না করা কিমা, হ্যাপালিনো (ঝাল মরিচ) ও ওলিভ স্লাইস সমানভাবে ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ ফ্লাড',
+            description:
+                'সবকিছুর ওপর প্রচুর পরিমাণে মোজারেলা চিজ বা লিকুইড চিজ সস ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কুইক বেক',
+            description:
+                '১৮০ ডিগ্রি ওভেনে ৫-৭ মিনিট বেক করুন যতক্ষণ না চিজ গলে বুদবুদ সৃষ্টি করে।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['মেক্সিকান', 'চিজ'],
+      rating: 4.8,
+      viewCount: 8200),
+
+// ১৫৫. হানি চিকেন
+  const FoodItem(
+      id: 'bideshi_155',
+      name: 'হানি চিকেন',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍗',
+      description:
+          'ক্রিসপি ফ্রাইড চিকেন কিউব ও মধুর মিষ্টি-নোনতা গ্লেজি সসের অত্যন্ত জনপ্রিয় চাইনিজ ডিশ।',
+      ingredients: [
+        '১ কাপ চিকেন কিউব',
+        '২ টেবিল চামচ মধু',
+        '১ টেবিল চামচ সয়া সস',
+        '১ চা চামচ রসুন কুচি',
+        '১টি ডিম ও ২ টেবিল চামচ কর্নফ্লাওয়ার (কোট করার জন্য)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ফ্রাই',
+            description:
+                'চিকেন ডিম ও কর্নফ্লাওয়ার দিয়ে মেখে গরম তেলে ক্রিসপি করে ডিপ ফ্রাই করে তুলে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সস প্রিপারেশন',
+            description:
+                'প্যানে সামান্য তেলে রসুন কুচি ভেজে সয়া সস, মধু এবং সামান্য পানি দিয়ে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'টসিং',
+            description:
+                'ঘন আঠালো সসের মধ্যে ভেজে রাখা ক্রিসপি চিকেনগুলো ঢেলে দ্রুত হাই হিটে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গার্নিশ',
+            description:
+                'সস চিকেনের গায়ে লেগে চকচকে হয়ে উঠলে ওপরে সাদা তিল ছিটিয়ে নামিয়ে নিন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 420,
+      tags: ['চাইনিজ', 'মাংস'],
+      rating: 4.7,
+      viewCount: 5900),
+
+// ১৫৬. অরেঞ্জ চিকেন
+  const FoodItem(
+      id: 'bideshi_156',
+      name: 'অরেঞ্জ চিকেন',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍗',
+      description:
+          'ফ্রেশ কমলার রস, সয়া সস ও চিনির টক-মিষ্টি ঘন সসে মাখানো মুচমুচে চাইনিজ চিকেন।',
+      ingredients: [
+        '১ কাপ মুরগির মাংসের টুকরো',
+        '১/২ কাপ ফ্রেশ কমলার রস (Orange Juice)',
+        '১ টেবিল চামচ ব্রাউন সুগার',
+        '১ চা চামচ কমলার খোসা কুচি (Zest)',
+        '১ টেবিল চামচ কর্নফ্লাওয়ার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ক্রিস্প',
+            description:
+                'চিকেন কর্নফ্লাওয়ারে কোট করে ডুবো তেলে কড়া করে ভেজে তেল ঝরিয়ে একপাশে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'অরেঞ্জ সস',
+            description:
+                'প্যানে কমলার রস, চিনি, সয়া সস, রসুন কুচি ও অরেঞ্জ জেস্ট একসাথে ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'থিকেনিং',
+            description:
+                'সামান্য পানিতে কর্নফ্লাওয়ার গুলে সসে দিয়ে নাড়ুন যতক্ষণ না সসটি ঘন ও আঠালো হয়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কম্বাইন',
+            description:
+                'সসে চিকেনগুলো দিয়ে ১ মিনিট নাড়ুন যেন সসটি প্রতিটি চিকেনের গায়ে ভালোভাবে কোট হয়ে যায়।')
+      ],
+      cookTime: 32,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 430,
+      tags: ['চাইনিজ', 'মাংস'],
+      rating: 4.6,
+      viewCount: 5100),
+
+// ১৫৭. সিজলিং বিফ
+  const FoodItem(
+      id: 'bideshi_157',
+      name: 'সিজলিং বিফ',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🥩',
+      description:
+          'গরম কাস্ট আয়রন সিজলার প্লেটে ধোঁয়া ওঠা স্পাইসি বিফ স্লাইস, ক্যাপসিকাম ও পেঁয়াজের রাজকীয় মেলবন্ধন।',
+      ingredients: [
+        '১.৫ কাপ পাতলা বিফ স্লাইস',
+        '১/২ কাপ ক্যাপসিকাম ও পেঁয়াজ স্কয়ার কাটা',
+        '১ টেবিল চামচ ওয়েস্টার সস',
+        '১ টেবিল চামচ চিলি সস',
+        '১ টেবিল চামচ বাটার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বিফ নরম করা',
+            description:
+                'বিফ স্লাইসগুলো আদা-রসুন ও সয়া সস দিয়ে মেখে প্যানে হাই হিটে ৫-৭ মিনিট সতে করে সেদ্ধ করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি ও সস',
+            description:
+                'বিফের সাথে ক্যাপসিকাম, পেঁয়াজ, ওয়েস্টার সস ও চিলি সস দিয়ে আরও ২ মিনিট রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'প্লেট গরম',
+            description:
+                'পাশাপাশি চুলার ওপর লোহার সিজলিং প্লেটটি আধ ঘণ্টা তীব্র আঁচে একদম লালচে গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সিজল ইফেক্ট',
+            description:
+                'গরম প্লেটে মাখন ঘষে রান্না করা বিফ ঢেলে দিন; ধোঁয়া ও সিজলিং শব্দসহ দ্রুত টেবিলে পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 460,
+      tags: ['চাইনিজ', 'মাংস'],
+      rating: 4.9,
+      viewCount: 7300),
+
+// ১৫৮. চিকেন সিজলার
+  const FoodItem(
+      id: 'bideshi_158',
+      name: 'চিকেন সিজলার',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍗',
+      description:
+          'হট আয়রন প্লেটে বাটার ও গার্লিক সসে ফুটতে থাকা জুসি চিকেন ব্রেস্ট ও ফ্রেশ ভেজিটেবল।',
+      ingredients: [
+        '১টি বড় চিকেন ব্রেস্ট ফিলানি',
+        '১/২ কাপ আধা-সেদ্ধ সবজি (গাজর, ব্রকলি)',
+        '১/৪ কাপ ব্ল্যাক পেপার সস',
+        '১ টেবিল চামচ বাটার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন স্টেক',
+            description:
+                'চিকেন ব্রেস্ট গোলমরিচ ও সয়া সস দিয়ে ম্যারিনেট করে গ্রিল প্যানে ভালো করে সেঁকে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি সতে',
+            description:
+                'একই প্যানে বাটার দিয়ে সেদ্ধ গাজর ও ব্রকলি সামান্য লবণ সহ হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'প্লেট রেডি',
+            description:
+                'লোহার সিজলার ডিশটি সরাসরি আগুনে অত্যন্ত গরম করে কাঠের ট্রে-র ওপর রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description:
+                'গরম প্লেটে বাঁধাকপি পাতা বিছিয়ে গ্রিলড চিকেন ও সবজি রাখুন এবং ওপর থেকে ব্ল্যাক পেপার সস ঢেলে ধোঁয়া তুলুন।')
+      ],
+      cookTime: 33,
+      prepTime: 20,
+      servings: 1,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['চাইনিজ', 'মাংস'],
+      rating: 4.8,
+      viewCount: 6400),
+
+// ১৫৯. পেরি পেরি চিকেন
+  const FoodItem(
+      id: 'bideshi_159',
+      name: 'পেরি পেরি চিকেন',
+      category: 'bideshi',
+      subCategory: 'japanese',
+      emoji: '🍗',
+      description:
+          'ঝাল আফ্রিকান বার্ডস আই চিলি ফ্লেভারের পেরি পেরি সসে ম্যারিনেট করা স্পাইসি গ্রিলড চিকেন।',
+      ingredients: [
+        '২ টুকরো চিকেন (লেগ বা ব্রেস্ট)',
+        '১/৪ কাপ পেরি পেরি সস',
+        '১ টেবিল চামচ লেবুর রস',
+        '১ টেবিল চামচ অলিভ অয়েল',
+        '১ চা চামচ রসুন পেস্ট'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেশন',
+            description:
+                'চিকেনে ছুরি দিয়ে দাগ কেটে পেরি পেরি সস, লেবুর রস, তেল ও রসুন দিয়ে অন্তত ২ ঘণ্টা ম্যারিনেট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'গ্রিলিং',
+            description:
+                'গ্রিল প্যান বা ওভেনে চিকেন টুকরোগুলো মাঝারি আঁচে প্রতি পিঠ ১২-১৫ মিনিট গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস বাস্টিং',
+            description:
+                'রান্নার মাঝে মাঝে বেঁচে যাওয়া পেরি পেরি সস ব্রাশ দিয়ে চিকেনের ওপর মাখিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description:
+                'চিকেন পুরোপুরি সেদ্ধ ও স্মোকি পোড়া দাগ লাগলে নামিয়ে ফ্রেঞ্চ ফ্রাইয়ের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 120,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 400,
+      tags: ['জাপানি', 'মাংস'],
+      rating: 4.7,
+      viewCount: 5800),
+
+// ১৬০. গ্রিলড ফিশ
+  const FoodItem(
+      id: 'bideshi_160',
+      name: 'গ্রিলড ফিশ',
+      category: 'bideshi',
+      subCategory: 'mediterranean',
+      emoji: '🐟',
+      description:
+          'লেবুর রস, অলিভ অয়েল এবং ভূমধ্যসাগরীয় হার্বসে ম্যারিনেট করা ওভেনে পোড়ানো হেলদি গ্রিলড ফিশ।',
+      ingredients: [
+        '১টি আস্ত কোরাল বা রুই মাছ (পরিষ্কার করা)',
+        '২ টেবিল চামচ লেবুর রস',
+        '১ টেবিল চামচ অলিভ অয়েল',
+        '১/২ চা চামচ ওরেগানো ও গোলমরিচ',
+        '২ কোয়া রসুন কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাছ কাটা',
+            description:
+                'মাছের গায়ে ছুরি দিয়ে আড়াআড়ি গভীর দাগ কেটে নিন যেন মসলা ভেতরে সহজে ঢোকে।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যারিনেট',
+            description:
+                'লেবুর রস, অলিভ অয়েল, ওরেগানো, গোলমরিচ গুঁড়া, রসুন ও লবণ একসাথে মিশিয়ে মাছের গায়ে ভালো করে মাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল বা বেক',
+            description:
+                'গ্রিল প্যানে বা ওভেনে ২০০ ডিগ্রিতে প্রতি পিঠ ১০-১২ মিনিট করে মাছটি পারফেক্টলি সেঁকে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সার্ভিং',
+            description:
+                'মাছ নরম ও ক্রিসপি হলে নামিয়ে ওপর থেকে ধনেপাতা ও লেবুর স্লাইস দিয়ে পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['মাছ', 'গ্রিল'],
+      rating: 4.6,
+      viewCount: 4300),
+
+// ১৬১. স্মোকড চিকেন
+  const FoodItem(
+      id: 'bideshi_161',
+      name: 'স্মোকড চিকেন',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍗',
+      description:
+          'কয়লার ধোঁয়ায় বা বারবিকিউ পিটে মৃদু আঁচে ধীরে ধীরে রান্না করা অত্যন্ত সুগন্ধি ও জুসি স্মোকি চিকেন।',
+      ingredients: [
+        '২ টুকরো বড় মুরগির মাংস',
+        '২ টেবিল চামচ বারবিকিউ সস',
+        '১ চা চামচ স্মোকড পেপরিকা গুঁড়া',
+        '১ চা চামচ মাখন',
+        '১টি কয়লার টুকরো (ধোঁয়ার জন্য)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মসলা মাখানো',
+            description:
+                'চিকেন বারবিকিউ সস, পেপরিকা গুঁড়া, আদা-রসুন পেস্ট ও লবণ দিয়ে ৩০ মিনিট ম্যারিনেট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্যান কুক',
+            description:
+                'প্যানে মাখন দিয়ে চিকেন ঢেকে মাঝারি আঁচে দুই পিঠ ভালো করে সেদ্ধ ও পোড়া পোড়া করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্মোকিং ইফেক্ট',
+            description:
+                'পানের মাঝে একটি ছোট বাটি রেখে জ্বলন্ত কয়লা রাখুন এবং কয়লার ওপর সামান্য ঘি বা তেল ঢালুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'দমে রাখা',
+            description:
+                'ধোঁয়া বের হওয়া মাত্রই প্যানের ঢাকনা শক্ত করে বন্ধ করে ৫ মিনিট রাখুন যেন স্মোকি ফ্লেভার মিশে যায়।')
+      ],
+      cookTime: 45,
+      prepTime: 30,
+      servings: 2,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['মাংস', 'স্মোক'],
+      rating: 4.8,
+      viewCount: 5100),
+
+// ১৬২. চিজ বল
+  const FoodItem(
+      id: 'bideshi_162',
+      name: 'চিজ বল',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🧀',
+      description:
+          'ম্যাশড আলু ও মসলার গোল বলের ঠিক মাঝে গলানো চিজ ভরা অত্যন্ত পপুলার ক্রিসপি স্ন্যাকস।',
+      ingredients: [
+        '১ কাপ সেদ্ধ আলু (ম্যাশড)',
+        '১/২ কাপ মোজারেলা চিজ (ছোট কিউব করা)',
+        '১টি ডিম',
+        '১/২ কাপ ব্রেডক্রাম্ব',
+        '১/২ চা চামচ গোলমরিচ গুঁড়া',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু রেডি',
+            description:
+                'ম্যাশড আলুর সাথে গোলমরিচ গুঁড়া ও লবণ ভালো করে মেখে ছোট ছোট ডো এর ভাগ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিজ ভরা',
+            description:
+                'আলুর বল হাতের তালুতে চ্যাপ্টা করে মাঝখানে একটি চিজের কিউব রেখে চারপাশ ভালোভাবে মুড়ে গোল বল বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description:
+                'বলগুলো প্রথমে ফেটানো ডিমে ডুবিয়ে তারপর ব্রেডক্রাম্বে গড়িয়ে ডবল কোট করে নিন যেন চিজ বের না হয়।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ডিপ ফ্রাই',
+            description:
+                'গরম ডুবো তেলে বলগুলো গোল্ডেন ব্রাউন হওয়া পর্যন্ত কড়া করে ভেজে টমেটো সসের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['চিজ', 'স্ন্যাকস'],
+      rating: 4.5,
+      viewCount: 6900),
+
+// ১৬৩. পটেটো ওয়েজেস
+  const FoodItem(
+      id: 'bideshi_163',
+      name: 'পটেটো ওয়েজেস',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍟',
+      description:
+          'খোসা সহ লম্বা কোণাকুণি কাটা আলু, পেপরিকা ও ওরেগানো মাখিয়ে ডিপ ফ্রাই করা মচমচে ওয়েজেস।',
+      ingredients: [
+        '৩টি বড় আলু (খোসা সহ)',
+        '১ চা চামচ পেপরিকা গুঁড়া',
+        '১/২ চা চামচ ওরেগানো',
+        '২ টেবিল চামচ কর্নফ্লাওয়ার',
+        'লবণ',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কাটিং ও বয়েল',
+            description:
+                'আলু ভালো করে ধুয়ে খোসা সহ লম্বা ৮টি তিনকোণা টুকরো (Wedges) করে কেটে পানিতে ৫ মিনিট আধা-সেদ্ধ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শুকানো ও সিজনিং',
+            description:
+                'আলুর পানি পুরোপুরি ঝরিয়ে শুকিয়ে নিন; এরপর পেপরিকা, ওরেগানো, লবণ ও কর্নফ্লাওয়ার দিয়ে টস করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোট করা',
+            description:
+                'শুকনো কর্নফ্লাওয়ারের গুঁড়া যেন প্রতিটি আলুর গায়ে ভালোভাবে লেগে ক্রিসপি লেয়ার তৈরি করে।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ডিপ ফ্রাই',
+            description:
+                'গরম ডুবো তেলে মিডিয়াম হাই হিটে ওয়েজেসগুলো গাঢ় সোনালী ও মচমচে হওয়া পর্যন্ত ভেজে তুলুন।')
+      ],
+      cookTime: 22,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['আলু', 'ফ্রাই'],
+      rating: 4.6,
+      viewCount: 8400),
+
+// ১৬৪.  চিকেন স্ট্রিপস
+  const FoodItem(
+      id: 'bideshi_164',
+      name: 'চিকেন স্ট্রিপস',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🍗',
+      description:
+          'মুরগির বুকের মাংস লম্বা ফালফালি করে কেটে ক্রিসপি ব্রেডক্রাম্বে জড়িয়ে ভাজা ফিঙ্গার ফ্রাই।',
+      ingredients: [
+        '১ কাপ চিকen ব্রেস্ট (লম্বা কাটা)',
+        '১টি ডিম',
+        '১/২ কাপ ময়দা',
+        '১/২ কাপ ব্রেডক্রাম্ব',
+        '১/২ চা চামচ রসুন গুঁড়া ও মরিচ গুঁড়া',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেট',
+            description:
+                'চিকেন স্ট্রিপগুলো রসুন গুঁড়া, মরিচ গুঁড়া ও সামান্য লবণ দিয়ে ১০ মিনিট মাখিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শুকনো কোটিং',
+            description:
+                'স্ট্রিপগুলো প্রথমে ময়দায় গড়িয়ে নিন, তারপর অতিরিক্ত ময়দা ঝেড়ে ফেলুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ক্রাম্ব কোটিং',
+            description:
+                'ময়দা মাখানো চিকেন ফেটানো ডিমে ডুবিয়ে সরাসরি ব্রেডক্রাম্বের ওপর রেখে চেপে চেপে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফ্রাইং',
+            description:
+                'গরম তেলে স্ট্রিপগুলো ছেড়ে এপিঠ-ওপিঠ ৩-৪ মিনিট করে গোল্ডেন ক্রিসপি হওয়া পর্যন্ত ভেজে নিন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 360,
+      tags: ['মাংস', 'ফ্রাই'],
+      rating: 4.7,
+      viewCount: 5500),
+
+// ১৬৫. চিকেন সসেজ
+  const FoodItem(
+      id: 'bideshi_165',
+      name: 'চিকেন সসেজ',
+      category: 'bideshi',
+      subCategory: 'american',
+      emoji: '🌭',
+      description:
+          'স্মুথ চিকেন পেস্ট ও হালকা মসলার মিশ্রণে তৈরি ঘরে তৈরি স্বাস্থ্যকর ও জুসি চিকেন সসেজ।',
+      ingredients: [
+        '১ কাপ মুরগির মাংসের কিমা (একদম মিহি)',
+        '১টি ডিমের সাদা অংশ',
+        '১/৪ চা চামচ রসুন পেস্ট',
+        '১/৪ চা চামচ গোলমরিচ গুঁড়া',
+        '১ চা চামচ কর্নফ্লাওয়ার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্লেন্ডিং',
+            description:
+                'ব্লেন্ডারে মিহি কিমা, ডিমের সাদা অংশ, রসুন, গোলমরিচ, কর্নফ্লাওয়ার ও লবণ দিয়ে একদম মসৃণ পেস্ট বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'র‍্যাপিং',
+            description:
+                'প্লাস্টিক ক্লিং র‍্যাপের ওপর চামচ দিয়ে পেস্ট রেখে সিলিন্ডার বা সসেজের লম্বা আকারে টাইট করে মুড়ে দুই মাথা সুতো দিয়ে বাঁধুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'স্টিমিং বা বয়েলিং',
+            description:
+                'ফুটন্ত গরম পানিতে প্লাস্টিক মোড়ানো সসেজগুলো দিয়ে ১০-১২ মিনিট মাঝারি আঁচে সেদ্ধ করে শক্ত করে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'প্যান ফ্রাই',
+            description:
+                'প্লাস্টিক খুলে সসেজগুলো প্যানে সামান্য বাটার বা তেল দিয়ে হালকা দাগ লাগা পর্যন্ত ভেজে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['মাংস', 'সসেজ'],
+      rating: 4.5,
+      viewCount: 3200),
+
+// ১৬৬. গার্লিক পাস্তা
+  const FoodItem(
+      id: 'bideshi_166',
+      name: 'গার্লিক পাস্তা',
+      category: 'bideshi',
+      subCategory: 'italian',
+      emoji: '🍝',
+      description:
+          'প্রচুর রসুন কুচি, এক্সট্রা ভার্জিন অলিভ অয়েল ও চিলি ফ্লেক্সের ক্লাসিক ইতালিয়ান স্প্যাগেটি এ্যগলিও ইওলিও।',
+      ingredients: [
+        '১.৫ কাপ স্প্যাগেটি পাস্তা',
+        '৩ টেবিল চামচ অলিভ অয়েল',
+        '১.৫ টেবিল চামচ রসুন (পাতলা স্লাইস)',
+        '১ চা চামচ চিলি ফ্লেক্স',
+        '২ টেবিল চামচ পার্সলে কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাস্তা ফুটানো',
+            description:
+                'লবণ পানিতে স্প্যাগেটি আল দান্তে সেদ্ধ করে জল ঝরিয়ে নিন (১/৪ কাপ পাস্তা ফোটানো জল রাখুন)।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ইনফিউজড অয়েল',
+            description:
+                'প্যানে ঠান্ডা অলিভ অয়েল ও রসুনের স্লাইস দিয়ে মৃদু আঁচে ভাজুন যতক্ষণ না রসুন সুগন্ধি ও হালকা সোনালী হয়।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'হার্বস যোগ',
+            description:
+                'রসুনের তেলে চিলি ফ্লেক্স দিন, তারপর সেদ্ধ স্প্যাগেটি ও রেখে দেওয়া পাস্তা ফোটানো জলটুকু ঢেলে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'টসিং',
+            description:
+                'সবকিছু হাই হিটে ১ মিনিট অনবরত টস করুন এবং ওপরে ফ্রেশ পার্সলে কুচি ছড়িয়ে নামিয়ে নিন।')
+      ],
+      cookTime: 25,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['পাস্টা', 'রসুন'],
+      rating: 4.6,
+      viewCount: 4900),
+
+// ১৬৭. চিলি চিকেন
+  const FoodItem(
+      id: 'bideshi_167',
+      name: 'চিলি চিকেন',
+      category: 'bideshi',
+      subCategory: 'chinese',
+      emoji: '🍗',
+      description:
+          'রসুন, সয়া সস, ক্যাপসিকাম ও প্রচুর কাঁচামরিচের ঝাল-মিষ্টি ঘন গ্রেভিতে মাখানো ইন্দো-চাইনিজ চিকেন।',
+      ingredients: [
+        '১ কাপ বোনলেস চিকেন কিউব',
+        '১/২ কাপ ক্যাপসিকাম ও পেঁয়াজ কিউব',
+        '৪-৫টি কাঁচামরিচ ফালি',
+        '১ টেবিল চামচ ডার্ক সয়া সস',
+        '১ টেবিল চামচ চিলি সস',
+        '১ টেবিল চামচ কর্নফ্লাওয়ার'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ফ্রাই',
+            description:
+                'চিকেন টুকরোগুলো কর্নফ্লাওয়ার ও গোলমরিচ দিয়ে মেখে তেলের মধ্যে হালকা ক্রিসপি করে ভেজে তুলে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ভেজি সতে',
+            description:
+                'প্যানে তেল গরম করে রসুন কুচি, আদা কুচি, ক্যাপসিকাম ও পেঁয়াজ হাই হিটে ১ মিনিট সতে করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রেভি প্রিপ',
+            description:
+                'সয়া সস, চিলি সস, টমেটো সস ও সামান্য পানিতে গোলানো কর্নফ্লাওয়ার প্যানে দিয়ে গ্রেভি ফুটিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিক্সিং ও সার্ভ',
+            description:
+                'ফুটন্ত ঘন গ্রেভিতে ভাজা চিকেন ও কাঁচামরিচ দিয়ে ১ মিনিট হাই হিটে নেড়ে আঠালো করে নামিয়ে নিন।')
+      ],
+      cookTime: 30,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 400,
+      tags: ['চাইনিজ', 'ঝাল'],
+      rating: 4.8,
+      viewCount: 9200),
 ];
 
 // ============================================================================
@@ -14090,116 +21166,2820 @@ final List<FoodItem> snackFoods = [
       tags: ['বাদাম', 'ভাজা', 'হেলদি'],
       rating: 4.5,
       viewCount: 3400),
-
-  // 44. ডাল ভাজা
+  // 45. আলু ভাজি
   const FoodItem(
-      id: 'snack_044',
-      name: 'ডাল ভাজা',
+      id: 'snack_045',
+      name: 'আলু ভাজি',
       category: 'snacks',
       subCategory: 'snack',
-      emoji: '🫘',
+      emoji: '🥔',
       description:
-          'শুকনো তাওয়ায় ভাজা মসুর/মুগ ডাল — দ্রুত তৈরি ও পুষ্টিকর নাস্তা।',
+          'সরষে ও পাঁচফোড়নে রান্না আলু ভাজি — রুটি বা পরোটার সেরা সঙ্গী।',
       ingredients: [
-        '১ কাপ মসুর/মুগ ডাল',
-        '১ টেবিল চামচ তেল',
-        '১/২ চা চামচ জিরা',
+        '৪ টি আলু (লম্বা করে কাটা)',
+        '১/২ চা চামচ পাঁচফোড়ন',
         '১/২ চা চামচ হলুদ',
-        'লবণ',
-        'কাঁচা মরিচ'
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '২ টি কাঁচা মরিচ',
+        '১ টি শুকনো মরিচ',
+        '২ টেবিল চামচ সরিষার তেল',
+        'লবণ স্বাদমতো'
       ],
       steps: [
         RecipeStep(
             stepNumber: 1,
-            title: 'ডাল ধোয়া',
-            description: 'ডাল ধুয়ে পানি ঝরিয়ে নিন।'),
+            title: 'আলু কাটা',
+            description:
+                'আলু ধুয়ে খোসা ছাড়িয়ে লম্বা করে পাতলা স্লাইস করুন।'),
         RecipeStep(
             stepNumber: 2,
-            title: 'ভাজা',
-            description: 'কড়াইতে তেল ও জিরা দিয়ে ডাল শুকনো করে ভাজুন।'),
+            title: 'ফোড়ন',
+            description:
+                'কড়াইতে তেল গরম করে শুকনো মরিচ ও পাঁচফোড়ন দিয়ে ফোড়ন দিন।'),
         RecipeStep(
             stepNumber: 3,
-            title: 'মসলা',
-            description: 'হলুদ, লবণ ও কাঁচা মরিচ মিশিয়ে নিন।'),
+            title: 'আলু দেওয়া',
+            description:
+                'আলু দিয়ে হলুদ, মরিচ গুঁড়া ও লবণ মিশিয়ে মাঝারি আঁচে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'আলু সোনালি ও ক্রিসপি হওয়া পর্যন্ত ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'কাঁচা মরিচ ছিটিয়ে গরম রুটির সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 180,
+      tags: ['ভেজিটেরিয়ান', 'ভাজি', 'নাস্তা'],
+      rating: 4.6,
+      viewCount: 5100),
+
+  // 46. বেগুন ভাজি
+  const FoodItem(
+      id: 'snack_046',
+      name: 'বেগুন ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍆',
+      description: 'সরিষার তেলে পোড়া বেগুন ভাজি — ভাত বা রুটির সাথে অসাধারণ।',
+      ingredients: [
+        '১ টি বড় বেগুন (গোলাকার কাটা)',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ ধনিয়া গুঁড়া',
+        '৩ টেবিল চামচ সরিষার তেল',
+        'লবণ স্বাদমতো'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বেগুন প্রস্তুত',
+            description:
+                'বেগুন গোলাকার করে ০.৫ সেমি পুরু কাটুন। লবণ মাখিয়ে ৫ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description: 'হলুদ, মরিচ ও ধনিয়া গুঁড়া মিশিয়ে বেগুনে মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description:
+                'কড়াইতে সরিষার তেল গরম করে বেগুন দুই পাশ সোনালি করে ভাজুন।'),
         RecipeStep(
             stepNumber: 4,
             title: 'পরিবেশন',
-            description: 'ঠান্ডা হয়ে গেলে চা বা দইয়ের সাথে পরিবেশন করুন।')
+            description: 'গরম গরম ভাত বা পরোটার সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 170,
+      tags: ['ভেজিটেরিয়ান', 'ভাজি', 'বেগুন'],
+      rating: 4.5,
+      viewCount: 4200),
+
+  // 47. করলা ভাজি
+  const FoodItem(
+      id: 'snack_047',
+      name: 'করলা ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥒',
+      description:
+          'তেঁতো করলার স্বাস্থ্যকর ভাজি — ডায়াবেটিস ও হজমের জন্য উপকারী।',
+      ingredients: [
+        '২ টি মাঝারি করলা (পাতলা কাটা)',
+        '১ টি পেঁয়াজ কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '২ টেবিল চামচ তেল',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'করলা প্রস্তুত',
+            description:
+                'করলা পাতলা করে কেটে লবণ মাখিয়ে ১০ মিনিট রেখে পানি চিপে ফেলুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পেঁয়াজ ভাজা',
+            description: 'তেলে পেঁয়াজ সোনালি করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'করলা দেওয়া',
+            description: 'করলা দিয়ে হলুদ, মরিচ ও লবণ মিশিয়ে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                'মাঝারি আঁচে নরম ও হালকা ক্রিসপি হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত বা রুটির সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 150,
+      tags: ['ভেজিটেরিয়ান', 'করলা', 'স্বাস্থ্যকর'],
+      rating: 4.3,
+      viewCount: 3200),
+
+  // 48. ঢেঁড়স ভাজি
+  const FoodItem(
+      id: 'snack_048',
+      name: 'ঢেঁড়স ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥬',
+      description: 'শুকনো মশলায় ভাজা ঢেঁড়স — আঁশসহ সুস্বাদু পুষ্টিকর নাস্তা।',
+      ingredients: [
+        '২৫০ গ্রাম ঢেঁড়স (গোলাকার কাটা)',
+        '১ টি পেঁয়াজ কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '২ টেবিল চামচ তেল',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ঢেঁড়স প্রস্তুত',
+            description: 'ঢেঁড়স ধুয়ে মুছে নিন। গোলাকার করে কাটুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পেঁয়াজ ভাজা',
+            description: 'তেলে পেঁয়াজ সোনালি করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ঢেঁড়স দেওয়া',
+            description: 'ঢেঁড়স দিয়ে হলুদ, মরিচ ও লবণ মিশিয়ে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'ঢেকে মাঝারি আঁচে নরম না হওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত বা রুটির সাথে গরম পরিবেশন করুন।')
       ],
       cookTime: 18,
       prepTime: 10,
       servings: 4,
       difficulty: 'সহজ',
-      calories: 170,
-      tags: ['ডাল', 'ভাজা', 'হালকা'],
+      calories: 140,
+      tags: ['ভেজিটেরিয়ান', 'ভাজি', 'পুষ্টিকর'],
       rating: 4.4,
+      viewCount: 3500),
+
+  // 49. পটল ভাজি
+  const FoodItem(
+      id: 'snack_049',
+      name: 'পটল ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥒',
+      description: 'মশলায় রান্না পটল ভাজি — সহজ ও হালকা সবজি নাস্তা।',
+      ingredients: [
+        '৩০০ গ্রাম পটল (চার ভাগ করা)',
+        '১ টি পেঁয়াজ কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ ধনিয়া গুঁড়া',
+        '২ টেবিল চামচ তেল',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পটল প্রস্তুত',
+            description: 'পটল ধুয়ে দুই দিক কেটে চার ভাগ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পেঁয়াজ ভাজা',
+            description: 'তেলে পেঁয়াজ হালকা ভেজে মশলা দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পটল দেওয়া',
+            description: 'পটল দিয়ে লবণ মিশিয়ে ঢেকে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মশলা কষানো',
+            description: 'পটল নরম হলে ঢাকনা সরিয়ে মশলা কষিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত বা রুটির সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 150,
+      tags: ['ভেজিটেরিয়ান', 'পটল', 'হালকা'],
+      rating: 4.3,
+      viewCount: 3100),
+
+  // 50. কাঁচকলা ভাজি
+  const FoodItem(
+      id: 'snack_050',
+      name: 'কাঁচকলা ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍌',
+      description:
+          'কাঁচকলার মশলাদার ভাজি — ভাত বা রুটির সাথে পুষ্টিকর পেট ভরানো খাবার।',
+      ingredients: [
+        '৪ টি কাঁচকলা',
+        '১ টি পেঁয়াজ কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        '২ টেবিল চামচ তেল',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'কলা প্রস্তুত',
+            description:
+                'কাঁচকলা খোসা ছাড়িয়ে লম্বা বা গোলাকার কেটে লবণ পানিতে ধুয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description: 'হলুদ, মরিচ, জিরা ও লবণ মাখিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পেঁয়াজ ভাজা',
+            description: 'তেলে পেঁয়াজ সোনালি করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কলা ভাজা',
+            description: 'কলা দিয়ে মাঝারি আঁচে উভয় পাশ ভালো করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ভাত বা রুটির সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 170,
+      tags: ['ভেজিটেরিয়ান', 'কলা', 'পুষ্টিকর'],
+      rating: 4.5,
+      viewCount: 3800),
+
+  // 51. মাছ ভাজা
+  const FoodItem(
+      id: 'snack_051',
+      name: 'মাছ ভাজা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🐟',
+      description: 'হলুদ-মরিচ-লবণ মাখিয়ে ভাজা মাছ — বাংলাদেশের সেরা সাইড ডিশ।',
+      ingredients: [
+        '৪ টি মাছের টুকরা',
+        '১ চা চামচ হলুদ গুঁড়া',
+        '১ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ ধনিয়া গুঁড়া',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        '১ চা চামচ আদা-রসুন বাটা',
+        'লবণ স্বাদমতো',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাছ পরিষ্কার',
+            description: 'মাছ ভালো করে ধুয়ে পানি ঝরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description:
+                'হলুদ, মরিচ, ধনিয়া, জিরা, আদা-রসুন ও লবণ মাছে ভালো করে মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ম্যারিনেট',
+            description: '১৫ মিনিট মশলা মেখে রেখে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'গরম তেলে মাঝারি আঁচে মাছ দুই পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'লেবু ও পেঁয়াজের সাথে গরম ভাতের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['মাছ', 'ভাজা', 'বাংলাদেশি'],
+      rating: 4.8,
+      viewCount: 6500),
+
+  // 52. ইলিশ ভাজা
+  const FoodItem(
+      id: 'snack_052',
+      name: 'ইলিশ ভাজা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🐟',
+      description:
+          'সরিষার তেলে ভাজা ইলিশ — বাংলাদেশের জাতীয় মাছের রাজকীয় স্বাদ।',
+      ingredients: [
+        '৪ টুকরা ইলিশ মাছ',
+        '১ চা চামচ হলুদ গুঁড়া',
+        '১ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        'লবণ স্বাদমতো',
+        '৩ টেবিল চামচ সরিষার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাছ পরিষ্কার',
+            description: 'ইলিশ মাছ ধুয়ে গায়ে হালকা চিরে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description: 'হলুদ, মরিচ, জিরা ও লবণ মাছে ভালো করে মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'তেল গরম',
+            description: 'কড়াইতে সরিষার তেল খুব ভালো করে গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'মাছ দিয়ে একপাশ ৩-৪ মিনিট, তারপর উল্টিয়ে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'কাঁচা মরিচ ও পেঁয়াজ কুচি সহ গরম ভাতের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['মাছ', 'ইলিশ', 'ঐতিহ্যবাহী'],
+      rating: 4.9,
+      viewCount: 7800),
+
+  // 53. রূপচাঁদা ভাজা
+  const FoodItem(
+      id: 'snack_053',
+      name: 'রূপচাঁদা ভাজা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🐟',
+      description:
+          'সরষে তেলে ভাজা রূপচাঁদা মাছ — বাংলাদেশের বিশেষ সামুদ্রিক মাছের সেরা রান্না।',
+      ingredients: [
+        '৪ টি রূপচাঁদা মাছ',
+        '১ চা চামচ হলুদ',
+        '১ চা চামচ মরিচ গুঁড়া',
+        '১ চা চামচ ধনিয়া গুঁড়া',
+        '১ চা চামচ আদা-রসুন বাটা',
+        'লবণ',
+        'সরষে তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাছ পরিষ্কার',
+            description: 'মাছ পরিষ্কার করে গায়ে হালকা চিরে দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description: 'সব মশলা মাছে ভালো করে মাখিয়ে ১৫ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'তেল গরম',
+            description: 'সরষে তেল খুব ভালো করে গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'মাছ দিয়ে মাঝারি আঁচে দুই পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'কাঁচা মরিচ ও লেবু সহ গরম ভাতের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['মাছ', 'ভাজা', 'সামুদ্রিক'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 54. বাটা মাছ ভাজা
+  const FoodItem(
+      id: 'snack_054',
+      name: 'বাটা মাছ ভাজা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🐟',
+      description:
+          'পাঁচফোড়ন ও মশলায় ভাজা বাটা মাছ — গ্রামীণ স্বাদের সেরা ভাজা।',
+      ingredients: [
+        '৬ টি বাটা মাছ',
+        '১ চা চামচ হলুদ',
+        '১ চা চামচ মরিচ গুঁড়া',
+        '১/২ চা চামচ পাঁচফোড়ন',
+        'লবণ',
+        'সরষে তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাছ পরিষ্কার',
+            description: 'মাছ আঁশ ছাড়িয়ে ধুয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা মাখানো',
+            description: 'হলুদ, মরিচ ও লবণ ভালো করে মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'তেল গরম',
+            description: 'সরষে তেল গরম করে পাঁচফোড়ন দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'মাছ দিয়ে উভয় পাশ ক্রিসপি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম ভাত ও পেঁয়াজ কুচি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['মাছ', 'ভাজা', 'গ্রামীণ'],
+      rating: 4.7,
+      viewCount: 5800),
+
+  // 55. চিংড়ি ভাজা
+  const FoodItem(
+      id: 'snack_055',
+      name: 'চিংড়ি ভাজা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🦐',
+      description:
+          'মশলাদার ক্রিসপি চিংড়ি ভাজা — পার্টি স্ন্যাকস হিসেবে অতুলনীয়।',
+      ingredients: [
+        '৩০০ গ্রাম চিংড়ি মাছ',
+        '১ চা চামচ হলুদ',
+        '১ চা চামচ মরিচ গুঁড়া',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ চা চামচ গরম মশলা',
+        'লবণ',
+        '২ টেবিল চামচ তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিংড়ি পরিষ্কার',
+            description: 'চিংড়ি খোসা ছাড়িয়ে ডেভেইন করে ধুয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যারিনেট',
+            description:
+                'হলুদ, মরিচ, আদা-রসুন, গরম মশলা ও লবণ মাখিয়ে ১০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: 'গরম তেলে চিংড়ি দিয়ে হাই হিটে ২-৩ মিনিট ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'লেবুর রস ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 260,
+      tags: ['চিংড়ি', 'ভাজা', 'সামুদ্রিক'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 56. ডিম ভাজি
+  const FoodItem(
+      id: 'snack_056',
+      name: 'ডিম ভাজি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍳',
+      description: 'পেঁয়াজ-মরিচ দিয়ে ভাজা ডিম — দ্রুততম ও সুস্বাদু নাস্তা।',
+      ingredients: [
+        '৪ টি ডিম',
+        '১ টি পেঁয়াজ কুচি',
+        '২ টি কাঁচা মরিচ কুচি',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        'লবণ',
+        '২ টেবিল চামচ তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পেঁয়াজ ভাজা',
+            description: 'তেলে পেঁয়াজ সোনালি করে ভেজে মরিচ দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা দেওয়া',
+            description: 'হলুদ, মরিচ গুঁড়া ও লবণ মিশিয়ে নাড়ুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডিম ভাঙা',
+            description: 'ডিম সরাসরি কড়াইতে ভেঙে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'ডিম যেভাবে পছন্দ সেভাবে ভাজুন (শক্ত বা নরম)।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম রুটি বা পরোটার সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 180,
+      tags: ['ডিম', 'দ্রুত', 'নাস্তা'],
+      rating: 4.6,
+      viewCount: 5800),
+
+  // 57. অমলেট
+  const FoodItem(
+      id: 'snack_057',
+      name: 'অমলেট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍳',
+      description: 'ফ্লাফি অমলেট — ব্রেকফাস্টের সেরা পছন্দ।',
+      ingredients: [
+        '৩ টি ডিম',
+        '২ টেবিল চামচ দুধ',
+        '১ টি পেঁয়াজ কুচি',
+        '২ টি কাঁচা মরিচ',
+        'ধনেপাতা',
+        'লবণ',
+        '১ টেবিল চামচ মাখন'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডিম ফেটানো',
+            description: 'ডিম দুধ দিয়ে ভালো করে ফেটে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি যোগ',
+            description: 'পেঁয়াজ, মরিচ, ধনেপাতা ও লবণ ডিমে মেশান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মাখন গরম',
+            description: 'প্যানে মাখন গলিয়ে সমান করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অমলেট ঢালা',
+            description: 'ডিমের মিশ্রণ ঢেলে মাঝারি আঁচে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'ভাঁজ ও পরিবেশন',
+            description: 'ডিম সেট হলে ভাঁজ করে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 5,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['ডিম', 'নাস্তা', 'দ্রুত'],
+      rating: 4.6,
+      viewCount: 5200),
+
+  // 58. মসলা অমলেট
+  const FoodItem(
+      id: 'snack_058',
+      name: 'মসলা অমলেট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍳',
+      description: 'ভারী মশলায় রান্না অমলেট — ঝাল ও সুস্বাদু নাস্তা।',
+      ingredients: [
+        '৩ টি ডিম',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি টমেটো কুচি',
+        '৩ টি কাঁচা মরিচ',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ মরিচ গুঁড়া',
+        'ধনেপাতা',
+        'লবণ',
+        '২ টেবিল চামচ তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডিম ফেটানো',
+            description: 'ডিম ভালো করে ফেটে সব মশলা মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি ভাজা',
+            description: 'তেলে পেঁয়াজ ও টমেটো হালকা ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডিম ঢালা',
+            description: 'ডিমের মিশ্রণ ঢেলে ছড়িয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রান্না',
+            description: 'মাঝারি আঁচে নিচের দিক সেট হলে উল্টে দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'গরম রুটি বা ভাতের সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 8,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 210,
+      tags: ['ডিম', 'মশলাদার', 'নাস্তা'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 59. ডিম টোস্ট
+  const FoodItem(
+      id: 'snack_059',
+      name: 'ডিম টোস্ট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍳',
+      description: 'ডিম ও পাউরুটির কম্বিনেশন — সকালের দ্রুত পুষ্টিকর নাস্তা।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '৪ টি ডিম',
+        '১ টি পেঁয়াজ কুচি',
+        '২ টি কাঁচা মরিচ কুচি',
+        'লবণ',
+        'গোলমরিচ',
+        '২ টেবিল চামচ মাখন'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাউরুটি টোস্ট',
+            description: 'পাউরুটি টোস্টারে বা তাওয়ায় সোনালি করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাখন লাগান',
+            description: 'গরম টোস্টে মাখন মেখে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডিম রান্না',
+            description:
+                'প্যানে ডিম ভেঙে পেঁয়াজ, মরিচ, লবণ ও গোলমরিচ দিয়ে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'অ্যাসেম্বল',
+            description: 'টোস্টের উপর ভাজা ডিম রাখুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'চা বা কফির সাথে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 5,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['ডিম', 'নাস্তা', 'পাউরুটি'],
+      rating: 4.5,
+      viewCount: 4600),
+
+  // 60. ফ্রেঞ্চ টোস্ট
+  const FoodItem(
+      id: 'snack_060',
+      name: 'ফ্রেঞ্চ টোস্ট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍞',
+      description:
+          'ডিম-দুধে ভেজানো মিষ্টি ফ্রেঞ্চ টোস্ট — শিশুদের পছন্দের নাস্তা।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '২ টি ডিম',
+        '১/২ কাপ দুধ',
+        '১ টেবিল চামচ চিনি',
+        '১/২ চা চামচ ভ্যানিলা',
+        '১/২ চা চামচ দারচিনি গুঁড়া',
+        '২ টেবিল চামচ মাখন',
+        'মধু পরিবেশনে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার তৈরি',
+            description:
+                'ডিম, দুধ, চিনি, ভ্যানিলা ও দারচিনি ভালো করে ফেটে ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ভিজানো',
+            description:
+                'পাউরুটির স্লাইস ব্যাটারে ডুবিয়ে উভয় পাশ ভিজিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: 'মাখন গরম করে উভয় পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'মধু বা জ্যাম দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['নাস্তা', 'মিষ্টি', 'পাউরুটি'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 61. চিকেন ফ্রাই
+  const FoodItem(
+      id: 'snack_061',
+      name: 'চিকেন ফ্রাই',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description:
+          'ক্রিসপি ও জুসি চিকেন ফ্রাই — ফাস্ট ফুড স্টাইলে বাড়িতে বানান।',
+      ingredients: [
+        '৫০০ গ্রাম চিকেন পিস',
+        '১ কাপ ময়দা',
+        '১/২ কাপ কর্নফ্লাওয়ার',
+        '১ চা চামচ গোলমরিচ',
+        '১ চা চামচ রসুন গুঁড়া',
+        '১ চা চামচ পাপরিকা',
+        '১ টি ডিম',
+        '১/২ কাপ দুধ',
+        'লবণ',
+        'ডুবো ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ম্যারিনেট',
+            description:
+                'চিকেনে লবণ, গোলমরিচ, রসুন গুঁড়া মাখিয়ে ৩০ মিনিট ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্যাটার তৈরি',
+            description:
+                'ময়দা, কর্নফ্লাওয়ার, পাপরিকা, ডিম ও দুধ মিশিয়ে ঘন ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'চিকেন ব্যাটারে ডুবিয়ে ভালো করে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                '১৭৫°C তেলে গোল্ডেন ও সম্পূর্ণ রান্না হওয়া পর্যন্ত ভাজুন (১৫-২০ মিনিট)।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ফ্রেঞ্চ ফ্রাই ও কোলেসলো সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 340,
+      tags: ['মাংস', 'ফ্রাই', 'ফাস্টফুড'],
+      rating: 4.8,
+      viewCount: 7200),
+
+  // 62. ফ্রেঞ্চ ফ্রাই
+  const FoodItem(
+      id: 'snack_062',
+      name: 'ফ্রেঞ্চ ফ্রাই',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍟',
+      description:
+          'ক্রিসপি ডাবল ফ্রাই আলুর ফ্রেঞ্চ ফ্রাই — সবার পছন্দের স্ন্যাকস।',
+      ingredients: [
+        '৪ টি বড় আলু',
+        'লবণ',
+        'গোলমরিচ',
+        'পাপরিকা',
+        'ডুবো ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু কাটা',
+            description:
+                'আলু ধুয়ে খোসা ছাড়িয়ে সমান লম্বা স্টিক আকারে কাটুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পানিতে ভিজানো',
+            description: 'কাটা আলু ৩০ মিনিট ঠান্ডা পানিতে ভিজিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'শুকানো',
+            description: 'পানি থেকে তুলে ভালো করে মুছে শুকিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'প্রথম ভাজা',
+            description: '১৫০°C তেলে ৫ মিনিট ভেজে তুলুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'দ্বিতীয় ভাজা',
+            description: '১৯০°C তেলে সোনালি ও ক্রিসপি হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description:
+                'লবণ, গোলমরিচ ও পাপরিকা ছিটিয়ে কেচাপ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['আলু', 'ফ্রাই', 'ফাস্টফুড'],
+      rating: 4.7,
+      viewCount: 6800),
+
+  // 63. পটেটো ওয়েজেস
+  const FoodItem(
+      id: 'snack_063',
+      name: 'পটেটো ওয়েজেস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍟',
+      description:
+          'হার্বস ও মশলায় বেক করা আলুর ওয়েজেস — স্বাস্থ্যকর স্ন্যাকস।',
+      ingredients: [
+        '৪ টি বড় আলু',
+        '২ টেবিল চামচ অলিভ অয়েল',
+        '১ চা চামচ রসুন গুঁড়া',
+        '১ চা চামচ পাপরিকা',
+        '১/২ চা চামচ ওরেগানো',
+        '১/২ চা চামচ রোজমেরি',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ওভেন গরম',
+            description: 'ওভেন ২০০°C এ গরম করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আলু কাটা',
+            description: 'আলু ধুয়ে খোসা সহ ৬-৮ ভাগে লম্বা করে কাটুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মশলা মাখানো',
+            description: 'অলিভ অয়েল ও সব মশলা আলুতে মাখান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেকিং',
+            description: 'বেকিং ট্রেতে এক সারিতে রেখে ৩৫-৪০ মিনিট বেক করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'সোনালি ও ক্রিসপি হলে সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 22,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['আলু', 'বেক', 'হেলদি'],
+      rating: 4.6,
+      viewCount: 4900),
+
+  // 64. চিকেন নাগেটস
+  const FoodItem(
+      id: 'snack_064',
+      name: 'চিকেন নাগেটস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description: 'বাচ্চাদের পছন্দের চিকেন নাগেটস — ক্রিসপি ও জুসি।',
+      ingredients: [
+        '৩০০ গ্রাম চিকেন ব্রেস্ট',
+        '১/২ কাপ ব্রেডক্রাম্ব',
+        '১/৪ কাপ পারমেজান চিজ',
+        '১ টি ডিম',
+        '১ চা চামচ রসুন গুঁড়া',
+        '১ চা চামচ পাপরিকা',
+        'লবণ',
+        'ডুবো ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description: 'চিকেন ব্রেস্ট ছোট নাগেট আকারে কাটুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যারিনেট',
+            description: 'চিকেনে লবণ, রসুন গুঁড়া ও পাপরিকা মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'ডিমে ডুবিয়ে ব্রেডক্রাম্ব ও চিজের মিশ্রণে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'গরম তেলে সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'কেচাপ বা মায়োনেজ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 320,
+      tags: ['মাংস', 'ফ্রাই', 'বাচ্চাদের'],
+      rating: 4.7,
+      viewCount: 5900),
+
+  // 65. চিকেন ললিপপ
+  const FoodItem(
+      id: 'snack_065',
+      name: 'চিকেন ললিপপ',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description:
+          'ললিপপ আকারের চিকেন উইং — বাচ্চাদের পছন্দের মজাদার স্ন্যাকস।',
+      ingredients: [
+        '১২ টি চিকেন উইং (মিড জয়েন্ট)',
+        '১ কাপ ময়দা',
+        '১/২ কাপ কর্নফ্লাওয়ার',
+        '১ চা চামচ রসুন গুঁড়া',
+        '১ চা চামচ পাপরিকা',
+        '১ চা চামচ লাল মরিচ গুঁড়া',
+        '১ টি ডিম',
+        '১/৪ কাপ দুধ',
+        'লবণ',
+        'ডুবো ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ললিপপ তৈরি',
+            description: 'উইংয়ের মাংস এক দিকে ঠেলে ললিপপ আকার দিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ব্যাটার তৈরি',
+            description:
+                'ময়দা, কর্নফ্লাওয়ার, মশলা, ডিম ও দুধ মিশিয়ে ব্যাটার বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'কোটিং',
+            description: 'ললিপপ ব্যাটারে ডুবিয়ে কোট করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description:
+                '১৭৫°C তেলে সোনালি ও সম্পূর্ণ রান্না হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'মিষ্টি-ঝাল সস সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 320,
+      tags: ['মাংস', 'ললিপপ', 'বাচ্চাদের'],
+      rating: 4.7,
+      viewCount: 5600),
+
+  // 66. চিকেন উইংস
+  const FoodItem(
+      id: 'snack_066',
+      name: 'চিকেন উইংস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description:
+          'বাফেলো স্টাইল স্পাইসি চিকেন উইংস — পার্টির হাইলাইট স্ন্যাকস।',
+      ingredients: [
+        '১ কেজি চিকেন উইংস',
+        '১/২ কাপ ময়দা',
+        '১ চা চামচ গোলমরিচ',
+        '১ চা চামচ রসুন গুঁড়া',
+        '১ চা চামচ পাপরিকা',
+        '১/৪ কাপ হট সস',
+        '২ টেবিল চামচ মাখন',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'উইংস প্রস্তুত',
+            description: 'উইংস ধুয়ে মুছে নিন। জয়েন্টে কেটে দুই ভাগ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রাই রাব',
+            description:
+                'ময়দা, গোলমরিচ, রসুন, পাপরিকা ও লবণে উইংস ভালো করে মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description: '১৮০°C তেলে সোনালি ও ক্রিসপি হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস তৈরি',
+            description: 'মাখন গলিয়ে হট সস মিশিয়ে বাফেলো সস বানান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'টস করুন',
+            description: 'ভাজা উইংস সস দিয়ে টস করুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'সেলেরি স্টিক ও ব্লু চিজ ডিপিং সহ পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['মাংস', 'ফ্রাই', 'পার্টি'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 67. বার্গার
+  const FoodItem(
+      id: 'snack_067',
+      name: 'বার্গার',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍔',
+      description:
+          'হোমমেড ভেজিটেবল বার্গার — ভেজিটেরিয়ানদের জন্য পারফেক্ট ফাস্টফুড।',
+      ingredients: [
+        '৪ টি বার্গার বান',
+        '৪ টি ভেজিটেবল প্যাটি',
+        'লেটুস পাতা',
+        '২ টি টমেটো (স্লাইস)',
+        '১ টি পেঁয়াজ (রিং কাটা)',
+        '৪ স্লাইস পনির',
+        'মায়োনেজ',
+        'কেচাপ',
+        'মাস্টার্ড',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'প্যাটি প্রস্তুত',
+            description: 'ভেজিটেবল প্যাটি মশলা দিয়ে ক্রিসপি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বান টোস্ট',
+            description: 'বার্গার বান কেটে মাখন দিয়ে তাওয়ায় টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস লাগানো',
+            description: 'নিচের বানে মায়োনেজ ও মাস্টার্ড লাগান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'লেয়ার সাজানো',
+            description: 'লেটুস → প্যাটি → পনির → টমেটো → পেঁয়াজ রিং সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'উপরের বান দিয়ে ঢেকে ফ্রেঞ্চ ফ্রাই সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 380,
+      tags: ['বার্গার', 'ভেজিটেরিয়ান', 'ফাস্টফুড'],
+      rating: 4.6,
+      viewCount: 5200),
+
+  // 68. চিকেন বার্গার
+  const FoodItem(
+      id: 'snack_068',
+      name: 'চিকেন বার্গার',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍔',
+      description:
+          'জুসি ক্রিসপি চিকেন বার্গার — বাড়িতে বানানো ফাস্টফুডের মজা।',
+      ingredients: [
+        '৪ টি বার্গার বান',
+        '৪ টি চিকেন ফিলে',
+        'লেটুস পাতা',
+        '২ টি টমেটো (স্লাইস)',
+        '১ টি পেঁয়াজ (রিং কাটা)',
+        '৪ স্লাইস পনির',
+        'মায়োনেজ',
+        'কেচাপ',
+        'মাস্টার্ড',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description:
+                'চিকেন ফিলে মশলা দিয়ে ম্যারিনেট করে ক্রিসপি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বান টোস্ট',
+            description: 'বার্গার বান কেটে মাখন দিয়ে তাওয়ায় টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস লাগানো',
+            description: 'নিচের বানে মায়োনেজ ও মাস্টার্ড লাগান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'লেয়ার সাজানো',
+            description: 'লেটুস → চিকেন → পনির → টমেটো → পেঁয়াজ রিং সাজান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'উপরের বান দিয়ে ঢেকে ফ্রেঞ্চ ফ্রাই সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['বার্গার', 'মাংস', 'ফাস্টফুড'],
+      rating: 4.8,
+      viewCount: 7100),
+
+  // 69. বিফ বার্গার
+  const FoodItem(
+      id: 'snack_069',
+      name: 'বিফ বার্গার',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍔',
+      description:
+          'জুসি বিফ প্যাটি বার্গার — ক্লাসিক আমেরিকান স্টাইল বাংলাদেশে।',
+      ingredients: [
+        '৪ টি বার্গার বান',
+        '৪০০ গ্রাম বিফ কিমা',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি ডিম',
+        'লেটুস পাতা',
+        '২ টি টমেটো',
+        '৪ স্লাইস চিজ',
+        'মায়োনেজ, কেচাপ',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'প্যাটি তৈরি',
+            description:
+                'বিফ কিমা, পেঁয়াজ, ডিম, লবণ ও গোলমরিচ মিশিয়ে প্যাটি বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্যাটি রান্না',
+            description: 'গ্রিল বা প্যানে প্যাটি উভয় পাশ ভালো করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'চিজ মেল্ট',
+            description: 'প্যাটির উপর চিজ রেখে ঢেকে গলান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বান টোস্ট',
+            description: 'বান মাখন দিয়ে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'অ্যাসেম্বল ও পরিবেশন',
+            description: 'সব লেয়ার সাজিয়ে ফ্রেঞ্চ ফ্রাই সহ পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['বার্গার', 'মাংস', 'ফাস্টফুড'],
+      rating: 4.7,
+      viewCount: 6500),
+
+  // 70. স্যান্ডউইচ
+  const FoodItem(
+      id: 'snack_070',
+      name: 'স্যান্ডউইচ',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥪',
+      description:
+          'হোমমেড ভেজিটেবল স্যান্ডউইচ — দ্রুত তৈরি ও স্বাস্থ্যকর নাস্তা।',
+      ingredients: [
+        '৪ টি ব্রেড স্লাইস',
+        '১/২ কাপ মিক্সড সবজি কুচি',
+        '২ টেবিল চামচ মেয়োনেজ',
+        '১ টেবিল চামচ কেচাপ',
+        'লেটুস পাতা',
+        'টমেটো স্লাইস',
+        'লবণ',
+        'গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্রেড টোস্ট',
+            description: 'ব্রেড স্লাইস হালকা টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ফিলিং',
+            description:
+                'সবজি কুচি মেয়োনেজ, কেচাপ, লবণ ও গোলমরিচ দিয়ে মেশান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'অ্যাসেম্বল',
+            description:
+                'ব্রেডে লেটুস, ফিলিং ও টমেটো স্লাইস দিয়ে আরেকটি ব্রেড দিয়ে ঢাকুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'ত্রিকোণাকারে কেটে চা বা কফির সাথে পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 300,
+      tags: ['স্যান্ডউইচ', 'নাস্তা', 'হেলদি'],
+      rating: 4.5,
+      viewCount: 3900),
+
+  // 71. ক্লাব স্যান্ডউইচ
+  const FoodItem(
+      id: 'snack_071',
+      name: 'ক্লাব স্যান্ডউইচ',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥪',
+      description: 'চিকেন, বেকন ও সবজির তিন লেয়ারের ক্লাব স্যান্ডউইচ।',
+      ingredients: [
+        '৬ স্লাইস পাউরুটি (টোস্ট করা)',
+        '২ টি চিকেন ব্রেস্ট (রান্না করা)',
+        '২ টি সিদ্ধ ডিম',
+        'লেটুস পাতা',
+        '২ টি টমেটো',
+        '১ টি শসা',
+        'মায়োনেজ',
+        'মাস্টার্ড',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'উপকরণ প্রস্তুত',
+            description:
+                'চিকেন, ডিম, টমেটো, শসা কেটে নিন। পাউরুটি টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'প্রথম লেয়ার',
+            description: 'প্রথম টোস্টে মায়োনেজ লাগিয়ে লেটুস ও চিকেন রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'দ্বিতীয় লেয়ার',
+            description:
+                'দ্বিতীয় টোস্টে মাস্টার্ড লাগিয়ে ডিম, টমেটো ও শসা রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'তৃতীয় টোস্ট',
+            description: 'তৃতীয় টোস্ট উপরে দিয়ে ঢেকে টুথপিক দিয়ে আটকান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তেরছা করে কেটে চিপস বা সালাদ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 350,
+      tags: ['স্যান্ডউইচ', 'মাংস', 'নাস্তা'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 72. চিকেন স্যান্ডউইচ
+  const FoodItem(
+      id: 'snack_072',
+      name: 'চিকেন স্যান্ডউইচ',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥪',
+      description:
+          'গ্রিলড চিকেন স্যান্ডউইচ — লাঞ্চ বা স্ন্যাকসের পারফেক্ট পছন্দ।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '২০০ গ্রাম চিকেন ব্রেস্ট',
+        'লেটুস পাতা',
+        '১ টি টমেটো',
+        '১ টি শসা',
+        'মায়োনেজ',
+        'মাস্টার্ড',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন রান্না',
+            description: 'চিকেন মশলায় গ্রিল করে পাতলা স্লাইস করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পাউরুটি টোস্ট',
+            description: 'পাউরুটি হালকা টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস লাগান',
+            description: 'এক স্লাইসে মায়োনেজ ও অন্য স্লাইসে মাস্টার্ড লাগান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'লেয়ার সাজান',
+            description: 'লেটুস, চিকেন, টমেটো ও শসা সাজিয়ে বন্ধ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তেরছা কেটে সালাদ সহ পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 15,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['স্যান্ডউইচ', 'মাংস', 'লাঞ্চ'],
+      rating: 4.6,
+      viewCount: 4900),
+
+  // 73. গ্রিল স্যান্ডউইচ
+  const FoodItem(
+      id: 'snack_073',
+      name: 'গ্রিল স্যান্ডউইচ',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥪',
+      description:
+          'চিজ ও সবজির গরম গ্রিল স্যান্ডউইচ — ব্রেকফাস্টের দ্রুত সমাধান।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '৪ স্লাইস চিজ',
+        '১ টি টমেটো (স্লাইস)',
+        '১ টি শসা (স্লাইস)',
+        'লেটুস পাতা',
+        '২ টেবিল চামচ মাখন',
+        'মাস্টার্ড',
+        'লবণ, গোলমরিচ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'উপকরণ সাজান',
+            description: 'টমেটো, শসা ও লেটুস প্রস্তুত রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'স্যান্ডউইচ বানান',
+            description:
+                'পাউরুটিতে মাস্টার্ড লাগিয়ে চিজ ও সবজি রেখে আরেক স্লাইস দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মাখন লাগান',
+            description: 'স্যান্ডউইচের বাইরে মাখন লাগান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গ্রিল করুন',
+            description: 'গ্রিল প্যানে উভয় পাশ সোনালি করে গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তেরছা করে কেটে চা সহ পরিবেশন করুন।')
+      ],
+      cookTime: 18,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 330,
+      tags: ['স্যান্ডউইচ', 'গ্রিল', 'নাস্তা'],
+      rating: 4.5,
+      viewCount: 4400),
+  // 74. টোস্ট বিস্কুট
+  const FoodItem(
+      id: 'snack_074',
+      name: 'টোস্ট বিস্কুট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍪',
+      description:
+          'চা-নাস্তার ক্লাসিক টোস্ট বিস্কুট — দ্রুত ও সুস্বাদু হালকা নাস্তা।',
+      ingredients: [
+        '৮-১০ টি বিস্কুট (ম্যারি/গ্লুকোজ)',
+        '২ টেবিল চামচ মাখন',
+        '১ টেবিল চামচ চিনি/মধু (ঐচ্ছিক)',
+        'চা/কফি পরিবেশনের জন্য'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'বিস্কুট প্রস্তুত',
+            description:
+                'বিস্কুটগুলো টোস্টারে বা তাওয়ায় হালকা ক্রিসপি করে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাখন লাগান',
+            description: 'গরম বিস্কুটে মাখন সমানভাবে লাগান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিষ্টি (ঐচ্ছিক)',
+            description: 'চিনি বা মধু ছিটিয়ে নিন যদি মিষ্টি পছন্দ করেন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'গরম চা বা কফির সাথে তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 10,
+      prepTime: 2,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['বিস্কুট', 'নাস্তা', 'দ্রুত'],
+      rating: 4.3,
       viewCount: 3200),
-  _stubSnack(
-      'আলু ভাজি', 'snack', '🥔', 20, 'সহজ', 180, ['ভেজিটেরিয়ান', 'ভাজি']),
-  _stubSnack(
-      'বেগুন ভাজি', 'snack', '🍆', 22, 'সহজ', 170, ['ভেজিটেরিয়ান', 'ভাজি']),
-  _stubSnack(
-      'করলা ভাজি', 'snack', '🥒', 20, 'সহজ', 150, ['ভেজিটেরিয়ান', 'করলা']),
-  _stubSnack(
-      'ঢেঁড়স ভাজি', 'snack', '🥬', 18, 'সহজ', 140, ['ভেজিটেরিয়ান', 'ভাজি']),
-  _stubSnack(
-      'পটল ভাজি', 'snack', '🥒', 20, 'সহজ', 150, ['ভেজিটেরিয়ান', 'ভাজি']),
-  _stubSnack(
-      'কাঁচকলা ভাজি', 'snack', '🍌', 22, 'সহজ', 170, ['ভেজিটেরিয়ান', 'কলা']),
-  _stubSnack('মাছ ভাজা', 'snack', '🐟', 20, 'সহজ', 280, ['মাছ', 'ভাজা']),
-  _stubSnack('ইলিশ ভাজা', 'snack', '🐟', 20, 'সহজ', 320, ['মাছ', 'ভাজা']),
-  _stubSnack('রূপচাঁদা ভাজা', 'snack', '🐟', 20, 'সহজ', 300, ['মাছ', 'ভাজা']),
-  _stubSnack('বাটা মাছ ভাজা', 'snack', '🐟', 20, 'সহজ', 280, ['মাছ', 'ভাজা']),
-  _stubSnack('চিংড়ি ভাজা', 'snack', '🦐', 18, 'সহজ', 260, ['চিংড়ি', 'ভাজা']),
-  _stubSnack('ডিম ভাজি', 'snack', '🍳', 10, 'সহজ', 180, ['ডিম', 'দ্রুত']),
-  _stubSnack('অমলেট', 'snack', '🍳', 10, 'সহজ', 200, ['ডিম', 'নাস্তা']),
-  _stubSnack('মসলা অমলেট', 'snack', '🍳', 12, 'সহজ', 210, ['ডিম', 'মশলাদার']),
-  _stubSnack('ডিম টোস্ট', 'snack', '🍳', 12, 'সহজ', 280, ['ডিম', 'নাস্তা']),
-  _stubSnack(
-      'ফ্রেঞ্চ টোস্ট', 'snack', '🍞', 18, 'সহজ', 320, ['নাস্তা', 'মিষ্টি']),
-  _stubSnack('চিকেন ফ্রাই', 'snack', '🍗', 30, 'সহজ', 340, ['মাংস', 'ফ্রাই']),
-  _stubSnack('ফ্রেঞ্চ ফ্রাই', 'snack', '🍟', 20, 'সহজ', 280, ['আলু', 'ফ্রাই']),
-  _stubSnack('পটেটো ওয়েজেস', 'snack', '🍟', 22, 'সহজ', 320, ['আলু', 'ফ্রাই']),
-  _stubSnack('চিকেন নাগেটস', 'snack', '🍗', 25, 'সহজ', 320, ['মাংস', 'ফ্রাই']),
-  _stubSnack('চিকেন ললিপপ', 'snack', '🍗', 30, 'সহজ', 320, ['মাংস', 'ললিপপ']),
-  _stubSnack('চিকেন উইংস', 'snack', '🍗', 35, 'সহজ', 380, ['মাংস', 'ফ্রাই']),
-  _stubSnack('বার্গার', 'snack', '🍔', 25, 'সহজ', 380, ['বার্গার', 'নাস্তা']),
-  _stubSnack(
-      'চিকেন বার্গার', 'snack', '🍔', 25, 'সহজ', 380, ['বার্গার', 'মাংস']),
-  _stubSnack('বিফ বার্গার', 'snack', '🍔', 28, 'সহজ', 420, ['বার্গার', 'মাংস']),
-  _stubSnack(
-      'স্যান্ডউইচ', 'snack', '🥪', 15, 'সহজ', 300, ['স্যান্ডউইচ', 'নাস্তা']),
-  _stubSnack('ক্লাব স্যান্ডউইচ', 'snack', '🥪', 20, 'সহজ', 350,
-      ['স্যান্ডউইচ', 'নাস্তা']),
-  _stubSnack('চিকেন স্যান্ডউইচ', 'snack', '🥪', 18, 'সহজ', 340,
-      ['স্যান্ডউইচ', 'মাংস']),
-  _stubSnack('গ্রিল স্যান্ডউইচ', 'snack', '🥪', 18, 'সহজ', 330,
-      ['স্যান্ডউইচ', 'গ্রিল']),
-  _stubSnack(
-      'টোস্ট বিস্কুট', 'snack', '🍪', 10, 'সহজ', 200, ['বিস্কুট', 'নাস্তা']),
-  _stubSnack('মালাই টোস্ট', 'snack', '🍞', 15, 'সহজ', 240, ['টোস্ট', 'মালাই']),
-  _stubSnack('বাটার টোস্ট', 'snack', '🍞', 12, 'সহজ', 220, ['টোস্ট', 'বাটার']),
-  _stubSnack('নান রুটি', 'snack', '🫓', 25, 'মাঝারি', 200, ['রুটি', 'নান']),
-  _stubSnack('বাটার নান', 'snack', '🫓', 28, 'মাঝারি', 240, ['রুটি', 'বাটার']),
-  _stubSnack('তন্দুরি রুটি', 'snack', '🫓', 20, 'সহজ', 170, ['রুটি', 'তন্দুর']),
-  _stubSnack('কাবাব', 'snack', '🍢', 30, 'মাঝারি', 380, ['কাবাব', 'মাংস']),
-  _stubSnack('শামি কাবাব', 'snack', '🍢', 35, 'মাঝারি', 300, ['কাবাব', 'ভাজা']),
-  _stubSnack('জালি কাবাব', 'snack', '🍢', 40, 'মাঝারি', 340, ['কাবাব', 'জালি']),
-  _stubSnack('বটি কাবাব', 'snack', '🍢', 40, 'মাঝারি', 350, ['কাবাব', 'মাংস']),
-  _stubSnack(
-      'রেশমি কাবাব', 'snack', '🍢', 42, 'মাঝারি', 355, ['কাবাব', 'রেশমি']),
-  _stubSnack(
-      'চিকেন তন্দুরি', 'snack', '🍗', 45, 'মাঝারি', 420, ['মাংস', 'তন্দুর']),
-  _stubSnack(
-      'বিফ তন্দুরি', 'snack', '🥩', 48, 'মাঝারি', 440, ['মাংস', 'তন্দুর']),
-  _stubSnack('হালিম', 'snack', '🍲', 90, 'কঠিন', 450, ['মাংস', 'হালিম']),
-  _stubSnack('নুডলস', 'snack', '🍜', 15, 'সহজ', 280, ['নুডলস', 'দ্রুত']),
-  _stubSnack('চাউমিন', 'snack', '🍜', 20, 'সহজ', 300, ['নুডলস', 'চাইনিজ']),
-  _stubSnack('ফ্রাইড রাইস', 'snack', '🍳', 20, 'সহজ', 340, ['রাইস', 'ফ্রাই']),
-  _stubSnack('এগ ফ্রাইড রাইস', 'snack', '🥚', 20, 'সহজ', 350, ['রাইস', 'ডিম']),
-  _stubSnack(
-      'চিকেন ফ্রাইড রাইস', 'snack', '🍗', 25, 'সহজ', 380, ['রাইস', 'মাংস']),
-  _stubSnack('মায়ো নুডলস', 'snack', '🍜', 15, 'সহজ', 310, ['নুডলস', 'মায়ো']),
+
+  // 75. মালাই টোস্ট
+  const FoodItem(
+      id: 'snack_075',
+      name: 'মালাই টোস্ট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍞',
+      description:
+          'ঘন মালাই ও মিষ্টিতে ভেজানো মালাই টোস্ট — মিষ্টি নাস্তার অসাধারণ পছন্দ।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '১ কাপ ঘন দুধ (ক্ষীর)',
+        '২ টেবিল চামচ চিনি',
+        '১/২ চা চামচ এলাচ গুঁড়া',
+        'কেশর (ঐচ্ছিক)',
+        'পেস্তা বাদাম কুচি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাউরুটি টোস্ট',
+            description: 'পাউরুটি সোনালি করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মালাই তৈরি',
+            description: 'দুধ ঘন হওয়া পর্যন্ত রান্না করে চিনি ও এলাচ মেশান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভেজানো',
+            description: 'টোস্ট ঘন দুধে ডুবিয়ে কয়েক মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পেস্তা ছিটিয়ে ঠান্ডা বা গরম পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 240,
+      tags: ['টোস্ট', 'মালাই', 'মিষ্টি'],
+      rating: 4.6,
+      viewCount: 4100),
+
+  // 76. বাটার টোস্ট
+  const FoodItem(
+      id: 'snack_076',
+      name: 'বাটার টোস্ট',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍞',
+      description: 'ক্রিসপি বাটার টোস্ট — সকালের দ্রুততম ও সুস্বাদু নাস্তা।',
+      ingredients: [
+        '৪ স্লাইস পাউরুটি',
+        '৩ টেবিল চামচ মাখন',
+        '১ চা চামচ মধু (ঐচ্ছিক)',
+        'জ্যাম বা মারমালেড (ঐচ্ছিক)'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'পাউরুটি টোস্ট',
+            description: 'পাউরুটি টোস্টারে ক্রিসপি করে টোস্ট করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাখন লাগান',
+            description: 'গরম টোস্টে উদারভাবে মাখন মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'পরিবেশন',
+            description: 'মধু বা জ্যাম দিয়ে চা সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 12,
+      prepTime: 2,
+      servings: 2,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['টোস্ট', 'বাটার', 'দ্রুত'],
+      rating: 4.4,
+      viewCount: 3800),
+
+  // 77. নান রুটি
+  const FoodItem(
+      id: 'snack_077',
+      name: 'নান রুটি',
+      category: 'snacks',
+      subCategory: 'bread',
+      emoji: '🫓',
+      description:
+          'ইস্ট দিয়ে তৈরি নরম ও ফোলানো নান রুটি — তন্দুরের স্বাদ ঘরে।',
+      ingredients: [
+        '২ কাপ ময়দা',
+        '১ চা চামচ ইস্ট',
+        '১/২ চা চামচ চিনি',
+        '১/২ চা চামচ লবণ',
+        '১/২ কাপ দই',
+        '২ টেবিল চামচ তেল',
+        'সামান্য পানি',
+        'মাখন পরিবেশনে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ইস্ট অ্যাক্টিভেট',
+            description: 'গরম পানিতে চিনি ও ইস্ট মিশিয়ে ১০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডো তৈরি',
+            description:
+                'ময়দা, লবণ, দই, তেল ও ইস্ট মিশিয়ে নরম ডো তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফারমেন্টেশন',
+            description: 'ডো ঢেকে ১ ঘণ্টা উষ্ণ জায়গায় রাখুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'বেলা',
+            description: 'ডো ছোট বল করে টিয়ারড্রপ আকারে বেলুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'রান্না',
+            description: 'গরম তাওয়া বা গ্রিলে উভয় পাশ ভাজুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'মাখন ও রসুন লাগিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 75,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 200,
+      tags: ['রুটি', 'নান', 'ফোলানো'],
+      rating: 4.7,
+      viewCount: 5700),
+
+  // 78. বাটার নান
+  const FoodItem(
+      id: 'snack_078',
+      name: 'বাটার নান',
+      category: 'snacks',
+      subCategory: 'bread',
+      emoji: '🫓',
+      description:
+          'মাখন ও রসুনে সমৃদ্ধ বাটার নান — রেস্তোরাঁর মেনুর সেরা পছন্দ।',
+      ingredients: [
+        '২ কাপ ময়দা',
+        '১ চা চামচ ইস্ট',
+        '১/২ কাপ দই',
+        '২ টেবিল চামচ তেল',
+        'লবণ',
+        '৩ টেবিল চামচ মাখন',
+        '৪ কোয়া রসুন (কুচি)',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো তৈরি',
+            description: 'নান রুটির মতো ডো তৈরি করে ১ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বাটার মিক্স',
+            description: 'মাখন গলিয়ে রসুন কুচি ও ধনেপাতা মিশিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'নান বেলা',
+            description: 'ডো ছোট বল করে পাতলা বেলুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'রান্না',
+            description: 'তাওয়ায় দুই পাশ ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'বাটার লাগান',
+            description: 'গরম নানে বাটার মিক্স উদারভাবে লাগান।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'গরম গরম পছন্দের কারি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 75,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 240,
+      tags: ['রুটি', 'বাটার', 'রসুন'],
+      rating: 4.8,
+      viewCount: 6100),
+
+  // 79. তন্দুরি রুটি
+  const FoodItem(
+      id: 'snack_079',
+      name: 'তন্দুরি রুটি',
+      category: 'snacks',
+      subCategory: 'bread',
+      emoji: '🫓',
+      description: 'আটার তন্দুরি রুটি — স্বাস্থ্যকর ও পুষ্টিকর ভারী নাস্তা।',
+      ingredients: [
+        '২ কাপ গমের আটা',
+        '১/২ চা চামচ লবণ',
+        '১ চা চামচ তেল',
+        'পরিমাণমতো পানি'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো তৈরি',
+            description: 'আটা, লবণ ও তেল মিশিয়ে নরম ডো তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'বিশ্রাম',
+            description: 'ডো ঢেকে ৩০ মিনিট রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'বেলা',
+            description: 'ডো ছোট বল করে মোটা করে বেলুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'তাওয়ায় রান্না',
+            description: 'তাওয়া খুব গরম করে রুটি দুই পাশ সেঁকুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'মাখন ও তরকারি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 35,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 170,
+      tags: ['রুটি', 'তন্দুর', 'আটা'],
+      rating: 4.5,
+      viewCount: 4200),
+
+  // 80. কাবাব
+  const FoodItem(
+      id: 'snack_080',
+      name: 'কাবাব',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍢',
+      description:
+          'মশলাদার মাংসের কাবাব — মুঘলাই রান্নার ক্লাসিক ও জনপ্রিয় স্ন্যাকস।',
+      ingredients: [
+        '৫০০ গ্রাম গরু/খাসির মাংস (কিমা)',
+        '১ টি পেঁয়াজ কুচি',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        '১ টি ডিম',
+        'ধনেপাতা',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স তৈরি',
+            description:
+                'কিমা, পেঁয়াজ, আদা-রসুন, মশলা, ডিম ও লবণ ভালো করে মিশিয়ে মণ্ড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আকার দেওয়া',
+            description: 'মণ্ড দিয়ে লম্বা বা গোলাকার কাবাব আকার দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা/গ্রিল',
+            description:
+                'প্যানে তেল দিয়ে বা গ্রিলে দুই পাশ সোনালি করে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজ, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['কাবাব', 'মাংস', 'মুঘলাই'],
+      rating: 4.7,
+      viewCount: 5900),
+
+  // 81. শামি কাবাব
+  const FoodItem(
+      id: 'snack_081',
+      name: 'শামি কাবাব',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍢',
+      description:
+          'ছোলা ও মাংসের মিশ্রণে তৈরি নরম শামি কাবাব — মুঘলাই ঐতিহ্যের স্বাদ।',
+      ingredients: [
+        '৩০০ গ্রাম গরুর মাংস (কিমা)',
+        '১/২ কাপ ছোলার ডাল',
+        '১ টি পেঁয়াজ',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১ টি ডিম',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ জিরা',
+        '৩-৪ টি শুকনো মরিচ',
+        'লবণ',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'সিদ্ধ করা',
+            description:
+                'মাংস, ছোলার ডাল, পেঁয়াজ, আদা-রসুন, মশলা একসাথে সিদ্ধ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পেস্ট বানানো',
+            description: 'সিদ্ধ মিশ্রণ ঠান্ডা করে ব্লেন্ড করুন বা বাটুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশ্রণ',
+            description: 'পেস্টে ডিম ও ধনেপাতা মিশিয়ে মণ্ড তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'কাবাব বানানো',
+            description: 'মণ্ড দিয়ে ছোট গোলাকার কাবাব বানান।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'ভাজা',
+            description: 'প্যানে তেল দিয়ে দুই পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজের রিং ও পুদিনা চাটনি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 35,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 300,
+      tags: ['কাবাব', 'মাংস', 'মুঘলাই'],
+      rating: 4.8,
+      viewCount: 5800),
+
+  // 82. জালি কাবাব
+  const FoodItem(
+      id: 'snack_082',
+      name: 'জালি কাবাব',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍢',
+      description:
+          'জালির ছাঁচে তৈরি আকর্ষণীয় জালি কাবাব — পার্টির বিশেষ আকর্ষণ।',
+      ingredients: [
+        '৪০০ গ্রাম মিক্সড মাংস কিমা',
+        '১ টি পেঁয়াজ বাটা',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        '১ টি ডিম',
+        'ধনেপাতা কুচি',
+        'লবণ',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স তৈরি',
+            description:
+                'কিমা, পেঁয়াজ বাটা, আদা-রসুন, মশলা, ডিম ও লবণ ভালো করে মিশিয়ে মণ্ড বানান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ছাঁচ তৈরি',
+            description:
+                'মণ্ড চ্যাপ্টা করে জালির ছাঁচে বা কাঁটাচামচ দিয়ে জালির প্যাটার্ন তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাজা',
+            description:
+                'প্যানে তেল দিয়ে মাঝারি আঁচে দুই পাশ সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'চাটনি ও সালাদ সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 25,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 340,
+      tags: ['কাবাব', 'জালি', 'পার্টি'],
+      rating: 4.7,
+      viewCount: 5200),
+
+  // 83. বটি কাবাব
+  const FoodItem(
+      id: 'snack_083',
+      name: 'বটি কাবাব',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍢',
+      description: 'টেন্ডার মাংসের বটি কাবাব — বিশেষ উপলক্ষ্যের সেরা পছন্দ।',
+      ingredients: [
+        '৫০০ গ্রাম গরু/খাসির মাংস (ছোট টুকরা)',
+        '১ কাপ দই',
+        '২ টেবিল চামচ আদা-রসুন বাটা',
+        '১ চা চামচ জিরা গুঁড়া',
+        '১ চা চামচ ধনিয়া গুঁড়া',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ হলুদ',
+        'লাল মরিচ গুঁড়া',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ম্যারিনেড',
+            description:
+                'দই, আদা-রসুন, সব মশলা মিশিয়ে মাংস মাখিয়ে ৪-৬ ঘণ্টা ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শিকে পরানো',
+            description: 'মাংসের টুকরা শিকে পরিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল করা',
+            description: 'গ্রিল বা তন্দুরে উভয় পাশ সমানভাবে গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মাঝে তেল লাগানো',
+            description: 'গ্রিলিংয়ের সময় মাঝে মাঝে তেল বা মাখন ব্রাশ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজ, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 40,
+      prepTime: 30,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 350,
+      tags: ['কাবাব', 'মাংস', 'গ্রিল'],
+      rating: 4.8,
+      viewCount: 5500),
+
+  // 84. রেশমি কাবাব
+  const FoodItem(
+      id: 'snack_084',
+      name: 'রেশমি কাবাব',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍢',
+      description:
+          'ক্রিম ও কাজুর নরম রেশমি কাবাব — মুঘলাই রান্নার অনন্য স্বাদ।',
+      ingredients: [
+        '৪০০ গ্রাম চিকেন কিমা',
+        '১/২ কাপ ক্রিম',
+        '২ টেবিল চামচ কাজু বাদাম বাটা',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১ চা চামচ সাদা গোলমরিচ',
+        '১/২ চা চামচ গরম মশলা',
+        '১ টি ডিম',
+        'লবণ',
+        'মাখন গ্রিলে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মিক্স তৈরি',
+            description:
+                'চিকেন কিমায় ক্রিম, কাজু বাটা, আদা-রসুন, মশলা ও ডিম মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ঠান্ডা করা',
+            description: 'মিক্স ৩০ মিনিট ফ্রিজে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'শিকে পরানো',
+            description: 'ভেজা হাতে শিকে লম্বা করে কাবাব আকার দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গ্রিল করা',
+            description: 'গ্রিলে মাখন মেখে দুই পাশ গ্রিল করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজ, লেবু ও পুদিনা চাটনি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 42,
+      prepTime: 40,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 355,
+      tags: ['কাবাব', 'রেশমি', 'মুঘলাই'],
+      rating: 4.8,
+      viewCount: 5100),
+
+  // 85. চিকেন তন্দুরি
+  const FoodItem(
+      id: 'snack_085',
+      name: 'চিকেন তন্দুরি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description:
+          'দইয়ের ম্যারিনেডে রান্না তন্দুরি চিকেন — রেস্তোরাঁর স্বাদ বাড়িতে।',
+      ingredients: [
+        '১ কেজি চিকেন (লেগ ও থাই পিস)',
+        '১ কাপ দই',
+        '২ টেবিল চামচ আদা-রসুন বাটা',
+        '১ চা চামচ তন্দুরি মশলা',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ হলুদ',
+        'লেবুর রস',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন প্রস্তুত',
+            description: 'চিকেনের গায়ে গভীর করে চিরে দিন যাতে মশলা ঢোকে।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যারিনেড',
+            description:
+                'দই, আদা-রসুন, সব মশলা ও লেবুর রস মিশিয়ে চিকেন মাখান। ৮ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ওভেন গরম',
+            description: 'ওভেন ২২০°C এ গরম করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'গ্রিল করা',
+            description: '৩০-৩৫ মিনিট গ্রিল করুন, মাঝে উল্টে দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description:
+                'পেঁয়াজ রিং, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 45,
+      prepTime: 30,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 420,
+      tags: ['মাংস', 'তন্দুর', 'গ্রিল'],
+      rating: 4.9,
+      viewCount: 7500),
+
+  // 86. বিফ তন্দুরি
+  const FoodItem(
+      id: 'snack_086',
+      name: 'বিফ তন্দুরি',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥩',
+      description: 'মশলাদার বিফ তন্দুরি — মুঘলাই রান্নার রাজকীয় স্বাদ।',
+      ingredients: [
+        '১ কেজি গরুর মাংস (ছোট টুকরা)',
+        '১ কাপ দই',
+        '২ টেবিল চামচ আদা-রসুন বাটা',
+        '১ চা চামচ তন্দুরি মশলা',
+        '১ চা চামচ গরম মশলা',
+        '১/২ চা চামচ হলুদ',
+        'লেবুর রস',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মাংস প্রস্তুত',
+            description: 'মাংসের টুকরায় গভীর চিরে দিন যাতে মশলা ঢোকে।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ম্যারিনেড',
+            description:
+                'দই, আদা-রসুন, সব মশলা ও লেবুর রস মিশিয়ে মাংস মাখান। ৮-১০ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'গ্রিল/ওভেন',
+            description:
+                '২২০°C তাপমাত্রায় ৪০-৪৫ মিনিট গ্রিল করুন, মাঝে উল্টে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পেঁয়াজ, লেবু ও পুদিনা চাটনি সহ গরম পরিবেশন করুন।')
+      ],
+      cookTime: 48,
+      prepTime: 30,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 440,
+      tags: ['মাংস', 'তন্দুর', 'বিফ'],
+      rating: 4.8,
+      viewCount: 6200),
+
+  // 87. হালিম
+  const FoodItem(
+      id: 'snack_087',
+      name: 'হালিম',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍲',
+      description:
+          'গরুর মাংস ও ডাল দিয়ে তৈরি ঘন হালিম — ইফতারের রাজকীয় খাবার।',
+      ingredients: [
+        '৫০০ গ্রাম গরুর মাংস',
+        '১/২ কাপ গম ভাঙা',
+        '১/৪ কাপ মসুর ডাল',
+        '১/৪ কাপ মুগ ডাল',
+        '১/৪ কাপ ছোলার ডাল',
+        '১ টি পেঁয়াজ (বেরেস্তা)',
+        '২ টেবিল চামচ আদা-রসুন বাটা',
+        '১ চা চামচ গরম মশলা',
+        '১ চা চামচ হালিম মশলা',
+        'লবণ',
+        'তেল',
+        'লেবু, ধনেপাতা পরিবেশনে'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'প্রস্তুতি',
+            description: 'গম ও সব ডাল রাতে ভিজিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মাংস রান্না',
+            description:
+                'মাংস মশলা দিয়ে নরম করে সিদ্ধ করে হাত দিয়ে ছিঁড়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ডাল সিদ্ধ',
+            description: 'গম ও ডাল আলাদা সিদ্ধ করে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'মিশানো',
+            description:
+                'মাংস, গম ও ডাল একসাথে মিশিয়ে ঘন না হওয়া পর্যন্ত রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'বেরেস্তা',
+            description: 'পেঁয়াজ বেরেস্তা ও হালিম মশলা দিয়ে মেশান।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'লেবু, ধনেপাতা ও আদা কুচি দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 90,
+      prepTime: 30,
+      servings: 6,
+      difficulty: 'কঠিন',
+      calories: 450,
+      tags: ['মাংস', 'হালিম', 'ইফতার'],
+      rating: 4.9,
+      viewCount: 8500),
+
+  // 88. নুডলস
+  const FoodItem(
+      id: 'snack_088',
+      name: 'নুডলস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍜',
+      description:
+          'সবজি ও মশলায় রান্না মজাদার নুডলস — দ্রুত তৈরির হালকা নাস্তা।',
+      ingredients: [
+        '২০০ গ্রাম নুডলস',
+        '১ কাপ মিক্সড সবজি',
+        '২ টি সবুজ পেঁয়াজ',
+        '২ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ চিলি সস',
+        '১ চা চামচ তিলের তেল',
+        'রসুন কুচি',
+        'আদা কুচি',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস সিদ্ধ',
+            description: 'নুডলস প্যাকেটের নির্দেশনা মতো সিদ্ধ করে ছেঁকে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'সবজি ভাজা',
+            description: 'হাই হিটে তেলে রসুন, আদা ও সবজি দ্রুত ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সস যোগ',
+            description: 'সয়া সস ও চিলি সস মিশিয়ে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'নুডলস যোগ',
+            description: 'সিদ্ধ নুডলস দিয়ে ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিলের তেল ও সবুজ পেঁয়াজ ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 280,
+      tags: ['নুডলস', 'দ্রুত', 'হালকা'],
+      rating: 4.6,
+      viewCount: 5500),
+
+  // 89. চাউমিন
+  const FoodItem(
+      id: 'snack_089',
+      name: 'চাউমিন',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍜',
+      description:
+          'চাইনিজ স্টাইল চাউমিন — রেস্তোরাঁর স্বাদ বাড়িতেই উপভোগ করুন।',
+      ingredients: [
+        '২০০ গ্রাম এগ নুডলস',
+        '১০০ গ্রাম চিকেন (সরু কাটা)',
+        '১ কাপ বাঁধাকপি কুচি',
+        '১/২ কাপ গাজর কুচি',
+        '২ টি সবুজ পেঁয়াজ',
+        '৩ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ ওয়েস্টার সস',
+        '১ চা চামচ তিলের তেল',
+        'রসুন',
+        'আদা',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস সিদ্ধ',
+            description: 'নুডলস আধা সিদ্ধ করে তেল মিশিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'চিকেন ভাজা',
+            description: 'হাই হিটে চিকেন দ্রুত ভেজে তুলুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সবজি ভাজা',
+            description: 'একই প্যানে রসুন, আদা, সবজি হাই হিটে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস ও নুডলস',
+            description: 'সস মিশিয়ে নুডলস ও চিকেন দিয়ে সব একসাথে টস করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিলের তেল ও পেঁয়াজ পাতা দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 300,
+      tags: ['নুডলস', 'চাইনিজ', 'মাংস'],
+      rating: 4.7,
+      viewCount: 6100),
+
+  // 90. ফ্রাইড রাইস
+  const FoodItem(
+      id: 'snack_090',
+      name: 'ফ্রাইড রাইস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍳',
+      description:
+          'সবজি ও মশলার চাইনিজ ফ্রাইড রাইস — বাড়তি ভাতের সেরা ব্যবহার।',
+      ingredients: [
+        '৩ কাপ রান্না করা ঠান্ডা ভাত',
+        '১ কাপ মিক্সড সবজি',
+        '২ টি ডিম',
+        '৩ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ তিলের তেল',
+        'রসুন কুচি',
+        '২ টি সবুজ পেঁয়াজ',
+        'লবণ, গোলমরিচ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডিম ভাজা',
+            description: 'তেলে ডিম হালকা ভেজে নিয়ে সরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রসুন ও সবজি',
+            description: 'একই প্যানে রসুন ও সবজি হাই হিটে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাত যোগ',
+            description: 'ঠান্ডা ভাত দিয়ে হাই হিটে সব ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস যোগ',
+            description: 'সয়া সস দিয়ে মিশিয়ে ডিম ফেরত দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিলের তেল ও পেঁয়াজ পাতা দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 340,
+      tags: ['রাইস', 'ফ্রাই', 'চাইনিজ'],
+      rating: 4.6,
+      viewCount: 5200),
+
+  // 91. এগ ফ্রাইড রাইস
+  const FoodItem(
+      id: 'snack_091',
+      name: 'এগ ফ্রাইড রাইস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥚',
+      description:
+          'ডিম ও সবজির চাইনিজ ফ্রাইড রাইস — বাড়তি ভাতের সেরা ব্যবহার।',
+      ingredients: [
+        '৩ কাপ রান্না করা ঠান্ডা ভাত',
+        '৩ টি ডিম',
+        '১ কাপ মিক্সড সবজি',
+        '৩ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ তিলের তেল',
+        'রসুন কুচি',
+        '২ টি সবুজ পেঁয়াজ',
+        'লবণ, গোলমরিচ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডিম ভাজা',
+            description: 'তেলে ডিম হালকা ভেজে নিয়ে সরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'রসুন ও সবজি',
+            description: 'একই প্যানে রসুন ও সবজি হাই হিটে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ভাত যোগ',
+            description: 'ঠান্ডা ভাত দিয়ে হাই হিটে সব ভালো করে টস করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'সস যোগ',
+            description: 'সয়া সস দিয়ে মিশিয়ে ডিম ফেরত দিন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিলের তেল ও পেঁয়াজ পাতা দিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 20,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 350,
+      tags: ['রাইস', 'ডিম', 'চাইনিজ'],
+      rating: 4.6,
+      viewCount: 5200),
+
+  // 92. চিকেন ফ্রাইড রাইস
+  const FoodItem(
+      id: 'snack_092',
+      name: 'চিকেন ফ্রাইড রাইস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍗',
+      description: 'চিকেন ও সবজির ফ্রাইড রাইস — রেস্তোরাঁ স্টাইলে বাড়িতে।',
+      ingredients: [
+        '৩ কাপ ঠান্ডা ভাত',
+        '২০০ গ্রাম চিকেন (কিউব করা)',
+        '৩ টি ডিম',
+        '১ কাপ মিক্সড সবজি',
+        '৩ টেবিল চামচ সয়া সস',
+        '১ টেবিল চামচ ওয়েস্টার সস',
+        '১ চা চামচ তিলের তেল',
+        'রসুন',
+        'আদা',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'চিকেন ভাজা',
+            description: 'তেলে চিকেন দ্রুত ভেজে সরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ডিম ভাজা',
+            description: 'ডিম স্ক্র্যাম্বল করে সরিয়ে রাখুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সবজি ভাজা',
+            description: 'রসুন, আদা ও সবজি হাই হিটে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাত ও সস',
+            description: 'ভাত দিয়ে সস মিশিয়ে সব একসাথে টস করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'তিলের তেল ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 15,
+      servings: 3,
+      difficulty: 'মাঝারি',
+      calories: 380,
+      tags: ['রাইস', 'মাংস', 'চাইনিজ'],
+      rating: 4.7,
+      viewCount: 5800),
+
+  // 93. মায়ো নুডলস
+  const FoodItem(
+      id: 'snack_093',
+      name: 'মায়ো নুডলস',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🍜',
+      description: 'মায়োনেজ ও মশলার নুডলস সালাদ — ঠান্ডা পরিবেশনে দারুণ।',
+      ingredients: [
+        '২০০ গ্রাম নুডলস',
+        '৩ টেবিল চামচ মায়োনেজ',
+        '১ চা চামচ সয়া সস',
+        '১ চা চামচ চিলি সস',
+        '১ টি গাজর (কুচি)',
+        '২ টি সবুজ পেঁয়াজ',
+        '১/২ চা চামচ গোলমরিচ',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'নুডলস সিদ্ধ',
+            description: 'নুডলস সিদ্ধ করে ঠান্ডা পানিতে ধুয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ড্রেসিং তৈরি',
+            description:
+                'মায়োনেজ, সয়া সস, চিলি সস ও গোলমরিচ মিশিয়ে ড্রেসিং বানান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মিশানো',
+            description: 'নুডলস, গাজর ও পেঁয়াজে ড্রেসিং মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'ঠান্ডা বা স্বাভাবিক তাপমাত্রায় পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 3,
+      difficulty: 'সহজ',
+      calories: 310,
+      tags: ['নুডলস', 'মায়ো', 'ঠান্ডা'],
+      rating: 4.5,
+      viewCount: 4200),
+  // 94. চিংড়ি সমুচা
+  const FoodItem(
+      id: 'snack_094',
+      name: 'চিংড়ি সমুচা',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🦐',
+      description:
+          'চিংড়ি ভরা ক্রিসপি সমুচা — সামুদ্রিক খাবারপ্রেমীদের বিশেষ পছন্দ।',
+      ingredients: [
+        '২ কাপ ময়দা',
+        '২০০ গ্রাম চিংড়ি কুচি',
+        '১ টি পেঁয়াজ কুচি',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ চা চামচ গরম মশলা',
+        'লবণ',
+        'ধনেপাতা',
+        'ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডো তৈরি',
+            description: 'ময়দা, লবণ ও তেল মিশিয়ে শক্ত ডো তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'পুর রান্না',
+            description:
+                'তেলে পেঁয়াজ, আদা-রসুন ভেজে চিংড়ি ও মশলা দিয়ে রান্না করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সমুচা বানানো',
+            description: 'ডো বেলে পুর দিয়ে ত্রিভুজ আকারে সিল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'গরম তেলে ক্রিসপি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'টক-মিষ্টি চাটনি সহ পরিবেশন করুন।')
+      ],
+      cookTime: 28,
+      prepTime: 30,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 270,
+      tags: ['চিংড়ি', 'সমুচা', 'সামুদ্রিক'],
+      rating: 4.7,
+      viewCount: 4600),
+
+  // 95. ভেজিটেবল স্প্রিং রোল
+  const FoodItem(
+      id: 'snack_095',
+      name: 'ভেজিটেবল স্প্রিং রোল',
+      category: 'snacks',
+      subCategory: 'snack',
+      emoji: '🥗',
+      description:
+          'সবজিতে ভরা ভেজিটেরিয়ান স্প্রিং রোল — হালকা ও স্বাস্থ্যকর নাস্তা।',
+      ingredients: [
+        '১২ টি স্প্রিং রোল শিট',
+        '১ কাপ বাঁধাকপি কুচি',
+        '১/২ কাপ গাজর কুচি',
+        '১/২ কাপ মুশরুম কুচি',
+        '২ টি সবুজ পেঁয়াজ',
+        '১ টেবিল চামচ সয়া সস',
+        'রসুন কুচি',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ফিলিং তৈরি',
+            description: 'তেলে রসুন ভেজে সব সবজি হাই হিটে ভেজে সয়া সস মেশান।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'ঠান্ডা করা',
+            description: 'ফিলিং ঠান্ডা করে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'রোল তৈরি',
+            description: 'শিটে ফিলিং দিয়ে শক্ত করে রোল করুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'তেলে সোনালি করে ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'চিলি সস সহ পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 20,
+      servings: 4,
+      difficulty: 'মাঝারি',
+      calories: 240,
+      tags: ['সবজি', 'রোল', 'ভেজিটেরিয়ান'],
+      rating: 4.5,
+      viewCount: 4000),
+
+  // 96. আলু চাট
+  const FoodItem(
+      id: 'snack_096',
+      name: 'আলু চাট',
+      category: 'snacks',
+      subCategory: 'street_food',
+      emoji: '🥔',
+      description: 'টক-ঝাল আলুর চাট — সন্ধ্যার স্ট্রিট ফুড হিসেবে অসাধারণ।',
+      ingredients: [
+        '৪ টি সিদ্ধ আলু (কিউব করা)',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি টমেটো কুচি',
+        '১/২ কাপ দই',
+        'তেঁতুলের চাটনি',
+        'ভাজা জিরা গুঁড়া',
+        'চাট মশলা',
+        'কাঁচা মরিচ',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'আলু প্রস্তুত',
+            description: 'সিদ্ধ আলু কিউব করে হালকা তেলে সোনালি করে ভেজে নিন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা যোগ',
+            description: 'চাট মশলা, জিরা গুঁড়া, লবণ মিশিয়ে নিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সাজানো',
+            description: 'থালায় আলু দিয়ে পেঁয়াজ, টমেটো, মরিচ সাজান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'দই ও চাটনি',
+            description: 'দই ও তেঁতুলের চাটনি ঢালুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ধনেপাতা ছিটিয়ে তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 200,
+      tags: ['চাট', 'আলু', 'স্ট্রিট ফুড'],
+      rating: 4.7,
+      viewCount: 5400),
+
+  // 97. ডিম চাট
+  const FoodItem(
+      id: 'snack_097',
+      name: 'ডিম চাট',
+      category: 'snacks',
+      subCategory: 'street_food',
+      emoji: '🥚',
+      description: 'সিদ্ধ ডিমের টক-মিষ্টি চাট — প্রোটিন সমৃদ্ধ স্ট্রিট ফুড।',
+      ingredients: [
+        '৪ টি সিদ্ধ ডিম',
+        '১ টি পেঁয়াজ কুচি',
+        '১ টি টমেটো কুচি',
+        '১/২ কাপ দই',
+        'তেঁতুলের চাটনি',
+        'চাট মশলা',
+        'ভাজা জিরা গুঁড়া',
+        'কাঁচা মরিচ',
+        'ধনেপাতা'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ডিম প্রস্তুত',
+            description: 'সিদ্ধ ডিম অর্ধেক বা চার ভাগে কাটুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা',
+            description: 'ডিমে চাট মশলা, জিরা গুঁড়া ও সামান্য লবণ মাখান।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'সাজানো',
+            description: 'থালায় ডিম সাজিয়ে পেঁয়াজ, টমেটো দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'দই ও চাটনি',
+            description: 'দই ও তেঁতুলের চাটনি ঢালুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ধনেপাতা ছিটিয়ে তৎক্ষণাৎ পরিবেশন করুন।')
+      ],
+      cookTime: 15,
+      prepTime: 10,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['চাট', 'ডিম', 'স্ট্রিট ফুড'],
+      rating: 4.6,
+      viewCount: 4800),
+
+  // 98. ঘুগনি
+  const FoodItem(
+      id: 'snack_098',
+      name: 'ঘুগনি',
+      category: 'snacks',
+      subCategory: 'street_food',
+      emoji: '🫘',
+      description:
+          'মশলাদার মটরশুঁটির ঘুগনি — বাংলাদেশ-ভারতের সীমান্তের জনপ্রিয় স্ট্রিট ফুড।',
+      ingredients: [
+        '২ কাপ মটরশুঁটি (ভেজানো)',
+        '১ টি পেঁয়াজ কুচি',
+        '১ চা চামচ আদা-রসুন বাটা',
+        '১/২ চা চামচ হলুদ',
+        '১/২ চা চামচ জিরা গুঁড়া',
+        '১/২ চা চামচ গরম মশলা',
+        '২ টি কাঁচা মরিচ',
+        'লেবুর রস',
+        'ধনেপাতা',
+        'লবণ',
+        'তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'মটরশুঁটি প্রস্তুত',
+            description:
+                'মটরশুঁটি রাতে ভিজিয়ে রাখুন, প্রেশার কুকারে নরম করে সিদ্ধ করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'মশলা কষানো',
+            description:
+                'তেলে পেঁয়াজ, আদা-রসুন ভেজে হলুদ, জিরা, গরম মশলা দিন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'মটরশুঁটি যোগ',
+            description:
+                'সিদ্ধ মটরশুঁটি দিয়ে লবণ ও অল্প পানি মিশিয়ে ১০ মিনিট কষান।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ফিনিশ',
+            description: 'কাঁচা মরিচ ও লেবুর রস দিয়ে ফিনিশ করুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'পরিবেশন',
+            description: 'ধনেপাতা ও পেঁয়াজ কুচি ছিটিয়ে গরম পরিবেশন করুন।')
+      ],
+      cookTime: 25,
+      prepTime: 480,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 220,
+      tags: ['মটরশুঁটি', 'স্ট্রিট ফুড', 'ভেজিটেরিয়ান'],
+      rating: 4.6,
+      viewCount: 4500),
+
+  // 99. ফুচকা
+  const FoodItem(
+      id: 'snack_099',
+      name: 'ফুচকা',
+      category: 'snacks',
+      subCategory: 'street_food',
+      emoji: '🫙',
+      description:
+          'টক-ঝাল মিষ্টি পানি আর আলুর পুরে ভরা ফুচকা — বাংলার সেরা রাস্তার খাবার।',
+      ingredients: [
+        '৩০ টি ফুচকার খোল',
+        '৪ টি সিদ্ধ আলু',
+        '১ কাপ তেঁতুলের পানি',
+        'ভাজা জিরা গুঁড়া',
+        'কাঁচা মরিচ কুচি',
+        'ধনেপাতা কুচি',
+        'চাটমশলা',
+        'লবণ'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'তেঁতুলের পানি',
+            description:
+                'তেঁতুল পানিতে গুলে ছেঁকে নিন। চাটমশলা, জিরা গুঁড়া ও লবণ মিশিয়ে টক পানি তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'আলুর পুর',
+            description:
+                'সিদ্ধ আলু মেখে কাঁচা মরিচ, পেঁয়াজ কুচি, ধনেপাতা ও চাটমশলা মিশিয়ে পুর তৈরি করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'ফুচকা পূরণ',
+            description: 'ফুচকার উপরে ছোট ছিদ্র করে আলুর পুর ভরুন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'পরিবেশন',
+            description: 'পুর ভরা ফুচকায় টক পানি ঢেলে সাথে সাথে খান।')
+      ],
+      cookTime: 20,
+      prepTime: 15,
+      servings: 4,
+      difficulty: 'সহজ',
+      calories: 150,
+      tags: ['স্ট্রিট ফুড', 'চটপটি', 'ঝাল'],
+      rating: 4.8,
+      viewCount: 3500),
+
+  // 100. জিলাপি
+  const FoodItem(
+      id: 'snack_100',
+      name: 'জিলাপি',
+      category: 'snacks',
+      subCategory: 'dessert',
+      emoji: '🍯',
+      description:
+          'ক্রিসপি ও মিষ্টি জিলাপি — উৎসব ও বিশেষ দিনের ঐতিহ্যবাহী মিষ্টি।',
+      ingredients: [
+        '১ কাপ ময়দা',
+        '২ টেবিল চামচ কর্নফ্লাওয়ার',
+        '১/৪ চা চামচ বেকিং পাউডার',
+        '১/২ কাপ দই',
+        '১ কাপ চিনি (শিরার জন্য)',
+        '১/২ চা চামচ এলাচ গুঁড়া',
+        'কেশর (ঐচ্ছিক)',
+        'ডুবো ভাজার তেল'
+      ],
+      steps: [
+        RecipeStep(
+            stepNumber: 1,
+            title: 'ব্যাটার তৈরি',
+            description:
+                'ময়দা, কর্নফ্লাওয়ার, বেকিং পাউডার ও দই মিশিয়ে ঘন ব্যাটার বানান। ২ ঘণ্টা রাখুন।'),
+        RecipeStep(
+            stepNumber: 2,
+            title: 'শিরা তৈরি',
+            description:
+                'চিনি ও পানি দিয়ে শিরা বানিয়ে এলাচ ও কেশর যোগ করুন।'),
+        RecipeStep(
+            stepNumber: 3,
+            title: 'জিলাপি তৈরি',
+            description:
+                'ব্যাটার পাইপিং ব্যাগে নিয়ে গরম তেলে সর্পিল আকারে দিন।'),
+        RecipeStep(
+            stepNumber: 4,
+            title: 'ভাজা',
+            description: 'ক্রিসপি ও গোল্ডেন হওয়া পর্যন্ত ভাজুন।'),
+        RecipeStep(
+            stepNumber: 5,
+            title: 'শিরায় ডুবানো',
+            description: 'ভাজা জিলাপি গরম শিরায় ২-৩ মিনিট ডুবিয়ে তুলুন।'),
+        RecipeStep(
+            stepNumber: 6,
+            title: 'পরিবেশন',
+            description: 'গরম বা ঠান্ডা পরিবেশন করুন।')
+      ],
+      cookTime: 30,
+      prepTime: 130,
+      servings: 6,
+      difficulty: 'মাঝারি',
+      calories: 280,
+      tags: ['মিষ্টি', 'উৎসব', 'ঐতিহ্য'],
+      rating: 4.8,
+      viewCount: 5200),
 ];
 
 // ============================================================================

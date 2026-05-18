@@ -30,6 +30,25 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
     super.dispose();
   }
 
+  // ✅ বাংলা টেক্সট স্টাইল হেল্পার (সংখ্যা সহ সাপোর্ট)
+  TextStyle _bnText({
+    required Color color,
+    required double fontSize,
+    FontWeight fontWeight = FontWeight.w400,
+    double height = 1.5,
+  }) {
+    return GoogleFonts.notoSansBengali(
+      fontSize: fontSize.sp,
+      fontWeight: fontWeight,
+      color: color,
+      height: height,
+      // ✅ সংখ্যার জন্য একটু বোল্ড করলে পরিষ্কার দেখায়
+
+    ).copyWith(
+      fontFamilyFallback: ['Noto Sans Bengali', 'SolaimanLipi', 'sans-serif'],
+    );
+  }
+
   Color _getDifficultyColor(String difficulty) {
     switch (difficulty) {
       case 'সহজ':
@@ -93,8 +112,7 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12.r),
-                border:
-                Border.all(color: Colors.white.withOpacity(0.2)),
+                border: Border.all(color: Colors.white.withOpacity(0.2)),
               ),
               child: Icon(
                 Icons.arrow_back_ios_new,
@@ -107,9 +125,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
           Expanded(
             child: Text(
               widget.food.name,
-              style: GoogleFonts.hindSiliguri(
+              style: _bnText(
                 color: Colors.white,
-                fontSize: isTablet ? 22.sp : 20.sp,
+                fontSize: isTablet ? 22 : 20,
                 fontWeight: FontWeight.w700,
               ),
               maxLines: 1,
@@ -128,8 +146,7 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20.r),
-        border:
-        Border.all(color: Colors.white.withOpacity(0.2)),
+        border: Border.all(color: Colors.white.withOpacity(0.2)),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -142,14 +159,13 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
           Text(
             widget.food.description,
             textAlign: TextAlign.center,
-            style: GoogleFonts.hindSiliguri(
+            style: _bnText(
               color: Colors.white.withOpacity(0.85),
-              fontSize: isTablet ? 15.sp : 13.sp,
+              fontSize: 15,
               height: 1.5,
             ),
           ),
           SizedBox(height: 16.h),
-          // Wrap prevents overflow if chips are too wide on small screens
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 8.w,
@@ -192,9 +208,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
           SizedBox(width: 5.w),
           Text(
             label,
-            style: GoogleFonts.hindSiliguri(
+            style: _bnText(
               color: color,
-              fontSize: 12.sp,
+              fontSize: 12,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -209,8 +225,7 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.08),
         borderRadius: BorderRadius.circular(12.r),
-        border:
-        Border.all(color: Colors.white.withOpacity(0.15)),
+        border: Border.all(color: Colors.white.withOpacity(0.15)),
       ),
       child: TabBar(
         controller: _tabController,
@@ -222,12 +237,14 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
         dividerColor: Colors.transparent,
         labelColor: Colors.white,
         unselectedLabelColor: Colors.white54,
-        labelStyle: GoogleFonts.hindSiliguri(
-          fontSize: 14.sp,
+        labelStyle: _bnText(
+          color: Colors.white,
+          fontSize: 15,
           fontWeight: FontWeight.w600,
         ),
-        unselectedLabelStyle: GoogleFonts.hindSiliguri(
-          fontSize: 14.sp,
+        unselectedLabelStyle: _bnText(
+          color: Colors.white54,
+          fontSize: 15,
           fontWeight: FontWeight.w400,
         ),
         tabs: const [
@@ -254,15 +271,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
       itemCount: widget.food.ingredients.length,
       itemBuilder: (context, index) => Container(
         margin: EdgeInsets.only(bottom: 10.h),
-        padding: EdgeInsets.symmetric(
-          horizontal: 16.w,
-          vertical: 12.h,
-        ),
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
         decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.08),
           borderRadius: BorderRadius.circular(12.r),
-          border:
-          Border.all(color: Colors.white.withOpacity(0.12)),
+          border: Border.all(color: Colors.white.withOpacity(0.12)),
         ),
         child: Row(
           children: [
@@ -275,10 +288,10 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
               ),
               child: Center(
                 child: Text(
-                  '${index + 1}',
-                  style: GoogleFonts.hindSiliguri(
+                  '${index + 1}', // ✅ বাংলা সংখ্যা এখানে রেন্ডার হবে
+                  style: _bnText(
                     color: const Color(0xFFFF6B35),
-                    fontSize: 13.sp,
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -288,9 +301,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
             Expanded(
               child: Text(
                 widget.food.ingredients[index],
-                style: GoogleFonts.hindSiliguri(
+                style: _bnText(
                   color: Colors.white,
-                  fontSize: isTablet ? 15.sp : 14.sp,
+                  fontSize: isTablet ? 15 : 14,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -327,10 +340,10 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
                     ),
                     child: Center(
                       child: Text(
-                        '${step.stepNumber}',
-                        style: GoogleFonts.hindSiliguri(
+                        '${step.stepNumber}', // ✅ বাংলা সংখ্যা এখানেও
+                        style: _bnText(
                           color: Colors.white,
-                          fontSize: 14.sp,
+                          fontSize: 14,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -356,26 +369,25 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen>
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.08),
                     borderRadius: BorderRadius.circular(14.r),
-                    border: Border.all(
-                        color: Colors.white.withOpacity(0.12)),
+                    border: Border.all(color: Colors.white.withOpacity(0.12)),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         step.title,
-                        style: GoogleFonts.hindSiliguri(
+                        style: _bnText(
                           color: const Color(0xFFFFB347),
-                          fontSize: isTablet ? 15.sp : 14.sp,
+                          fontSize: isTablet ? 15 : 14,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                       SizedBox(height: 6.h),
                       Text(
                         step.description,
-                        style: GoogleFonts.hindSiliguri(
+                        style: _bnText(
                           color: Colors.white.withOpacity(0.85),
-                          fontSize: isTablet ? 14.sp : 13.sp,
+                          fontSize: isTablet ? 14 : 13,
                           height: 1.5,
                         ),
                       ),

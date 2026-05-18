@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:ranna_app/presentation/controllers/favorite_controller.dart';
 
 import 'core/theme/app_theme.dart';
 import 'presentation/screens/home_screen.dart';
@@ -11,7 +12,9 @@ void main() {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
+
   ]);
+  Get.put(FavouritesController());
   runApp(const MyApp());
 }
 

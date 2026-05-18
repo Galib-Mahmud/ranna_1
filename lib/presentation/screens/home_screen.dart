@@ -1,3 +1,8 @@
+// ══════════════════════════════════════════════════════════════════════════════
+// HOME SCREEN — updated with Drawer
+// Replace your existing home_screen.dart with this file.
+// ══════════════════════════════════════════════════════════════════════════════
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -5,8 +10,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/theme/app_theme.dart';
 import '../../data/static/food_data.dart';
-import '../controllers/food_controller.dart';
-import 'cooking_tips_screen.dart';
+import '../controllers/favorite_controller.dart';
+import '../controllers/food_controller.dart'; // ← NEW
+import 'app_drawer.dart';
 import 'food_list_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,7 +27,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late AnimationController _floatController;
   late Animation<double> _fadeAnimation;
   late Animation<double> _floatAnimation;
+
   final FoodController controller = Get.put(FoodController());
+  final FavouritesController _favCtrl = Get.find<FavouritesController>();
+
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
@@ -47,15 +58,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    // MediaQuery values — used for layout decisions
     final mq = MediaQuery.of(context);
     final screenW = mq.size.width;
     final isTablet = screenW >= 600;
 
     return Scaffold(
+      key: _scaffoldKey,
+      drawer: const AppDrawer(),
       body: Stack(
         children: [
-          // ── Background Gradient ─────────────────────────────────────────
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -70,8 +81,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
           ),
-
-          // ── Decorative Circles ──────────────────────────────────────────
           Positioned(
             top: -80.h,
             right: -80.w,
@@ -96,14 +105,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
           ),
-
-          // ── Floating Emojis ─────────────────────────────────────────────
           _buildFloatingEmoji('🍛', 60.w, null, 140.h),
           _buildFloatingEmoji('🐟', null, 80.w, 220.h),
           _buildFloatingEmoji('🍕', 30.w, null, 380.h),
           _buildFloatingEmoji('🍗', null, 40.w, 460.h),
-
-          // ── Main Content ────────────────────────────────────────────────
           SafeArea(
             child: FadeTransition(
               opacity: _fadeAnimation,
@@ -114,6 +119,63 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Column(
                   children: [
                     SizedBox(height: 10.h),
+                    // ── Top row: drawer + heart counter ─────────
+                    Row(
+                      children: [
+                        GestureDetector(
+                          onTap: () =>
+                              _scaffoldKey.currentState?.openDrawer(),
+                          child: Container(
+                            width: 42.w,
+                            height: 42.w,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(12.r),
+                              border: Border.all(
+                                  color: Colors.white.withOpacity(0.2)),
+                            ),
+                            child: Icon(Icons.menu,
+                                color: Colors.white, size: 20.sp),
+                          ),
+                        ),
+                        const Spacer(),
+                        Obx(() => GestureDetector(
+                          onTap: () =>
+                              _scaffoldKey.currentState?.openDrawer(),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 12.w, vertical: 6.h),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFF6B6B)
+                                  .withOpacity(0.15),
+                              borderRadius:
+                              BorderRadius.circular(20.r),
+                              border: Border.all(
+                                  color: const Color(0xFFFF6B6B)
+                                      .withOpacity(0.3)),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.favorite,
+                                    color: const Color(0xFFFF6B6B),
+                                    size: 14.sp),
+                                SizedBox(width: 5.w),
+                                Text(
+                                  '${_favCtrl.favourites.length}',
+                                  style: GoogleFonts.hindSiliguri(
+                                    color: Colors.white,
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )),
+                      ],
+                    ),
+                    SizedBox(height: 4.h),
                     _buildHeader(isTablet),
                     _buildAnimatedHero(isTablet),
                     _buildMenuButtons(isTablet),
@@ -149,14 +211,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildHeader(bool isTablet) {
     return Column(
       children: [
-
         ShaderMask(
           shaderCallback: (bounds) => LinearGradient(
-            colors: [
-              AppTheme.accentGold,
-              Colors.white,
-              AppTheme.primaryOrange,
-            ],
+            colors: [AppTheme.accentGold, Colors.white, AppTheme.primaryOrange],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ).createShader(bounds),
@@ -201,7 +258,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
           ),
           child: Center(
-            child: Text('🍲', style: TextStyle(fontSize: isTablet ? 120.sp : 90.sp)),
+            child: Text('🍲',
+                style:
+                TextStyle(fontSize: isTablet ? 120.sp : 90.sp)),
           ),
         ),
       ),
@@ -259,7 +318,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
         ),
         SizedBox(height: 16.h),
-        _buildGiftButton(isTablet),
       ],
     );
   }
@@ -291,7 +349,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               offset: const Offset(0, 8),
             ),
           ],
-          border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
+          border:
+          Border.all(color: Colors.white.withOpacity(0.2), width: 1),
         ),
         child: Row(
           children: [
@@ -303,10 +362,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 borderRadius: BorderRadius.circular(14.r),
               ),
               child: Center(
-                child: Text(
-                  emoji,
-                  style: TextStyle(fontSize: isTablet ? 34.sp : 28.sp),
-                ),
+                child: Text(emoji,
+                    style:
+                    TextStyle(fontSize: isTablet ? 34.sp : 28.sp)),
               ),
             ),
             SizedBox(width: 16.w),
@@ -314,22 +372,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title,
-                    style: GoogleFonts.hindSiliguri(
-                      color: Colors.white,
-                      fontSize: isTablet ? 22.sp : 20.sp,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
+                  Text(title,
+                      style: GoogleFonts.hindSiliguri(
+                        color: Colors.white,
+                        fontSize: isTablet ? 22.sp : 20.sp,
+                        fontWeight: FontWeight.w700,
+                      )),
                   SizedBox(height: 2.h),
-                  Text(
-                    subtitle,
-                    style: GoogleFonts.hindSiliguri(
-                      color: Colors.white.withOpacity(0.8),
-                      fontSize: isTablet ? 15.sp : 13.sp,
-                    ),
-                  ),
+                  Text(subtitle,
+                      style: GoogleFonts.hindSiliguri(
+                        color: Colors.white.withOpacity(0.8),
+                        fontSize: isTablet ? 15.sp : 13.sp,
+                      )),
                 ],
               ),
             ),
@@ -340,96 +394,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 color: Colors.white.withOpacity(0.2),
                 shape: BoxShape.circle,
               ),
-              child: Icon(
-                Icons.arrow_forward_ios,
-                color: Colors.white,
-                size: 14.sp,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildGiftButton(bool isTablet) {
-    return GestureDetector(
-      onTap: () =>
-          Get.to(() => const CookingTipsScreen(), transition: Transition.fadeIn),
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.all(isTablet ? 24.w : 20.w),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [Color(0xFFf093fb), Color(0xFFf5576c)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(20.r),
-          boxShadow: [
-            BoxShadow(
-              color: const Color(0xFFf093fb).withOpacity(0.4),
-              blurRadius: 20,
-              offset: const Offset(0, 8),
-            ),
-          ],
-          border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: isTablet ? 68.w : 56.w,
-              height: isTablet ? 68.w : 56.w,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(14.r),
-              ),
-              child: Center(
-                child: Text(
-                  '🎁',
-                  style: TextStyle(fontSize: isTablet ? 34.sp : 28.sp),
-                ),
-              ),
-            ),
-            SizedBox(width: 16.w),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'রান্নার টিপস',
-                    style: GoogleFonts.hindSiliguri(
-                      color: Colors.white,
-                      fontSize: isTablet ? 22.sp : 20.sp,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  SizedBox(height: 2.h),
-                  Text(
-                    'রান্নাঘরের কাজ আরও সহজ করুন',
-                    style: GoogleFonts.hindSiliguri(
-                      color: Colors.white.withOpacity(0.85),
-                      fontSize: isTablet ? 15.sp : 13.sp,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding:
-              EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.25),
-                borderRadius: BorderRadius.circular(12.r),
-              ),
-              child: Text(
-                '১২ টিপস',
-                style: GoogleFonts.hindSiliguri(
-                  color: Colors.white,
-                  fontSize: 11.sp,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
+              child: Icon(Icons.arrow_forward_ios,
+                  color: Colors.white, size: 14.sp),
             ),
           ],
         ),
@@ -453,8 +419,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _buildStat('${bideshiFoods.length}', 'বিদেশি রেসিপি'),
           _buildDivider(),
           _buildStat(
-            '${deshiFoods.length + bideshiFoods.length + snackFoods.length}',
-            'মোট আইটেম',
+            '${ snackFoods.length}',
+            'নাস্তা/স্ন্যাকস',
           ),
         ],
       ),
@@ -464,22 +430,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget _buildStat(String count, String label) {
     return Column(
       children: [
-        Text(
-          count,
-          style: GoogleFonts.hindSiliguri(
-            color: AppTheme.accentGold,
-            fontSize: 18.sp,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
+        Text(count,
+            style: GoogleFonts.hindSiliguri(
+              color: AppTheme.accentGold,
+              fontSize: 18.sp,
+              fontWeight: FontWeight.w700,
+            )),
         SizedBox(height: 2.h),
-        Text(
-          label,
-          style: GoogleFonts.hindSiliguri(
-            color: Colors.white.withOpacity(0.6),
-            fontSize: 11.sp,
-          ),
-        ),
+        Text(label,
+            style: GoogleFonts.hindSiliguri(
+              color: Colors.white.withOpacity(0.6),
+              fontSize: 11.sp,
+            )),
       ],
     );
   }
