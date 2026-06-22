@@ -1,5 +1,4 @@
-name: ranna_app
-description: বাংলাদেশ ও বিশ্বের রেসিপি অ্যাপ
+name: Ranna
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -16,6 +15,7 @@ dependencies:
   flutter_screenutil:
   shared_preferences:
   url_launcher:
+  google_mobile_ads:
 
 
 dev_dependencies:

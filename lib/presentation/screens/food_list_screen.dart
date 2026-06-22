@@ -4,7 +4,10 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../data/models/food_model.dart';
+import '../controllers/ads_controller.dart';
+import '../widgets/banner_add_widget.dart';
 import '../widgets/food_card.dart';
+import 'recipe_details_screen.dart';
 
 class FoodListScreen extends StatefulWidget {
   final String title;
@@ -24,7 +27,12 @@ class FoodListScreen extends StatefulWidget {
 
 class _FoodListScreenState extends State<FoodListScreen> {
   final TextEditingController _searchController = TextEditingController();
+  final AdsController _adsCtrl = Get.find<AdsController>();
+
   List<FoodItem> _filteredFoods = [];
+
+  // যেসব রেসিপি ইতিমধ্যে unlock হয়েছে — আবার gate করবে না
+  final Set<String> _unlockedRecipes = <String>{};
 
   @override
   void initState() {
@@ -54,25 +62,167 @@ class _FoodListScreenState extends State<FoodListScreen> {
     });
   }
 
+  // ════════════════════════════════════════════════════════════════
+  // রেসিপি কার্ডে ট্যাপ → rewarded gate
+  // ════════════════════════════════════════════════════════════════
+  void _onRecipeTap(FoodItem food) {
+    // আগে unlock হয়ে থাকলে সরাসরি খুলে যাবে
+    if (_unlockedRecipes.contains(food.name)) {
+      _openRecipe(food);
+      return;
+    }
+
+    // Ad প্রস্তুত না থাকলে user কে আটকানো যাবে না — সরাসরি খুলে দাও
+    if (!_adsCtrl.isRewardedReady) {
+      _openRecipe(food);
+      return;
+    }
+
+    // Opt-in dialog দেখাও
+    _showUnlockDialog(food);
+  }
+
+  void _showUnlockDialog(FoodItem food) {
+    Get.dialog(
+      Dialog(
+        backgroundColor: Colors.transparent,
+        child: Container(
+          padding: EdgeInsets.all(24.w),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF2d1500), Color(0xFF4a0e00)],
+            ),
+            borderRadius: BorderRadius.circular(24.r),
+            border: Border.all(color: Colors.white.withOpacity(0.15)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text('🎬', style: TextStyle(fontSize: 48.sp)),
+              SizedBox(height: 12.h),
+              Text(
+                'রেসিপিটি দেখুন',
+                style: GoogleFonts.hindSiliguri(
+                  color: Colors.white,
+                  fontSize: 20.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              SizedBox(height: 8.h),
+              Text(
+                'একটি ছোট ভিডিও দেখে "${food.name}" রেসিপিটি দেখুন। '
+                    'এতে আমরা ফ্রি রেসিপি দিতে পারি 🙏',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.hindSiliguri(
+                  color: Colors.white.withOpacity(0.75),
+                  fontSize: 14.sp,
+                  height: 1.5,
+                ),
+              ),
+              SizedBox(height: 20.h),
+              Row(
+                children: [
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () => Get.back(),
+                      child: Container(
+                        padding: EdgeInsets.symmetric(vertical: 14.h),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(14.r),
+                          border: Border.all(
+                              color: Colors.white.withOpacity(0.2)),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'পরে',
+                            style: GoogleFonts.hindSiliguri(
+                              color: Colors.white.withOpacity(0.8),
+                              fontSize: 15.sp,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 12.w),
+                  Expanded(
+                    flex: 2,
+                    child: GestureDetector(
+                      onTap: () {
+                        Get.back();
+                        _watchAdThenOpen(food);
+                      },
+                      child: Container(
+                        padding: EdgeInsets.symmetric(vertical: 14.h),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFFf093fb), Color(0xFFf5576c)],
+                          ),
+                          borderRadius: BorderRadius.circular(14.r),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.play_circle_fill,
+                                color: Colors.white, size: 18.sp),
+                            SizedBox(width: 6.w),
+                            Text(
+                              'ভিডিও দেখুন',
+                              style: GoogleFonts.hindSiliguri(
+                                color: Colors.white,
+                                fontSize: 15.sp,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+      barrierDismissible: true,
+    );
+  }
+
+  void _watchAdThenOpen(FoodItem food) {
+    _adsCtrl.showRewarded(
+      onReward: () {
+        _unlockedRecipes.add(food.name);
+        _openRecipe(food);
+      },
+    );
+  }
+
+  void _openRecipe(FoodItem food) {
+    Get.to(
+          () => RecipeDetailScreen(food: food),
+      transition: Transition.downToUp,
+      duration: const Duration(milliseconds: 400),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final mq = MediaQuery.of(context);
     final screenW = mq.size.width;
     final isTablet = screenW >= 600;
 
-    // Grid column count based on screen width
     final crossAxisCount = isTablet ? 3 : 2;
-
-    // childAspectRatio: taller cards on small screens to avoid overflow
-    // We calculate a safe ratio based on actual screen width per card
-    final cardWidth = (screenW - 48) / crossAxisCount; // 48 = padding + spacing
-    // Each card needs ~220 logical px of height at minimum
+    final cardWidth = (screenW - 48) / crossAxisCount;
     final cardAspectRatio = (cardWidth / 230).clamp(0.72, 0.92);
 
     return Scaffold(
       body: Stack(
         children: [
-          // ── Background ──────────────────────────────────────────────────
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -86,7 +236,6 @@ class _FoodListScreenState extends State<FoodListScreen> {
               ),
             ),
           ),
-
           SafeArea(
             child: Column(
               children: [
@@ -101,6 +250,8 @@ class _FoodListScreenState extends State<FoodListScreen> {
                     isTablet: isTablet,
                   ),
                 ),
+                // ── Banner Ad নিচে ──────────────────────────────
+                const BannerAdWidget(),
               ],
             ),
           ),
@@ -114,7 +265,6 @@ class _FoodListScreenState extends State<FoodListScreen> {
       padding: EdgeInsets.fromLTRB(16.w, 12.h, 16.w, 0),
       child: Row(
         children: [
-          // Back Button
           GestureDetector(
             onTap: () => Get.back(),
             child: Container(
@@ -123,8 +273,7 @@ class _FoodListScreenState extends State<FoodListScreen> {
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12.r),
-                border:
-                Border.all(color: Colors.white.withOpacity(0.2)),
+                border: Border.all(color: Colors.white.withOpacity(0.2)),
               ),
               child: Icon(
                 Icons.arrow_back_ios_new,
@@ -133,10 +282,7 @@ class _FoodListScreenState extends State<FoodListScreen> {
               ),
             ),
           ),
-
           SizedBox(width: 16.w),
-
-          // Title
           Expanded(
             child: Text(
               widget.title,
@@ -148,16 +294,12 @@ class _FoodListScreenState extends State<FoodListScreen> {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-
-          // Count Badge
           Container(
-            padding:
-            EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
+            padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
             decoration: BoxDecoration(
               color: widget.accentColor.withOpacity(0.3),
               borderRadius: BorderRadius.circular(20.r),
-              border: Border.all(
-                  color: widget.accentColor.withOpacity(0.5)),
+              border: Border.all(color: widget.accentColor.withOpacity(0.5)),
             ),
             child: Text(
               '${_filteredFoods.length} টি',
@@ -254,14 +396,18 @@ class _FoodListScreenState extends State<FoodListScreen> {
         crossAxisCount: crossAxisCount,
         childAspectRatio: childAspectRatio,
         crossAxisSpacing: 14.w,
-        mainAxisSpacing: 20.h, // extra space for the serial badge overflow
+        mainAxisSpacing: 20.h,
       ),
       itemCount: _filteredFoods.length,
-      itemBuilder: (context, index) => FoodCard(
-        food: _filteredFoods[index],
-        accentColor: widget.accentColor,
-        index: index,
-      ),
+      itemBuilder: (context, index) {
+        final food = _filteredFoods[index];
+        return FoodCard(
+          food: food,
+          accentColor: widget.accentColor,
+          index: index,
+          onTap: () => _onRecipeTap(food), // ← rewarded gate এখানে
+        );
+      },
     );
   }
 }

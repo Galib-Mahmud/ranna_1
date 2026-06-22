@@ -11,12 +11,14 @@ class FoodCard extends StatefulWidget {
   final FoodItem food;
   final Color accentColor;
   final int index;
+  final VoidCallback? onTap; // ← NEW: থাকলে এটা চলবে, না থাকলে সরাসরি রেসিপি খুলবে
 
   const FoodCard({
     super.key,
     required this.food,
     required this.accentColor,
     required this.index,
+    this.onTap, // ← NEW
   });
 
   @override
@@ -29,13 +31,12 @@ class _FoodCardState extends State<FoodCard>
   late Animation<double> _scaleAnim;
   bool _isPressed = false;
 
-  // ── NEW ──────────────────────────────────────────────────────────────────
   late final FavouritesController _favCtrl;
 
   @override
   void initState() {
     super.initState();
-    _favCtrl = Get.find<FavouritesController>(); // ← NEW
+    _favCtrl = Get.find<FavouritesController>();
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 120),
@@ -44,7 +45,6 @@ class _FoodCardState extends State<FoodCard>
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     );
   }
-  // ─────────────────────────────────────────────────────────────────────────
 
   Color _getDifficultyColor(String difficulty) {
     return {
@@ -69,11 +69,18 @@ class _FoodCardState extends State<FoodCard>
   void _onTapUp(_) {
     setState(() => _isPressed = false);
     _controller.reverse();
-    Get.to(
-          () => RecipeDetailScreen(food: widget.food),
-      transition: Transition.downToUp,
-      duration: const Duration(milliseconds: 400),
-    );
+
+    // ── NEW: onTap callback থাকলে সেটা চালাও (rewarded gate ইত্যাদি) ──
+    if (widget.onTap != null) {
+      widget.onTap!();
+    } else {
+      // আগের ডিফল্ট আচরণ — সরাসরি রেসিপি খোলা
+      Get.to(
+            () => RecipeDetailScreen(food: widget.food),
+        transition: Transition.downToUp,
+        duration: const Duration(milliseconds: 400),
+      );
+    }
   }
 
   void _onTapCancel() {
@@ -381,14 +388,13 @@ class _FoodCardState extends State<FoodCard>
               ),
             ),
 
-            // ── ❤️ Favourite Button (Top Right) ── NEW ─────────────────────
+            // ── ❤️ Favourite Button (Top Right) ────────────────────────────
             Positioned(
               top: 8.h,
               right: 8.w,
               child: Obx(() {
                 final isFav = _favCtrl.isFavourite(widget.food);
                 return GestureDetector(
-                  // stop tap bubbling to the card's GestureDetector
                   onTapDown: (d) {},
                   onTap: () => _favCtrl.toggleFavourite(widget.food),
                   child: AnimatedContainer(
@@ -418,7 +424,6 @@ class _FoodCardState extends State<FoodCard>
                 );
               }),
             ),
-            // ──────────────────────────────────────────────────────────────
           ],
         ),
       ),

@@ -1,6 +1,5 @@
 // ══════════════════════════════════════════════════════════════════════════════
-// HOME SCREEN — updated with Drawer
-// Replace your existing home_screen.dart with this file.
+// HOME SCREEN — with Drawer + Interstitial Ads
 // ══════════════════════════════════════════════════════════════════════════════
 
 import 'package:flutter/material.dart';
@@ -11,7 +10,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_theme.dart';
 import '../../data/static/food_data.dart';
 import '../controllers/favorite_controller.dart';
-import '../controllers/food_controller.dart'; // ← NEW
+import '../controllers/food_controller.dart';
+import '../controllers/ads_controller.dart'; // ← NEW
 import 'app_drawer.dart';
 import 'food_list_screen.dart';
 
@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   final FoodController controller = Get.put(FoodController());
   final FavouritesController _favCtrl = Get.find<FavouritesController>();
-
+  final AdsController _adsCtrl = Get.find<AdsController>(); // ← NEW
 
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -119,7 +119,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Column(
                   children: [
                     SizedBox(height: 10.h),
-                    // ── Top row: drawer + heart counter ─────────
                     Row(
                       children: [
                         GestureDetector(
@@ -148,8 +147,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             decoration: BoxDecoration(
                               color: const Color(0xFFFF6B6B)
                                   .withOpacity(0.15),
-                              borderRadius:
-                              BorderRadius.circular(20.r),
+                              borderRadius: BorderRadius.circular(20.r),
                               border: Border.all(
                                   color: const Color(0xFFFF6B6B)
                                       .withOpacity(0.3)),
@@ -259,8 +257,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ),
           child: Center(
             child: Text('🍲',
-                style:
-                TextStyle(fontSize: isTablet ? 120.sp : 90.sp)),
+                style: TextStyle(fontSize: isTablet ? 120.sp : 90.sp)),
           ),
         ),
       ),
@@ -276,14 +273,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           subtitle: '${deshiFoods.length}+ রেসিপি',
           gradient: [const Color(0xFFFF6B35), const Color(0xFFE84040)],
           isTablet: isTablet,
-          onTap: () => Get.to(
-                () => FoodListScreen(
-              title: 'দেশি আইটেম',
-              foods: controller.allDeshiFoods,
-              accentColor: const Color(0xFFFF6B35),
-            ),
-            transition: Transition.rightToLeftWithFade,
-          ),
+          onTap: () {
+            _adsCtrl.maybeShowInterstitial(); // ← NEW
+            Get.to(
+                  () => FoodListScreen(
+                title: 'দেশি আইটেম',
+                foods: controller.allDeshiFoods,
+                accentColor: const Color(0xFFFF6B35),
+              ),
+              transition: Transition.rightToLeftWithFade,
+            );
+          },
         ),
         SizedBox(height: 16.h),
         _buildMainButton(
@@ -292,14 +292,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           subtitle: '${bideshiFoods.length}+ রেসিপি',
           gradient: [const Color(0xFF667eea), const Color(0xFF764ba2)],
           isTablet: isTablet,
-          onTap: () => Get.to(
-                () => FoodListScreen(
-              title: 'বিদেশি আইটেম',
-              foods: controller.allBideshiFoods,
-              accentColor: const Color(0xFF667eea),
-            ),
-            transition: Transition.rightToLeftWithFade,
-          ),
+          onTap: () {
+            _adsCtrl.maybeShowInterstitial(); // ← NEW
+            Get.to(
+                  () => FoodListScreen(
+                title: 'বিদেশি আইটেম',
+                foods: controller.allBideshiFoods,
+                accentColor: const Color(0xFF667eea),
+              ),
+              transition: Transition.rightToLeftWithFade,
+            );
+          },
         ),
         SizedBox(height: 16.h),
         _buildMainButton(
@@ -308,14 +311,17 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           subtitle: '${snackFoods.length}+ আইটেম',
           gradient: [const Color(0xFFf093fb), const Color(0xFFf5576c)],
           isTablet: isTablet,
-          onTap: () => Get.to(
-                () => FoodListScreen(
-              title: 'নাস্তা/স্ন্যাকস',
-              foods: controller.allSnackFoods,
-              accentColor: const Color(0xFFf093fb),
-            ),
-            transition: Transition.rightToLeftWithFade,
-          ),
+          onTap: () {
+            _adsCtrl.maybeShowInterstitial(); // ← NEW
+            Get.to(
+                  () => FoodListScreen(
+                title: 'নাস্তা/স্ন্যাকস',
+                foods: controller.allSnackFoods,
+                accentColor: const Color(0xFFf093fb),
+              ),
+              transition: Transition.rightToLeftWithFade,
+            );
+          },
         ),
         SizedBox(height: 16.h),
       ],
@@ -349,8 +355,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               offset: const Offset(0, 8),
             ),
           ],
-          border:
-          Border.all(color: Colors.white.withOpacity(0.2), width: 1),
+          border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
         ),
         child: Row(
           children: [
@@ -363,8 +368,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               child: Center(
                 child: Text(emoji,
-                    style:
-                    TextStyle(fontSize: isTablet ? 34.sp : 28.sp)),
+                    style: TextStyle(fontSize: isTablet ? 34.sp : 28.sp)),
               ),
             ),
             SizedBox(width: 16.w),
@@ -418,10 +422,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           _buildDivider(),
           _buildStat('${bideshiFoods.length}', 'বিদেশি রেসিপি'),
           _buildDivider(),
-          _buildStat(
-            '${ snackFoods.length}',
-            'নাস্তা/স্ন্যাকস',
-          ),
+          _buildStat('${snackFoods.length}', 'নাস্তা/স্ন্যাকস'),
         ],
       ),
     );
