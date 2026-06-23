@@ -1,6 +1,6 @@
 name: Ranna
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -16,6 +16,7 @@ dependencies:
   shared_preferences:
   url_launcher:
   google_mobile_ads:
+  flutter_launcher_icons:
 
 
 dev_dependencies:
@@ -25,3 +26,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/foreground_white.png"
+  adaptive_icon_foreground: "assets/foreground_white.png"
+  adaptive_icon_background: "#F44336"
